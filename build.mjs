@@ -4,7 +4,7 @@
 import { mkdirSync, writeFileSync, readdirSync, rmSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { LANGS, DEFAULT_LANG, STRINGS, VERIFICATION_TAGS } from "./content/site.mjs";
+import { LANGS, DEFAULT_LANG, STRINGS, VERIFICATION_TAGS, FEATURED_ARTICLES } from "./content/site.mjs";
 import { AUTHOR, ARTICLES_FR } from "./content/articles.mjs";
 import { ARTICLES_EN } from "./content/articles.en.mjs";
 
@@ -98,7 +98,13 @@ const foot = lang => `
   <footer class="footer">
     <div class="container footer__inner">
       <a class="brand" href="${homePath(lang)}"><span class="brand__mark"><svg><use href="#i-chat"/></svg></span>omni</a>
-      <p><a href="${indexPath(lang)}">${STRINGS[lang].footerArticles}</a> · © 2026 Omni</p>
+      <nav class="footer__links" aria-label="${STRINGS[lang].mainNav}">
+        <a href="${homePath(lang)}#how">${STRINGS[lang].nav.how}</a>
+        <a href="${homePath(lang)}#pricing">${STRINGS[lang].nav.pricing}</a>
+        <a href="${indexPath(lang)}">${STRINGS[lang].nav.articles}</a>
+        <a href="${homePath(lang)}#contact">${STRINGS[lang].nav.contact}</a>
+      </nav>
+      <p>© 2026 Omni</p>
     </div>
   </footer>
 </body>
@@ -181,6 +187,19 @@ const landingPage = lang => {
           </ul>
           <a class="btn btn--primary pricing__cta" href="#contact">${l.pricingCta}<svg><use href="#i-arrow"/></svg></a>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="articles" aria-labelledby="articles-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">${l.articlesEyebrow}</p>
+          <h2 id="articles-title">${l.articlesTitle}</h2>
+        </div>
+        <div class="article-grid">
+        ${FEATURED_ARTICLES.map(id => articleCard(lang, ARTICLES[lang].find(article => article.id === id))).join("\n        ")}
+        </div>
+        <p class="section__more"><a class="btn btn--secondary" href="${indexPath(lang)}">${l.articlesAll}<svg><use href="#i-arrow"/></svg></a></p>
       </div>
     </section>
 
@@ -308,6 +327,14 @@ ${article.body.trim()}
 ${foot(lang)}`;
 };
 
+const articleCard = (lang, article) => `<a class="card article-card" href="${articlePath(lang, article.id)}">
+          <p class="article-card__category">${escape(article.category)}</p>
+          <p class="article-card__value">${article.insight.value}</p>
+          <p class="article-card__label">${article.insight.label}</p>
+          <h3>${article.title}</h3>
+          <p class="article-card__meta">${escape(AUTHOR.name)} · ${formatDate(lang, article.date)}</p>
+        </a>`;
+
 const indexPage = lang => {
   const t = STRINGS[lang].articles;
   const alternates = Object.fromEntries(LANGS.map(code => [code, indexPath(code)]));
@@ -320,13 +347,7 @@ const indexPage = lang => {
         <p class="article-index__lede">${t.lede}</p>
       </div>
       <div class="article-grid">
-        ${[...ARTICLES[lang]].sort((a, b) => b.date.localeCompare(a.date)).map(article => `<a class="card article-card" href="${articlePath(lang, article.id)}">
-          <p class="article-card__category">${escape(article.category)}</p>
-          <p class="article-card__value">${article.insight.value}</p>
-          <p class="article-card__label">${article.insight.label}</p>
-          <h2>${article.title}</h2>
-          <p class="article-card__meta">${escape(AUTHOR.name)} · ${formatDate(lang, article.date)}</p>
-        </a>`).join("\n        ")}
+        ${[...ARTICLES[lang]].sort((a, b) => b.date.localeCompare(a.date)).map(article => articleCard(lang, article)).join("\n        ")}
       </div>
     </div>
   </main>

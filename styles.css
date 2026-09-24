@@ -206,7 +206,8 @@ h1 em, h2 em { font-family: var(--font-serif); font-size: 1.1em; font-style: ita
   .section { padding-top: 72px; }
   .form { padding: 24px 20px; }
   .form__submit { justify-self: stretch; }
-  .footer__inner { height: 72px; }
+  .footer__inner { flex-wrap: wrap; gap: 14px; height: auto; padding-block: 22px; }
+  .footer__links { order: 3; width: 100%; margin: 0; }
 }
 
 /* Articles */
@@ -277,9 +278,12 @@ h1 em, h2 em { font-family: var(--font-serif); font-size: 1.1em; font-style: ita
 .article-card__category { color: var(--primary); font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
 .article-card__value { margin-top: 18px !important; color: var(--primary); font-size: 38px; font-weight: 700; letter-spacing: -0.03em; line-height: 1; }
 .article-card__label { margin-top: 6px !important; color: var(--ink-55); font-size: 13.5px; }
-.article-card h2 { margin: 18px 0 0; font-size: 19px; line-height: 1.3; }
+.article-card h2, .article-card h3 { margin: 18px 0 0; font-size: 19px; line-height: 1.3; }
 .article-card__meta { margin-top: auto !important; padding-top: 18px; color: var(--ink-55); font-size: 13px; }
 .footer p a:hover { color: var(--primary); }
+.footer__links { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-left: auto; margin-right: 28px; color: var(--ink-78); font-size: 14px; font-weight: 600; }
+.footer__links a:hover { color: var(--primary); }
+.section__more { margin: 28px 0 0; text-align: center; }
 
 @media (max-width: 900px) {
   .article-grid { grid-template-columns: 1fr 1fr; }

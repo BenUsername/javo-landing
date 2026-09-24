@@ -6,6 +6,9 @@ export const DEFAULT_LANG = "en";
 
 // Search engine verification tags, added to both home pages, e.g.
 // '<meta name="google-site-verification" content="...">'.
+// Articles shown on the home page, by id, in this order.
+export const FEATURED_ARTICLES = ["contact-vendredi-soir-64-heures", "heures-hors-bureau-2026", "ai-act-article-50-chatbot"];
+
 export const VERIFICATION_TAGS = [
   '<meta name="google-site-verification" content="tXSdlWH-AtagVF7jXyHNNn9rm_i_qE1H0Qv11Bku6o0" />',
   '<meta name="msvalidate.01" content="F49FEFEDE4108C6CC9DA9548E9A251E4" />'
@@ -20,7 +23,7 @@ export const STRINGS = {
     home: "Omni, home",
     mainNav: "Main navigation",
     languageNav: "Language",
-    nav: { how: "How it works", pricing: "Pricing", articles: "Articles" },
+    nav: { how: "How it works", pricing: "Pricing", articles: "Articles", contact: "Contact" },
     ctaDemo: "Book a demo",
     footerArticles: "Articles",
     landing: {
@@ -51,6 +54,9 @@ export const STRINGS = {
       pricingUnit: "per product",
       pricingItems: ["Installation on your site", "Agent set up for your business", "Mobile and opening-hours integration", "Launch support"],
       pricingCta: "Get a quote",
+      articlesEyebrow: "Articles",
+      articlesTitle: "The numbers behind <em>every missed visitor</em>",
+      articlesAll: "All articles",
       contactEyebrow: "Contact",
       contactTitle: "Let's talk about <em>your site</em>",
       contactBody: "Tell us where you'd like to install Omni. We'll come back to you with a demo and a quote.",
@@ -82,7 +88,7 @@ export const STRINGS = {
     home: "Omni, accueil",
     mainNav: "Navigation principale",
     languageNav: "Langue",
-    nav: { how: "Fonctionnement", pricing: "Tarifs", articles: "Articles" },
+    nav: { how: "Fonctionnement", pricing: "Tarifs", articles: "Articles", contact: "Contact" },
     ctaDemo: "Demander une démo",
     footerArticles: "Articles",
     landing: {
@@ -113,6 +119,9 @@ export const STRINGS = {
       pricingUnit: "par produit",
       pricingItems: ["Installation sur votre site", "Agent configuré pour votre activité", "Intégration mobile et horaires d’ouverture", "Accompagnement au lancement"],
       pricingCta: "Obtenir un devis",
+      articlesEyebrow: "Articles",
+      articlesTitle: "Les chiffres derrière <em>chaque visiteur perdu</em>",
+      articlesAll: "Tous les articles",
       contactEyebrow: "Contact",
       contactTitle: "Parlons de <em>votre site</em>",
       contactBody: "Dites-nous où vous voulez installer Omni. Nous revenons vers vous avec une démo et un devis.",
