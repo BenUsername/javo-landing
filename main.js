@@ -8,7 +8,7 @@
  * After activation FormSubmit also gives a random alias that can replace the
  * address here, so the address is not visible in the page source.
  */
-const LEAD_EMAIL = "";
+const LEAD_EMAIL = "eduar.vari@proton.me";
 
 (() => {
   const form = document.querySelector("[data-lead-form]");

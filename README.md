@@ -7,6 +7,7 @@ Static landing page for Omni, the AI chat agent for websites. Plain HTML, CSS an
 - `main.js`: contact form. Leads are e-mailed through [FormSubmit](https://formsubmit.co).
 - `assets/`: demo video and poster, ALYOR logo, favicon.
 - `video-source/`: the animated scene behind the demo video and the script that records it.
+- `content/articles.mjs` + `build-articles.mjs`: the 10 articles and the author, generated into `articles/` and `sitemap.xml`.
 
 ## Lead e-mails
 
@@ -39,3 +40,16 @@ node video-source/record.mjs
 ```
 
 This writes `assets/omni-demo.mp4` (H.264, 720x1480, 15 s loop) and `assets/omni-demo-poster.jpg`.
+
+## Articles
+
+Articles live in `content/articles.mjs`. Each one opens with a "Calcul Omni" box: a derived number, the formula, the source and a caveat saying what the number is not. Only use figures you can source or derive in the box.
+
+After editing, regenerate the pages and commit the output:
+
+```sh
+node build-articles.mjs
+```
+
+- Author details (role, bio, photo, LinkedIn) are in `AUTHOR` at the top of `content/articles.mjs`; empty fields are simply not shown.
+- `SITE` at the top of `build-articles.mjs` sets the canonical URLs and the sitemap. Change it to the real domain before going live.
