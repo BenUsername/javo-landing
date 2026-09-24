@@ -1,18 +1,20 @@
-// Article content for build-articles.mjs. Every figure in an insight box must be
-// sourced or derived by a formula shown in the box; say what the number is not.
+// French articles for build.mjs. Every figure in an insight box must be sourced
+// or derived by a formula shown in the box; say what the number is not.
+// Each article's `id` pairs it with its English version in articles.en.mjs.
 
 export const AUTHOR = {
   name: "Edouard Vary",
-  role: "",       // e.g. "Fondateur, Omni" once confirmed
-  bio: "",        // one or two sentences of credentials
-  image: "",      // e.g. "/assets/edouard-vary.jpg"
-  linkedin: ""    // full LinkedIn profile URL
+  role: { en: "", fr: "" },   // e.g. "Founder, Omni" / "Fondateur, Omni" once confirmed
+  bio: { en: "", fr: "" },    // one or two sentences of credentials
+  image: "",                  // e.g. "/assets/edouard-vary.jpg"
+  linkedin: ""                // full LinkedIn profile URL
 };
 
 const PUBLISHED = "2026-09-24";
 
-export const ARTICLES = [
+export const ARTICLES_FR = [
   {
+    id: "heures-hors-bureau-2026",
     slug: "heures-hors-bureau-2026",
     category: "Disponibilité",
     title: "77 % des heures de l’année tombent en dehors de vos horaires d’ouverture",
@@ -59,6 +61,7 @@ export const ARTICLES = [
     ]
   },
   {
+    id: "rentabiliser-un-agent-de-chat",
     slug: "rentabiliser-un-agent-de-chat",
     category: "Rentabilité",
     title: "Combien de contacts faut-il pour rentabiliser un agent de chat à 600 € ?",
@@ -101,10 +104,11 @@ export const ARTICLES = [
 </ul>
 <p>Si le seuil obtenu est de quelques contacts sur l’année, le risque est faible. S’il dépasse le nombre de demandes que vous recevez aujourd’hui, commencez par mesurer avant d’investir.</p>`,
     sources: [
-      { label: "Omni, tarif : à partir de 600 € par produit", url: "/#tarifs" }
+      { label: "Omni, tarif : à partir de 600 € par produit", url: "/fr/#pricing" }
     ]
   },
   {
+    id: "cas-client-alyor",
     slug: "cas-client-alyor",
     category: "Cas client",
     title: "ALYOR : le chat prend la place du bouton d’appel quand le cabinet est fermé",
@@ -147,6 +151,7 @@ export const ARTICLES = [
     ]
   },
   {
+    id: "contact-vendredi-soir-64-heures",
     slug: "contact-vendredi-soir-64-heures",
     category: "Réactivité",
     title: "Un contact reçu vendredi à 17 h attend 64 heures avant qu’on lui réponde",
@@ -193,6 +198,7 @@ export const ARTICLES = [
     ]
   },
   {
+    id: "cout-permanence-hors-horaires-smic",
     slug: "cout-permanence-hors-horaires-smic",
     category: "Coûts",
     title: "Couvrir vos heures de fermeture avec un salarié coûterait plus de 83 000 € par an",
@@ -236,6 +242,7 @@ export const ARTICLES = [
     ]
   },
   {
+    id: "mobile-hors-horaires-bouton-appel",
     slug: "mobile-hors-horaires-bouton-appel",
     category: "Mobile",
     title: "Sur mobile, votre bouton d’appel ne sert à rien la plupart du temps",
@@ -271,6 +278,7 @@ export const ARTICLES = [
     ]
   },
   {
+    id: "ai-act-article-50-chatbot",
     slug: "ai-act-article-50-chatbot",
     category: "Réglementation",
     title: "Chatbot : informer le visiteur qu’il parle à une IA est obligatoire depuis le 2 août 2026",
@@ -313,6 +321,7 @@ export const ARTICLES = [
     ]
   },
   {
+    id: "cnil-sanctions-2025-donnees-chat",
     slug: "cnil-sanctions-2025-donnees-chat",
     category: "Données personnelles",
     title: "Sanctions CNIL 2025 : sans les deux amendes record, la moyenne tombe à 146 000 €",
@@ -348,6 +357,7 @@ export const ARTICLES = [
     ]
   },
   {
+    id: "reponse-immediate-10-minutes",
     slug: "reponse-immediate-10-minutes",
     category: "Réactivité",
     title: "Vos visiteurs attendent une réponse en 10 minutes. Le week-end, elle arrive 384 fois plus tard",
@@ -389,6 +399,7 @@ export const ARTICLES = [
     ]
   },
   {
+    id: "ia-generative-francais-2025",
     slug: "ia-generative-francais-2025",
     category: "Usages",
     title: "48 % des Français utilisent l’IA générative : vos visiteurs savent déjà parler à un chat",

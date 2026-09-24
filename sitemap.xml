@@ -1,15 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://omni-chat-ia.vercel.app/</loc></url>
-  <url><loc>https://omni-chat-ia.vercel.app/articles/</loc></url>
-  <url><loc>https://omni-chat-ia.vercel.app/articles/heures-hors-bureau-2026/</loc></url>
-  <url><loc>https://omni-chat-ia.vercel.app/articles/rentabiliser-un-agent-de-chat/</loc></url>
-  <url><loc>https://omni-chat-ia.vercel.app/articles/cas-client-alyor/</loc></url>
-  <url><loc>https://omni-chat-ia.vercel.app/articles/contact-vendredi-soir-64-heures/</loc></url>
-  <url><loc>https://omni-chat-ia.vercel.app/articles/cout-permanence-hors-horaires-smic/</loc></url>
-  <url><loc>https://omni-chat-ia.vercel.app/articles/mobile-hors-horaires-bouton-appel/</loc></url>
-  <url><loc>https://omni-chat-ia.vercel.app/articles/ai-act-article-50-chatbot/</loc></url>
-  <url><loc>https://omni-chat-ia.vercel.app/articles/cnil-sanctions-2025-donnees-chat/</loc></url>
-  <url><loc>https://omni-chat-ia.vercel.app/articles/reponse-immediate-10-minutes/</loc></url>
-  <url><loc>https://omni-chat-ia.vercel.app/articles/ia-generative-francais-2025/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/hours-outside-office-hours-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/hours-outside-office-hours-2026/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/heures-hors-bureau-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/hours-outside-office-hours-2026/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/heures-hors-bureau-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/hours-outside-office-hours-2026/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/heures-hors-bureau-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/hours-outside-office-hours-2026/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/chat-agent-break-even/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/chat-agent-break-even/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/rentabiliser-un-agent-de-chat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/chat-agent-break-even/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/rentabiliser-un-agent-de-chat/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/chat-agent-break-even/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/rentabiliser-un-agent-de-chat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/chat-agent-break-even/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/alyor-case-study/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/alyor-case-study/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/cas-client-alyor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/alyor-case-study/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/cas-client-alyor/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/alyor-case-study/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/cas-client-alyor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/alyor-case-study/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/friday-evening-lead-64-hours/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/friday-evening-lead-64-hours/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/contact-vendredi-soir-64-heures/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/friday-evening-lead-64-hours/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/contact-vendredi-soir-64-heures/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/friday-evening-lead-64-hours/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/contact-vendredi-soir-64-heures/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/friday-evening-lead-64-hours/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/cost-of-out-of-hours-cover/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/cost-of-out-of-hours-cover/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/cout-permanence-hors-horaires-smic/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/cost-of-out-of-hours-cover/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/cout-permanence-hors-horaires-smic/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/cost-of-out-of-hours-cover/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/cout-permanence-hors-horaires-smic/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/cost-of-out-of-hours-cover/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/mobile-call-button-out-of-hours/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/mobile-call-button-out-of-hours/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/mobile-hors-horaires-bouton-appel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/mobile-call-button-out-of-hours/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/mobile-hors-horaires-bouton-appel/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/mobile-call-button-out-of-hours/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/mobile-hors-horaires-bouton-appel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/mobile-call-button-out-of-hours/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/ai-act-article-50-chatbots/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/ai-act-article-50-chatbots/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/ai-act-article-50-chatbot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/ai-act-article-50-chatbots/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/ai-act-article-50-chatbot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/ai-act-article-50-chatbots/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/ai-act-article-50-chatbot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/ai-act-article-50-chatbots/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/cnil-fines-2025-chat-data/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/cnil-fines-2025-chat-data/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/cnil-sanctions-2025-donnees-chat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/cnil-fines-2025-chat-data/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/cnil-sanctions-2025-donnees-chat/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/cnil-fines-2025-chat-data/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/cnil-sanctions-2025-donnees-chat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/cnil-fines-2025-chat-data/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/ten-minute-response-expectation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/ten-minute-response-expectation/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/reponse-immediate-10-minutes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/ten-minute-response-expectation/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/reponse-immediate-10-minutes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/ten-minute-response-expectation/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/reponse-immediate-10-minutes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/ten-minute-response-expectation/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/generative-ai-use-france-2025/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/generative-ai-use-france-2025/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/ia-generative-francais-2025/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/generative-ai-use-france-2025/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/ia-generative-francais-2025/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/generative-ai-use-france-2025/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/ia-generative-francais-2025/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/generative-ai-use-france-2025/"/>
+  </url>
 </urlset>

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/articles/heures-hors-bureau-2026",
+      "destination": "/fr/articles/heures-hors-bureau-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/rentabiliser-un-agent-de-chat",
+      "destination": "/fr/articles/rentabiliser-un-agent-de-chat/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/cas-client-alyor",
+      "destination": "/fr/articles/cas-client-alyor/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/contact-vendredi-soir-64-heures",
+      "destination": "/fr/articles/contact-vendredi-soir-64-heures/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/cout-permanence-hors-horaires-smic",
+      "destination": "/fr/articles/cout-permanence-hors-horaires-smic/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/mobile-hors-horaires-bouton-appel",
+      "destination": "/fr/articles/mobile-hors-horaires-bouton-appel/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ai-act-article-50-chatbot",
+      "destination": "/fr/articles/ai-act-article-50-chatbot/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/cnil-sanctions-2025-donnees-chat",
+      "destination": "/fr/articles/cnil-sanctions-2025-donnees-chat/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/reponse-immediate-10-minutes",
+      "destination": "/fr/articles/reponse-immediate-10-minutes/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ia-generative-francais-2025",
+      "destination": "/fr/articles/ia-generative-francais-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/heures-hors-bureau-2026/",
+      "destination": "/fr/articles/heures-hors-bureau-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/rentabiliser-un-agent-de-chat/",
+      "destination": "/fr/articles/rentabiliser-un-agent-de-chat/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/cas-client-alyor/",
+      "destination": "/fr/articles/cas-client-alyor/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/contact-vendredi-soir-64-heures/",
+      "destination": "/fr/articles/contact-vendredi-soir-64-heures/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/cout-permanence-hors-horaires-smic/",
+      "destination": "/fr/articles/cout-permanence-hors-horaires-smic/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/mobile-hors-horaires-bouton-appel/",
+      "destination": "/fr/articles/mobile-hors-horaires-bouton-appel/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ai-act-article-50-chatbot/",
+      "destination": "/fr/articles/ai-act-article-50-chatbot/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/cnil-sanctions-2025-donnees-chat/",
+      "destination": "/fr/articles/cnil-sanctions-2025-donnees-chat/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/reponse-immediate-10-minutes/",
+      "destination": "/fr/articles/reponse-immediate-10-minutes/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ia-generative-francais-2025/",
+      "destination": "/fr/articles/ia-generative-francais-2025/",
+      "permanent": true
+    }
+  ]
+}

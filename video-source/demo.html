@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Omni demo scene</title>
@@ -61,13 +61,13 @@
 </style>
 </head>
 <body>
-  <div class="status"><span>21:47</span><span class="status__icons"><i style="height:5px"></i><i style="height:8px"></i><i style="height:11px"></i><span class="battery"></span></span></div>
+  <div class="status"><span data-t="time"></span><span class="status__icons"><i style="height:5px"></i><i style="height:8px"></i><i style="height:11px"></i><span class="battery"></span></span></div>
 
   <div class="site">
-    <div class="site__nav"><span class="site__logo"><b></b>Cabinet Durand</span><span class="site__menu"><i></i><i></i><i></i></span></div>
-    <h1>Votre patrimoine, avec un vrai conseiller.</h1>
-    <p>Retraite, épargne et prévoyance pour les indépendants.</p>
-    <span class="site__cta">Prendre rendez-vous</span>
+    <div class="site__nav"><span class="site__logo"><b></b><span data-t="firm"></span></span><span class="site__menu"><i></i><i></i><i></i></span></div>
+    <h1 data-t="headline"></h1>
+    <p data-t="tagline"></p>
+    <span class="site__cta" data-t="book"></span>
     <div class="site__img"></div>
   </div>
 
@@ -77,31 +77,31 @@
   <div class="chat" id="chat">
     <div class="chat__head">
       <span class="avatar"><svg viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span>
-      <span><span class="chat__title">Cabinet Durand</span><span class="chat__sub">Assistant, en ligne</span></span>
+      <span><span class="chat__title" data-t="firm"></span><span class="chat__sub" data-t="online"></span></span>
       <span class="chat__close"><svg viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
     </div>
     <div class="msgs">
-      <div class="msg msg--bot" data-at="2.1">Bonjour ! Je suis l’assistant du cabinet. Comment puis-je vous aider ?</div>
-      <div class="msg msg--me" data-at="4.5">Vous êtes ouverts samedi ?</div>
+      <div class="msg msg--bot" data-at="2.1" data-t="hello"></div>
+      <div class="msg msg--me" data-at="4.5" data-t="ask"></div>
       <div class="typing" data-from="4.9" data-to="5.9"><i></i><i></i><i></i></div>
-      <div class="msg msg--bot" data-at="5.9">Le cabinet est fermé le week-end. Je peux répondre à vos questions dès maintenant, ou organiser un rappel lundi matin.</div>
-      <div class="msg msg--me" data-at="8.2">Oui, rappelez-moi lundi</div>
+      <div class="msg msg--bot" data-at="5.9" data-t="closed"></div>
+      <div class="msg msg--me" data-at="8.2" data-t="callMe"></div>
       <div class="typing" data-from="8.5" data-to="9.2"><i></i><i></i><i></i></div>
-      <div class="msg msg--bot" data-at="9.2">Avec plaisir. Laissez-moi vos coordonnées :</div>
+      <div class="msg msg--bot" data-at="9.2" data-t="details"></div>
       <div class="lead" data-at="9.5">
-        <div class="lead__row"><label>Nom</label><div data-type="Camille D." data-type-from="9.9" data-type-to="10.6"></div></div>
-        <div class="lead__row"><label>Téléphone</label><div data-type="06 12 34 56 78" data-type-from="10.7" data-type-to="11.5"></div></div>
-        <div class="lead__btn" id="leadBtn">Envoyer</div>
+        <div class="lead__row"><label data-t="name"></label><div data-type="Camille D." data-type-from="9.9" data-type-to="10.6"></div></div>
+        <div class="lead__row"><label data-t="phone"></label><div data-t-type="phoneValue" data-type-from="10.7" data-type-to="11.5"></div></div>
+        <div class="lead__btn" id="leadBtn"></div>
       </div>
       <div class="typing" data-from="11.9" data-to="12.4"><i></i><i></i><i></i></div>
-      <div class="msg msg--bot" data-at="12.4">Merci Camille, un conseiller vous rappelle lundi matin.</div>
+      <div class="msg msg--bot" data-at="12.4" data-t="thanks"></div>
     </div>
     <div class="compose"><span class="compose__text" id="compose"></span><span class="send"><svg viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></span></div>
   </div>
 
   <div class="toast" id="toast">
     <span class="toast__icon"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>
-    <span><b>Nouveau lead : Camille D.</b><span>Rappel demandé lundi matin</span></span>
+    <span><b data-t="toastTitle"></b><span data-t="toastBody"></span></span>
   </div>
 
 <script>
@@ -110,9 +110,33 @@
   const ease = v => 1 - Math.pow(1 - clamp(v), 3);
   const span = (t, from, to) => clamp((t - from) / (to - from));
   const $ = id => document.getElementById(id);
+  // Scene text per language: demo.html?lang=en (default) or ?lang=fr.
+  const TEXT = {
+    en: {
+      time: "9:47", firm: "Durand Advisory", headline: "Your wealth, with a real adviser.", tagline: "Retirement, savings and protection for the self-employed.", book: "Book a meeting",
+      online: "Assistant, online", hello: "Hi! I’m the firm’s assistant. How can I help?", ask: "Are you open on Saturday?",
+      closed: "The office is closed at weekends. I can answer your questions now, or arrange a call back on Monday morning.", callMe: "Yes, call me on Monday",
+      details: "Happy to. Please leave your details:", name: "Name", phone: "Phone", phoneValue: "+33 6 12 34 56 78", send: "Send", sent: "Sent",
+      thanks: "Thanks Camille, an adviser will call you on Monday morning.", placeholder: "Type your message…",
+      toastTitle: "New lead: Camille D.", toastBody: "Call back requested for Monday morning"
+    },
+    fr: {
+      time: "21:47", firm: "Cabinet Durand", headline: "Votre patrimoine, avec un vrai conseiller.", tagline: "Retraite, épargne et prévoyance pour les indépendants.", book: "Prendre rendez-vous",
+      online: "Assistant, en ligne", hello: "Bonjour ! Je suis l’assistant du cabinet. Comment puis-je vous aider ?", ask: "Vous êtes ouverts samedi ?",
+      closed: "Le cabinet est fermé le week-end. Je peux répondre à vos questions dès maintenant, ou organiser un rappel lundi matin.", callMe: "Oui, rappelez-moi lundi",
+      details: "Avec plaisir. Laissez-moi vos coordonnées :", name: "Nom", phone: "Téléphone", phoneValue: "06 12 34 56 78", send: "Envoyer", sent: "Envoyé",
+      thanks: "Merci Camille, un conseiller vous rappelle lundi matin.", placeholder: "Écrivez votre message…",
+      toastTitle: "Nouveau lead : Camille D.", toastBody: "Rappel demandé lundi matin"
+    }
+  };
+  const LANG = new URLSearchParams(location.search).get("lang") === "fr" ? "fr" : "en";
+  const T = TEXT[LANG];
+  document.documentElement.lang = LANG;
+  document.querySelectorAll("[data-t]").forEach(el => { el.textContent = T[el.dataset.t]; });
+  document.querySelectorAll("[data-t-type]").forEach(el => { el.dataset.type = T[el.dataset.tType]; });
   const typed = [
-    { from: 3.2, to: 4.3, text: "Vous êtes ouverts samedi ?", sent: 4.5 },
-    { from: 7.0, to: 8.0, text: "Oui, rappelez-moi lundi", sent: 8.2 }
+    { from: 3.2, to: 4.3, text: T.ask, sent: 4.5 },
+    { from: 7.0, to: 8.0, text: T.callMe, sent: 8.2 }
   ];
 
   window.render = t => {
@@ -150,7 +174,7 @@
     });
     $("leadBtn").style.transform = `scale(${1 - 0.05 * (span(t, 11.6, 11.7) - span(t, 11.7, 11.85))})`;
     $("leadBtn").style.opacity = t >= 11.75 ? 0.55 : 1;
-    $("leadBtn").textContent = t >= 11.75 ? "Envoyé" : "Envoyer";
+    $("leadBtn").textContent = t >= 11.75 ? T.sent : T.send;
 
     const compose = $("compose");
     const active = typed.find(entry => t >= entry.from && t < entry.sent);
@@ -160,7 +184,7 @@
       compose.innerHTML = text.replace(/&/g, "&amp;").replace(/</g, "&lt;") + '<span class="caret"></span>';
     } else {
       compose.className = "compose__text is-empty";
-      compose.textContent = "Écrivez votre message…";
+      compose.textContent = T.placeholder;
     }
 
     const toast = ease(span(t, 12.8, 13.25)) * (1 - ease(span(t, DURATION - 1.2, DURATION - 0.6)));

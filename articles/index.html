@@ -1,11 +1,17 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Articles | Omni</title>
-  <meta name="description" content="Chiffres, calculs et méthodes pour transformer les visiteurs de votre site en contacts, même en dehors des horaires d’ouverture.">
+  <meta name="description" content="Figures, calculations and methods to turn your website visitors into leads, even outside opening hours.">
   <link rel="canonical" href="https://omni-chat-ia.vercel.app/articles/">
+  <link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/">
+  <link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/">
+  <link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/">
+  <meta property="og:title" content="Articles | Omni">
+  <meta property="og:description" content="Figures, calculations and methods to turn your website visitors into leads, even outside opening hours.">
+  <meta property="og:locale" content="en_GB">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,18 +21,27 @@
 <body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
     <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></symbol>
+    <symbol id="i-user-plus" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
     <symbol id="i-calc" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M8 6h8"/><path d="M16 14v4"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></symbol>
   </svg>
   <header class="nav">
     <div class="container nav__inner">
-      <a class="brand" href="/" aria-label="Omni, accueil"><span class="brand__mark"><svg><use href="#i-chat"/></svg></span>omni</a>
-      <nav class="nav__links" aria-label="Navigation principale">
-        <a href="/#fonctionnement">Fonctionnement</a>
-        <a href="/#tarifs">Tarifs</a>
+      <a class="brand" href="/" aria-label="Omni, home"><span class="brand__mark"><svg><use href="#i-chat"/></svg></span>omni</a>
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="/#how">How it works</a>
+        <a href="/#pricing">Pricing</a>
         <a href="/articles/">Articles</a>
       </nav>
-      <a class="btn btn--primary btn--sm" href="/#contact">Demander une démo</a>
+      <nav class="lang-switch" aria-label="Language">
+        <a href="/articles/" lang="en" hreflang="en" title="English" aria-current="page">EN</a><a href="/fr/articles/" lang="fr" hreflang="fr" title="Français">FR</a>
+      </nav>
+      <a class="btn btn--primary btn--sm nav__cta" href="/#contact">Book a demo</a>
     </div>
   </header>
 
@@ -34,79 +49,79 @@
     <div class="container">
       <div class="section__head">
         <p class="eyebrow">Articles</p>
-        <h1>Des chiffres pour <em>ne plus perdre un visiteur</em></h1>
-        <p class="article-index__lede">Chaque article part d’un calcul original, sourcé et reproductible.</p>
+        <h1>Numbers to help you <em>stop losing visitors</em></h1>
+        <p class="article-index__lede">Every article starts from an original calculation that is sourced and reproducible.</p>
       </div>
       <div class="article-grid">
-        <a class="card article-card" href="/articles/heures-hors-bureau-2026/">
-          <p class="article-card__category">Disponibilité</p>
-          <p class="article-card__value">77,0 %</p>
-          <p class="article-card__label">des 8 760 heures de 2026 tombent en dehors des horaires de bureau, jours fériés compris</p>
-          <h2>77 % des heures de l’année tombent en dehors de vos horaires d’ouverture</h2>
-          <p class="article-card__meta">Edouard Vary · 24 septembre 2026</p>
+        <a class="card article-card" href="/articles/hours-outside-office-hours-2026/">
+          <p class="article-card__category">Availability</p>
+          <p class="article-card__value">77.0%</p>
+          <p class="article-card__label">of the 8,760 hours in 2026 fall outside office hours, public holidays included</p>
+          <h2>77% of the year’s hours fall outside your opening hours</h2>
+          <p class="article-card__meta">Edouard Vary · 24 September 2026</p>
         </a>
-        <a class="card article-card" href="/articles/rentabiliser-un-agent-de-chat/">
-          <p class="article-card__category">Rentabilité</p>
-          <p class="article-card__value">3 contacts</p>
-          <p class="article-card__label">suffisent à couvrir 600 € si un client vous rapporte 1 000 € de marge et que vous signez un contact sur quatre</p>
-          <h2>Combien de contacts faut-il pour rentabiliser un agent de chat à 600 € ?</h2>
-          <p class="article-card__meta">Edouard Vary · 24 septembre 2026</p>
+        <a class="card article-card" href="/articles/chat-agent-break-even/">
+          <p class="article-card__category">Return on investment</p>
+          <p class="article-card__value">3 leads</p>
+          <p class="article-card__label">are enough to cover €600 if a client brings you €1,000 of margin and you sign one lead in four</p>
+          <h2>How many leads does it take to pay back a €600 chat agent?</h2>
+          <p class="article-card__meta">Edouard Vary · 24 September 2026</p>
         </a>
-        <a class="card article-card" href="/articles/cas-client-alyor/">
-          <p class="article-card__category">Cas client</p>
-          <p class="article-card__value">6 744 h</p>
-          <p class="article-card__label">par an pendant lesquelles le chat occupe la place du bouton d’appel sur mobile, soit 77 % des heures de 2026</p>
-          <h2>ALYOR : le chat prend la place du bouton d’appel quand le cabinet est fermé</h2>
-          <p class="article-card__meta">Edouard Vary · 24 septembre 2026</p>
+        <a class="card article-card" href="/articles/alyor-case-study/">
+          <p class="article-card__category">Case study</p>
+          <p class="article-card__value">6,744 h</p>
+          <p class="article-card__label">a year during which the chat takes the call button’s place on mobile: 77% of the hours in 2026</p>
+          <h2>ALYOR: the chat takes over from the call button when the office is closed</h2>
+          <p class="article-card__meta">Edouard Vary · 24 September 2026</p>
         </a>
-        <a class="card article-card" href="/articles/contact-vendredi-soir-64-heures/">
-          <p class="article-card__category">Réactivité</p>
+        <a class="card article-card" href="/articles/friday-evening-lead-64-hours/">
+          <p class="article-card__category">Responsiveness</p>
           <p class="article-card__value">64 h</p>
-          <p class="article-card__label">d’attente entre vendredi 17 h et lundi 9 h, soit 2,7 fois le seuil de 24 heures au-delà duquel la HBR mesure des chances de qualification plus de 60 fois plus faibles</p>
-          <h2>Un contact reçu vendredi à 17 h attend 64 heures avant qu’on lui réponde</h2>
-          <p class="article-card__meta">Edouard Vary · 24 septembre 2026</p>
+          <p class="article-card__label">of waiting between Friday 5 pm and Monday 9 am: 2.7 times the 24-hour mark beyond which HBR measured qualification odds more than 60 times lower</p>
+          <h2>A lead that arrives at 5 pm on Friday waits 64 hours for a reply</h2>
+          <p class="article-card__meta">Edouard Vary · 24 September 2026</p>
         </a>
-        <a class="card article-card" href="/articles/cout-permanence-hors-horaires-smic/">
-          <p class="article-card__category">Coûts</p>
-          <p class="article-card__value">83 019 €</p>
-          <p class="article-card__label">de salaire brut au SMIC pour couvrir les 6 744 heures de fermeture de 2026, avant cotisations patronales et majorations</p>
-          <h2>Couvrir vos heures de fermeture avec un salarié coûterait plus de 83 000 € par an</h2>
-          <p class="article-card__meta">Edouard Vary · 24 septembre 2026</p>
+        <a class="card article-card" href="/articles/cost-of-out-of-hours-cover/">
+          <p class="article-card__category">Costs</p>
+          <p class="article-card__value">€83,019</p>
+          <p class="article-card__label">of gross pay at the French minimum wage (SMIC) to cover the 6,744 closed hours of 2026, before employer contributions and premiums</p>
+          <h2>Covering your closed hours with an employee would cost over €83,000 a year</h2>
+          <p class="article-card__meta">Edouard Vary · 24 September 2026</p>
         </a>
-        <a class="card article-card" href="/articles/mobile-hors-horaires-bouton-appel/">
+        <a class="card article-card" href="/articles/mobile-call-button-out-of-hours/">
           <p class="article-card__category">Mobile</p>
-          <p class="article-card__value">44 %</p>
-          <p class="article-card__label">des visites seraient à la fois sur smartphone et en dehors des horaires de bureau si le trafic se répartissait uniformément sur l’année</p>
-          <h2>Sur mobile, votre bouton d’appel ne sert à rien la plupart du temps</h2>
-          <p class="article-card__meta">Edouard Vary · 24 septembre 2026</p>
+          <p class="article-card__value">44%</p>
+          <p class="article-card__label">of visits would be both on a smartphone and outside office hours if traffic were spread evenly across the year</p>
+          <h2>On mobile, your call button is useless most of the time</h2>
+          <p class="article-card__meta">Edouard Vary · 24 September 2026</p>
         </a>
-        <a class="card article-card" href="/articles/ai-act-article-50-chatbot/">
-          <p class="article-card__category">Réglementation</p>
-          <p class="article-card__value">0 jour</p>
-          <p class="article-card__label">de report pour l’obligation d’informer les personnes qu’elles interagissent avec une IA, malgré l’Omnibus numérique adopté en juillet 2026</p>
-          <h2>Chatbot : informer le visiteur qu’il parle à une IA est obligatoire depuis le 2 août 2026</h2>
-          <p class="article-card__meta">Edouard Vary · 24 septembre 2026</p>
+        <a class="card article-card" href="/articles/ai-act-article-50-chatbots/">
+          <p class="article-card__category">Regulation</p>
+          <p class="article-card__value">0 days</p>
+          <p class="article-card__label">of delay for the obligation to tell people they are interacting with an AI, despite the Digital Omnibus adopted in July 2026</p>
+          <h2>Chatbots: telling visitors they are talking to an AI has been mandatory since 2 August 2026</h2>
+          <p class="article-card__meta">Edouard Vary · 24 September 2026</p>
         </a>
-        <a class="card article-card" href="/articles/cnil-sanctions-2025-donnees-chat/">
-          <p class="article-card__category">Données personnelles</p>
-          <p class="article-card__value">146 167 €</p>
-          <p class="article-card__label">d’amende moyenne sur les 81 autres sanctions de 2025, une fois retirées les deux amendes de 325 et 150 millions d’euros</p>
-          <h2>Sanctions CNIL 2025 : sans les deux amendes record, la moyenne tombe à 146 000 €</h2>
-          <p class="article-card__meta">Edouard Vary · 24 septembre 2026</p>
+        <a class="card article-card" href="/articles/cnil-fines-2025-chat-data/">
+          <p class="article-card__category">Personal data</p>
+          <p class="article-card__value">€146,167</p>
+          <p class="article-card__label">average fine across the other 81 sanctions of 2025, once the two fines of €325 million and €150 million are removed</p>
+          <h2>CNIL fines in 2025: without the two record fines, the average falls to €146,000</h2>
+          <p class="article-card__meta">Edouard Vary · 24 September 2026</p>
         </a>
-        <a class="card article-card" href="/articles/reponse-immediate-10-minutes/">
-          <p class="article-card__category">Réactivité</p>
-          <p class="article-card__value">384 ×</p>
-          <p class="article-card__label">plus long que 10 minutes : c’est l’attente d’une demande reçue vendredi à 17 h et traitée lundi à 9 h</p>
-          <h2>Vos visiteurs attendent une réponse en 10 minutes. Le week-end, elle arrive 384 fois plus tard</h2>
-          <p class="article-card__meta">Edouard Vary · 24 septembre 2026</p>
+        <a class="card article-card" href="/articles/ten-minute-response-expectation/">
+          <p class="article-card__category">Responsiveness</p>
+          <p class="article-card__value">384×</p>
+          <p class="article-card__label">longer than 10 minutes: the wait for an enquiry received on Friday at 5 pm and handled on Monday at 9 am</p>
+          <h2>Your visitors expect a reply within 10 minutes. At weekends, it comes 384 times later</h2>
+          <p class="article-card__meta">Edouard Vary · 24 September 2026</p>
         </a>
-        <a class="card article-card" href="/articles/ia-generative-francais-2025/">
-          <p class="article-card__category">Usages</p>
-          <p class="article-card__value">× 2,4</p>
-          <p class="article-card__label">entre 2023 et 2025 : la part des Français de 12 ans et plus qui utilisent l’IA générative est passée de 20 % à 48 %</p>
-          <h2>48 % des Français utilisent l’IA générative : vos visiteurs savent déjà parler à un chat</h2>
-          <p class="article-card__meta">Edouard Vary · 24 septembre 2026</p>
+        <a class="card article-card" href="/articles/generative-ai-use-france-2025/">
+          <p class="article-card__category">Usage</p>
+          <p class="article-card__value">2.4×</p>
+          <p class="article-card__label">between 2023 and 2025: the share of people aged 12 and over in France using generative AI rose from 20% to 48%</p>
+          <h2>48% of French people use generative AI: your visitors already know how to talk to a chat</h2>
+          <p class="article-card__meta">Edouard Vary · 24 September 2026</p>
         </a>
       </div>
     </div>
