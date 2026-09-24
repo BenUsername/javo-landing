@@ -17,7 +17,7 @@ const POSTER_AT = 10.8;
 const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || undefined });
 const page = await browser.newPage({ viewport: { width: 360, height: 740 }, deviceScaleFactor: 2 });
 await page.goto(pathToFileURL(join(here, "demo.html")).href);
-await page.evaluate(() => document.fonts.load('600 16px "Spline Sans"'));
+await page.evaluate(() => document.fonts.load('700 16px "Manrope"'));
 
 const frames = mkdtempSync(join(tmpdir(), "omni-frames-"));
 const duration = await page.evaluate(() => window.DURATION);

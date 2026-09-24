@@ -3,7 +3,7 @@
 Static landing page for Omni, the AI chat agent for websites. Plain HTML, CSS and JavaScript, no build step.
 
 - `index.html`: hero with demo video, ALYOR client example, how it works, pricing (from €600 per product), contact form.
-- `styles.css`: styles, using the Aiso marketing tokens (Spline Sans, `#6d5ae8`, 24px cards).
+- `styles.css`: styles. Omni tokens: Manrope with Instrument Serif italics, pine green `#127a64` with an apricot accent, pill buttons, 18px cards.
 - `main.js`: contact form. Leads are e-mailed through [FormSubmit](https://formsubmit.co).
 - `assets/`: demo video and poster, ALYOR logo, favicon.
 - `video-source/`: the animated scene behind the demo video and the script that records it.
