@@ -1,4 +1,4 @@
-// POST /api/lead: stores one contact-form lead as a private JSON file in the omni-leads Blob store.
+// POST /api/lead/: stores one contact-form lead as a private JSON file in the omni-leads Blob store.
 import { put } from "@vercel/blob";
 import { randomUUID } from "node:crypto";
 

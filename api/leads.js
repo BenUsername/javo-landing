@@ -1,4 +1,4 @@
-// GET /api/leads?key=LEADS_KEY: downloads every stored lead as a CSV file (add &format=json for JSON).
+// GET /api/leads/?key=LEADS_KEY: downloads every stored lead as a CSV file (add &format=json for JSON).
 import { list, get } from "@vercel/blob";
 import { timingSafeEqual } from "node:crypto";
 

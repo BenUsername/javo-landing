@@ -2,7 +2,7 @@
 
 /*
  * Contact form -> /api/lead, which stores each lead in the site's private Vercel
- * Blob store. Download them all as CSV from /api/leads?key=<LEADS_KEY>.
+ * Blob store. Download them all as CSV from /api/leads/?key=<LEADS_KEY>.
  */
 
 (() => {
@@ -73,7 +73,7 @@
     setStatus(t.sending);
 
     try {
-      const response = await fetch("/api/lead", {
+      const response = await fetch("/api/lead/", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({ ...fields, lang, page: window.location.href })

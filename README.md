@@ -19,7 +19,7 @@ Static landing page for Omni, the AI chat agent for websites. Plain HTML, CSS an
 
 The contact form posts to `api/lead.js`, which stores each lead as a private JSON file in the `omni-leads` Vercel Blob store (connected to the project through `BLOB_READ_WRITE_TOKEN`).
 
-- Download all leads as a CSV (opens in Excel or Google Sheets): `https://omni-chat-ia.vercel.app/api/leads?key=<LEADS_KEY>`. Add `&format=json` for JSON.
+- Download all leads as a CSV (opens in Excel or Google Sheets): `https://omni-chat-ia.vercel.app/api/leads/?key=<LEADS_KEY>`. Add `&format=json` for JSON.
 - `LEADS_KEY` is a sensitive environment variable on the Vercel project. To change it, edit it in Vercel (Settings > Environment Variables) and redeploy.
 - The raw files are also visible in Vercel under Storage > omni-leads.
 
