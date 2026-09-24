@@ -7,7 +7,7 @@ import { AUTHOR, ARTICLES } from "./content/articles.mjs";
 
 const root = dirname(fileURLToPath(import.meta.url));
 // Public URL of the site, used for canonical links, structured data and the sitemap. Set it to the real domain.
-const SITE = "https://omni-landing.vercel.app";
+const SITE = "https://omni-landing-sigma.vercel.app";
 
 const escape = value => String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const frenchDate = iso => new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(`${iso}T00:00:00Z`));

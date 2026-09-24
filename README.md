@@ -52,4 +52,4 @@ node build-articles.mjs
 ```
 
 - Author details (role, bio, photo, LinkedIn) are in `AUTHOR` at the top of `content/articles.mjs`; empty fields are simply not shown.
-- `SITE` at the top of `build-articles.mjs` sets the canonical URLs and the sitemap. Change it to the real domain before going live.
+- `SITE` at the top of `build-articles.mjs` sets the canonical URLs and the sitemap (currently the Vercel URL). Update it if the site moves to its own domain.
