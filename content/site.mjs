@@ -6,7 +6,10 @@ export const DEFAULT_LANG = "en";
 
 // Search engine verification tags, added to both home pages, e.g.
 // '<meta name="google-site-verification" content="...">'.
-export const VERIFICATION_TAGS = [];
+export const VERIFICATION_TAGS = [
+  '<meta name="google-site-verification" content="tXSdlWH-AtagVF7jXyHNNn9rm_i_qE1H0Qv11Bku6o0" />',
+  '<meta name="msvalidate.01" content="F49FEFEDE4108C6CC9DA9548E9A251E4" />'
+];
 
 export const STRINGS = {
   en: {
