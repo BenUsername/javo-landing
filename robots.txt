@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://omni-landing-sigma.vercel.app/sitemap.xml
+Sitemap: https://omni-chat-ia.vercel.app/sitemap.xml

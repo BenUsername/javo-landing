@@ -61,5 +61,5 @@ node build-articles.mjs
 
 ```sh
 curl -X POST https://api.indexnow.org/indexnow -H "Content-Type: application/json; charset=utf-8" \
-  -d '{"host":"omni-landing-sigma.vercel.app","key":"9654f1c761652d608cb13b9fda3516d3","keyLocation":"https://omni-landing-sigma.vercel.app/9654f1c761652d608cb13b9fda3516d3.txt","urlList":["https://omni-landing-sigma.vercel.app/"]}'
+  -d '{"host":"omni-chat-ia.vercel.app","key":"9654f1c761652d608cb13b9fda3516d3","keyLocation":"https://omni-chat-ia.vercel.app/9654f1c761652d608cb13b9fda3516d3.txt","urlList":["https://omni-chat-ia.vercel.app/"]}'
 ```
