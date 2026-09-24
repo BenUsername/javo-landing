@@ -22,6 +22,11 @@ The contact form posts to `api/lead.js`, which stores each lead as a private JSO
 - Download all leads as a CSV (opens in Excel or Google Sheets): `https://omni-chat-ia.vercel.app/api/leads/?key=<LEADS_KEY>`. Add `&format=json` for JSON.
 - `LEADS_KEY` is a sensitive environment variable on the Vercel project. To change it, edit it in Vercel (Settings > Environment Variables) and redeploy.
 - The raw files are also visible in Vercel under Storage > omni-leads.
+- E-mail notification (optional): each new lead is also e-mailed through [Resend](https://resend.com) when these environment variables are set on the Vercel project, followed by a redeploy:
+  - `RESEND_API_KEY`: the Resend API key (sensitive).
+  - `LEAD_NOTIFY_TO`: recipients, comma-separated.
+  - `LEAD_NOTIFY_FROM` (optional): sender, default `Omni <onboarding@resend.dev>`. Resend's default sender can only e-mail the address of the Resend account itself; to e-mail anyone else, verify a sending domain in Resend and use an address on it.
+  The lead is stored first, so a failed e-mail never loses it.
 
 ## Run locally
 
