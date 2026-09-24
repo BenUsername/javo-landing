@@ -1,0 +1,41 @@
+# Omni landing page
+
+Static landing page for Omni, the AI chat agent for websites. Plain HTML, CSS and JavaScript, no build step.
+
+- `index.html`: hero with demo video, ALYOR client example, how it works, pricing (from €600 per product), contact form.
+- `styles.css`: styles, using the Aiso marketing tokens (Spline Sans, `#6d5ae8`, 24px cards).
+- `main.js`: contact form. Leads are e-mailed through [FormSubmit](https://formsubmit.co).
+- `assets/`: demo video and poster, ALYOR logo, favicon.
+- `video-source/`: the animated scene behind the demo video and the script that records it.
+
+## Lead e-mails
+
+Set the receiving address in `LEAD_EMAIL` at the top of `main.js`. Until it is set, the form shows an error and sends nothing.
+
+1. Deploy with the address set and submit the form once.
+2. FormSubmit sends that inbox an "Activate form" e-mail. Click the link; later leads are then delivered.
+3. Optional: the activation page gives a random alias. Put it in `LEAD_EMAIL` instead of the address so the address is not in the page source.
+
+## Run locally
+
+```sh
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000.
+
+## Deploy
+
+Import the repository in Vercel as a static site (framework preset "Other", no build command).
+
+## Regenerate the demo video
+
+Edit `video-source/demo.html` (the `render(t)` timeline drives every frame), then:
+
+```sh
+npm i playwright ffmpeg-static
+npx playwright install chromium
+node video-source/record.mjs
+```
+
+This writes `assets/omni-demo.mp4` (H.264, 720x1480, 15 s loop) and `assets/omni-demo-poster.jpg`.

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Omni, l’agent de chat qui répond à vos visiteurs</title>
+  <meta name="description" content="Omni répond aux questions de vos visiteurs jour et nuit et recueille leurs coordonnées. Installé sur votre site en une ligne de code, à partir de 600 € par produit.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/main.js" defer></script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></symbol>
+    <symbol id="i-user-plus" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+  </svg>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="/" aria-label="Omni, accueil">
+        <span class="brand__mark"><svg><use href="#i-chat"/></svg></span>omni
+      </a>
+      <nav class="nav__links" aria-label="Navigation principale">
+        <a href="#fonctionnement">Fonctionnement</a>
+        <a href="#tarifs">Tarifs</a>
+      </nav>
+      <a class="btn btn--primary btn--sm" href="#contact">Demander une démo</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="badge"><span class="badge__dot"></span>Agent IA pour votre site</p>
+          <h1>Vos visiteurs ont des questions <em>à 22h</em>. Omni y répond.</h1>
+          <p class="lede">Un agent de chat qui répond à vos visiteurs jour et nuit, puis vous transmet leurs coordonnées. Installé sur votre site en une ligne de code.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary" href="#contact">Demander une démo<svg><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--secondary" href="#tarifs">Voir les tarifs</a>
+          </div>
+          <ul class="benefits">
+            <li><svg><use href="#i-code"/></svg>Une ligne de code</li>
+            <li><svg><use href="#i-phone"/></svg>Pensé pour le mobile</li>
+            <li><svg><use href="#i-moon"/></svg>Disponible hors horaires</li>
+          </ul>
+        </div>
+        <div class="hero__media">
+          <div class="phone">
+            <video class="phone__screen" src="/assets/omni-demo.mp4" poster="/assets/omni-demo-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Démonstration : un visiteur pose une question le soir et Omni recueille sa demande de rappel"></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="client" aria-labelledby="client-title">
+      <div class="container">
+        <div class="card client__card">
+          <div class="client__logo"><img src="/assets/alyor-logo.png" alt="ALYOR" width="961" height="432"></div>
+          <div class="client__copy">
+            <p class="eyebrow">Ils utilisent Omni</p>
+            <h2 id="client-title">ALYOR, conseil patrimonial pour les indépendants</h2>
+            <p>Sur alyor.fr, Omni est présent sur chaque page. Sur mobile, il prend la place du bouton d’appel en dehors des heures d’ouverture&nbsp;: les visiteurs du soir et du week-end ont toujours quelqu’un à qui parler.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="fonctionnement" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Fonctionnement</p>
+          <h2 id="how-title">En place en quelques jours, <em>pas en quelques mois</em></h2>
+        </div>
+        <div class="steps">
+          <article class="card step">
+            <span class="step__icon"><svg><use href="#i-code"/></svg></span>
+            <h3>Une ligne de code</h3>
+            <p>Une balise à coller sur votre site, et Omni s’affiche sur toutes les pages, sur ordinateur comme sur mobile.</p>
+          </article>
+          <article class="card step">
+            <span class="step__icon"><svg><use href="#i-settings"/></svg></span>
+            <h3>Configuré pour votre activité</h3>
+            <p>Nous paramétrons l’agent avec vos offres, vos réponses types et votre ton, pour qu’il parle comme votre équipe.</p>
+          </article>
+          <article class="card step">
+            <span class="step__icon"><svg><use href="#i-user-plus"/></svg></span>
+            <h3>Des leads, pas seulement des conversations</h3>
+            <p>Avant d’échanger, le visiteur laisse son nom, son e-mail ou son téléphone. Vous savez qui rappeler.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tarifs" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Tarifs</p>
+          <h2 id="pricing-title">Un prix simple, <em>par produit</em></h2>
+        </div>
+        <div class="card pricing">
+          <div class="pricing__price">
+            <p class="pricing__from">À partir de</p>
+            <p class="pricing__amount">600&nbsp;€</p>
+            <p class="pricing__unit">par produit</p>
+          </div>
+          <ul class="pricing__list">
+            <li><svg><use href="#i-check"/></svg>Installation sur votre site</li>
+            <li><svg><use href="#i-check"/></svg>Agent configuré pour votre activité</li>
+            <li><svg><use href="#i-check"/></svg>Intégration mobile et horaires d’ouverture</li>
+            <li><svg><use href="#i-check"/></svg>Accompagnement au lancement</li>
+          </ul>
+          <a class="btn btn--primary pricing__cta" href="#contact">Obtenir un devis<svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div class="contact__copy">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Parlons de <em>votre site</em></h2>
+          <p>Dites-nous où vous voulez installer Omni. Nous revenons vers vous avec une démo et un devis.</p>
+        </div>
+        <form class="card form" data-lead-form novalidate>
+          <div class="form__row">
+            <label for="name">Nom <span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form__row">
+            <label for="email">E-mail <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form__row">
+            <label for="website">Site web</label>
+            <input id="website" name="website" type="text" inputmode="url" autocomplete="url" placeholder="exemple.fr">
+          </div>
+          <div class="form__row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <input class="form__trap" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn--primary form__submit" type="submit">Envoyer<svg><use href="#i-arrow"/></svg></button>
+          <p class="form__status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="brand" href="/"><span class="brand__mark"><svg><use href="#i-chat"/></svg></span>omni</a>
+      <p>© 2026 Omni</p>
+    </div>
+  </footer>
+</body>
+</html>
