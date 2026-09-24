@@ -1,14 +1,9 @@
 "use strict";
 
 /*
- * Contact form -> e-mail, through FormSubmit (https://formsubmit.co).
- *
- * LEAD_EMAIL is the inbox that receives every lead. The first submission sends
- * that inbox an "Activate form" e-mail; leads are delivered once it is clicked.
- * After activation FormSubmit also gives a random alias that can replace the
- * address here, so the address is not visible in the page source.
+ * Contact form -> /api/lead, which stores each lead in the site's private Vercel
+ * Blob store. Download them all as CSV from /api/leads?key=<LEADS_KEY>.
  */
-const LEAD_EMAIL = "eduar.vari@proton.me";
 
 (() => {
   const form = document.querySelector("[data-lead-form]");
@@ -18,18 +13,14 @@ const LEAD_EMAIL = "eduar.vari@proton.me";
     en: {
       invalid: "Please enter your name and a valid email address.",
       success: "Thank you, your message has been sent. We'll get back to you shortly.",
-      unavailable: "The form isn't available yet. Please try again a little later.",
       sending: "Sending…",
-      failed: "Your message couldn't be sent. Please try again in a moment.",
-      subject: name => `New Omni lead: ${name}`
+      failed: "Your message couldn't be sent. Please try again in a moment."
     },
     fr: {
       invalid: "Merci d’indiquer votre nom et une adresse e-mail valide.",
       success: "Merci, votre message a bien été envoyé. Nous revenons vers vous rapidement.",
-      unavailable: "Le formulaire n’est pas encore disponible. Merci de réessayer un peu plus tard.",
       sending: "Envoi en cours…",
-      failed: "L’envoi n’a pas abouti. Merci de réessayer dans un instant.",
-      subject: name => `Nouveau lead Omni : ${name}`
+      failed: "L’envoi n’a pas abouti. Merci de réessayer dans un instant."
     }
   };
   const lang = document.documentElement.lang.startsWith("fr") ? "fr" : "en";
@@ -76,35 +67,19 @@ const LEAD_EMAIL = "eduar.vari@proton.me";
       return;
     }
 
-    if (!LEAD_EMAIL) {
-      console.warn("[omni] LEAD_EMAIL is not set in main.js, so the lead was not sent.");
-      setStatus(t.unavailable, "error");
-      return;
-    }
-
     const fields = Object.fromEntries(["name", "email", "website", "message"].map(key => [key, form.elements[key].value.trim()]));
 
     submit.disabled = true;
     setStatus(t.sending);
 
     try {
-      const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(LEAD_EMAIL)}`, {
+      const response = await fetch("/api/lead", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          Nom: fields.name,
-          "E-mail": fields.email,
-          "Site web": fields.website,
-          Message: fields.message,
-          Page: window.location.href,
-          Langue: lang,
-          _subject: t.subject(fields.name),
-          _replyto: fields.email,
-          _template: "table"
-        })
+        body: JSON.stringify({ ...fields, lang, page: window.location.href })
       });
       const result = await response.json().catch(() => ({}));
-      if (!response.ok || String(result.success) !== "true") throw new Error(result.message || `HTTP ${response.status}`);
+      if (!response.ok || result.ok !== true) throw new Error(result.error || `HTTP ${response.status}`);
 
       form.reset();
       setStatus(t.success, "success");
