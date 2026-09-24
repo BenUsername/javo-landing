@@ -53,3 +53,13 @@ node build-articles.mjs
 
 - Author details (role, bio, photo, LinkedIn) are in `AUTHOR` at the top of `content/articles.mjs`; empty fields are simply not shown.
 - `SITE` at the top of `build-articles.mjs` sets the canonical URLs and the sitemap (currently the Vercel URL). Update it if the site moves to its own domain.
+
+## Search engines
+
+- `robots.txt` points crawlers at `sitemap.xml`.
+- IndexNow key: `9654f1c761652d608cb13b9fda3516d3.txt` at the site root. After publishing new or changed pages, notify Bing, Yandex, Seznam and Naver:
+
+```sh
+curl -X POST https://api.indexnow.org/indexnow -H "Content-Type: application/json; charset=utf-8" \
+  -d '{"host":"omni-landing-sigma.vercel.app","key":"9654f1c761652d608cb13b9fda3516d3","keyLocation":"https://omni-landing-sigma.vercel.app/9654f1c761652d608cb13b9fda3516d3.txt","urlList":["https://omni-landing-sigma.vercel.app/"]}'
+```
