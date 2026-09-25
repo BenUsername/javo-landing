@@ -6,8 +6,8 @@ export const DEFAULT_LANG = "en";
 
 // Search engine verification tags, added to both home pages, e.g.
 // '<meta name="google-site-verification" content="...">'.
-// Articles shown on the home page, by id, in this order.
-export const FEATURED_ARTICLES = ["contact-vendredi-soir-64-heures", "heures-hors-bureau-2026", "ai-act-article-50-chatbot"];
+// Number of latest articles shown on the home page.
+export const LATEST_ARTICLES_COUNT = 3;
 
 export const VERIFICATION_TAGS = [
   '<meta name="google-site-verification" content="tXSdlWH-AtagVF7jXyHNNn9rm_i_qE1H0Qv11Bku6o0" />',
@@ -54,7 +54,7 @@ export const STRINGS = {
       pricingUnit: "per product",
       pricingItems: ["Installation on your site", "Agent set up for your business", "Mobile and opening-hours integration", "Launch support"],
       pricingCta: "Get a quote",
-      articlesEyebrow: "Articles",
+      articlesEyebrow: "Latest articles",
       articlesTitle: "The numbers behind <em>every missed visitor</em>",
       articlesAll: "All articles",
       contactEyebrow: "Contact",
@@ -119,7 +119,7 @@ export const STRINGS = {
       pricingUnit: "par produit",
       pricingItems: ["Installation sur votre site", "Agent configuré pour votre activité", "Intégration mobile et horaires d’ouverture", "Accompagnement au lancement"],
       pricingCta: "Obtenir un devis",
-      articlesEyebrow: "Articles",
+      articlesEyebrow: "Derniers articles",
       articlesTitle: "Les chiffres derrière <em>chaque visiteur perdu</em>",
       articlesAll: "Tous les articles",
       contactEyebrow: "Contact",

@@ -4,7 +4,7 @@
 import { mkdirSync, writeFileSync, readdirSync, rmSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { LANGS, DEFAULT_LANG, STRINGS, VERIFICATION_TAGS, FEATURED_ARTICLES } from "./content/site.mjs";
+import { LANGS, DEFAULT_LANG, STRINGS, VERIFICATION_TAGS, LATEST_ARTICLES_COUNT } from "./content/site.mjs";
 import { AUTHOR, ARTICLES_FR } from "./content/articles.mjs";
 import { ARTICLES_EN } from "./content/articles.en.mjs";
 
@@ -29,6 +29,11 @@ const prefix = lang => (lang === DEFAULT_LANG ? "" : `/${lang}`);
 const homePath = lang => `${prefix(lang)}/`;
 const indexPath = lang => `${prefix(lang)}/articles/`;
 const articlePath = (lang, id) => `${prefix(lang)}/articles/${ARTICLES[lang].find(article => article.id === id).slug}/`;
+
+// Newest first; articles published the same day keep the most recently added first.
+const newestFirst = lang => ARTICLES[lang].map((article, index) => ({ article, index }))
+  .sort((a, b) => b.article.date.localeCompare(a.article.date) || b.index - a.index)
+  .map(({ article }) => article);
 
 const formatDate = (lang, iso) => new Intl.DateTimeFormat(STRINGS[lang].locale, { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(`${iso}T00:00:00Z`));
 
@@ -190,14 +195,14 @@ const landingPage = lang => {
       </div>
     </section>
 
-    <section class="section" id="articles" aria-labelledby="articles-title">
+    <section class="section" id="latest-articles" aria-labelledby="articles-title">
       <div class="container">
         <div class="section__head">
           <p class="eyebrow">${l.articlesEyebrow}</p>
           <h2 id="articles-title">${l.articlesTitle}</h2>
         </div>
         <div class="article-grid">
-        ${FEATURED_ARTICLES.map(id => articleCard(lang, ARTICLES[lang].find(article => article.id === id))).join("\n        ")}
+        ${newestFirst(lang).slice(0, LATEST_ARTICLES_COUNT).map(article => articleCard(lang, article)).join("\n        ")}
         </div>
         <p class="section__more"><a class="btn btn--secondary" href="${indexPath(lang)}">${l.articlesAll}<svg><use href="#i-arrow"/></svg></a></p>
       </div>
@@ -347,7 +352,7 @@ const indexPage = lang => {
         <p class="article-index__lede">${t.lede}</p>
       </div>
       <div class="article-grid">
-        ${[...ARTICLES[lang]].sort((a, b) => b.date.localeCompare(a.date)).map(article => articleCard(lang, article)).join("\n        ")}
+        ${newestFirst(lang).map(article => articleCard(lang, article)).join("\n        ")}
       </div>
     </div>
   </main>
