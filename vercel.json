@@ -3,28 +3,6 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "omni-chat-ia.vercel.app"
-        }
-      ],
-      "destination": "https://getjavo.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "omni-landing-sigma.vercel.app"
-        }
-      ],
-      "destination": "https://getjavo.com/:path*",
-      "permanent": true
-    },
-    {
       "source": "/articles/heures-hors-bureau-2026",
       "destination": "/fr/articles/heures-hors-bureau-2026/",
       "permanent": true

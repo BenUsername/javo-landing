@@ -13,7 +13,8 @@ Static landing page for Javo, the AI chat agent for websites. Plain HTML, CSS an
 - `content/site.mjs`: landing page and page chrome text in each language, plus search engine verification tags.
 - `content/articles.en.mjs`, `content/articles.mjs`: the 30 articles in English and French (paired by `id`), and the author.
 - `build.mjs`: generates all pages and `sitemap.xml`.
-- `vercel.json`: redirects the old Vercel addresses (`omni-chat-ia.vercel.app`, `omni-landing-sigma.vercel.app`) to `getjavo.com`, and the original French article URLs (`/articles/<french-slug>/`) to `/fr/articles/`.
+- `middleware.js`: redirects the old Vercel addresses (`omni-chat-ia.vercel.app`, `omni-landing-sigma.vercel.app`) to `getjavo.com`.
+- `vercel.json`: redirects the original French article URLs (`/articles/<french-slug>/`) to `/fr/articles/`.
 
 ## Leads
 
