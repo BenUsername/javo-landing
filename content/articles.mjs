@@ -4,7 +4,7 @@
 
 export const AUTHOR = {
   name: "Edouard Vary",
-  role: { en: "", fr: "" },   // e.g. "Founder, Omni" / "Fondateur, Omni" once confirmed
+  role: { en: "", fr: "" },   // e.g. "Founder, Javo" / "Fondateur, Javo" once confirmed
   bio: { en: "", fr: "" },    // one or two sentences of credentials
   image: "",                  // e.g. "/assets/edouard-vary.jpg"
   linkedin: ""                // full LinkedIn profile URL
@@ -105,7 +105,7 @@ export const ARTICLES_FR = [
 </ul>
 <p>Si le seuil obtenu est de quelques contacts sur l’année, le risque est faible. S’il dépasse le nombre de demandes que vous recevez aujourd’hui, commencez par mesurer avant d’investir.</p>`,
     sources: [
-      { label: "Omni, tarif : à partir de 600 € par produit", url: "/fr/#pricing" }
+      { label: "Javo, tarif : à partir de 600 € par produit", url: "/fr/#pricing" }
     ]
   },
   {
@@ -113,7 +113,7 @@ export const ARTICLES_FR = [
     slug: "cas-client-alyor",
     category: "Cas client",
     title: "ALYOR : le chat prend la place du bouton d’appel quand le cabinet est fermé",
-    description: "Comment Omni a été installé sur les 22 pages d’alyor.fr, et pourquoi, sur mobile, le bouton d’appel laisse sa place au chat en dehors des heures d’ouverture.",
+    description: "Comment Javo a été installé sur les 22 pages d’alyor.fr, et pourquoi, sur mobile, le bouton d’appel laisse sa place au chat en dehors des heures d’ouverture.",
     date: PUBLISHED,
     readingMinutes: 5,
     insight: {
@@ -122,13 +122,13 @@ export const ARTICLES_FR = [
       label: "par an pendant lesquelles le chat occupe la place du bouton d’appel sur mobile, soit 77 % des heures de 2026",
       body: "Le bouton d’appel s’affiche du lundi au vendredi de 9 h à 17 h, heure de Paris, hors jours fériés. Le reste du temps, le visiteur mobile voit le chat à sa place.",
       formula: "8 760 h − (252 jours ouvrés × 8 h) = 6 744 h",
-      source: "Configuration d’Omni sur alyor.fr ; calendrier 2026.",
+      source: "Configuration de Javo sur alyor.fr ; calendrier 2026.",
       caveat: "Durée d’affichage calculée à partir de la configuration, pas un nombre de conversations ni de contacts obtenus."
     },
     body: `
 <p>ALYOR est un cabinet de conseil patrimonial au service des indépendants : retraite, épargne, santé et prévoyance. Son site, alyor.fr, compte 22 pages : l’accueil, les pages produits, les articles et les pages de contact et d’informations légales.</p>
 <h2>Une ligne, sur chaque page</h2>
-<p>Le site est composé de pages HTML indépendantes, sans gabarit commun. La balise d’Omni a donc été ajoutée juste avant la fermeture du corps de page sur chacune des 22 pages, une seule fois par page, puis vérifiée page par page.</p>
+<p>Le site est composé de pages HTML indépendantes, sans gabarit commun. La balise de Javo a donc été ajoutée juste avant la fermeture du corps de page sur chacune des 22 pages, une seule fois par page, puis vérifiée page par page.</p>
 <h2>Sur mobile, trois boutons, c’était un de trop</h2>
 <p>Sur téléphone, alyor.fr affiche en bas d’écran une barre de contact fixe : un bouton principal, comme « Être rappelé », et un bouton d’appel. La bulle du chat, placée par défaut dans le coin inférieur droit, venait se superposer au bouton d’appel. Même une fois décalée, elle faisait trois options pour une même intention : parler à quelqu’un.</p>
 <h2>La règle retenue : appeler pendant les horaires, discuter en dehors</h2>

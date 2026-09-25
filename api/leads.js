@@ -66,7 +66,7 @@ export async function GET(request) {
     headers: {
       ...headers,
       "Content-Type": "text/csv; charset=utf-8",
-      "Content-Disposition": `attachment; filename="omni-leads-${date}.csv"`
+      "Content-Disposition": `attachment; filename="javo-leads-${date}.csv"`
     }
   });
 }

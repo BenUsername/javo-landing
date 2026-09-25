@@ -11,7 +11,7 @@ import { ARTICLES_EN } from "./content/articles.en.mjs";
 const root = dirname(fileURLToPath(import.meta.url));
 
 // Public URL of the site, used for canonical links, hreflang, structured data and the sitemap.
-const SITE = "https://omni-chat-ia.vercel.app";
+const SITE = "https://getjavo.com";
 
 const ARTICLES = { en: ARTICLES_EN, fr: ARTICLES_FR };
 
@@ -81,7 +81,7 @@ ${links.join("\n")}
   <link rel="icon" href="/assets/favicon-192.png" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <meta name="theme-color" content="#084efb">
-  <meta property="og:image" content="${SITE}/assets/omni-logo.png">
+  <meta property="og:image" content="${SITE}/assets/javo-logo.png">
   <link rel="stylesheet" href="/styles.css">${scripts.map(src => `\n  <script src="${src}" defer></script>`).join("")}${jsonLd ? `\n  <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` : ""}
 </head>
 <body>
@@ -98,7 +98,7 @@ const header = (lang, alternates) => {
   const home = homePath(lang);
   return `  <header class="nav">
     <div class="container nav__inner">
-      <a class="brand" href="${home}" aria-label="${t.home}"><img class="brand__mark" src="/assets/omni-mark.png" alt="" width="32" height="32">omni</a>
+      <a class="brand" href="${home}" aria-label="${t.home}"><img class="brand__mark" src="/assets/javo-mark.png" alt="" width="32" height="32">javo</a>
       <nav class="nav__links" aria-label="${t.mainNav}">
         <a href="${home}#how">${t.nav.how}</a>
         <a href="${home}#pricing">${t.nav.pricing}</a>
@@ -114,14 +114,14 @@ const header = (lang, alternates) => {
 const foot = lang => `
   <footer class="footer">
     <div class="container footer__inner">
-      <a class="brand" href="${homePath(lang)}"><img class="brand__mark" src="/assets/omni-mark.png" alt="" width="32" height="32">omni</a>
+      <a class="brand" href="${homePath(lang)}"><img class="brand__mark" src="/assets/javo-mark.png" alt="" width="32" height="32">javo</a>
       <nav class="footer__links" aria-label="${STRINGS[lang].mainNav}">
         <a href="${homePath(lang)}#how">${STRINGS[lang].nav.how}</a>
         <a href="${homePath(lang)}#pricing">${STRINGS[lang].nav.pricing}</a>
         <a href="${indexPath(lang)}">${STRINGS[lang].nav.articles}</a>
         <a href="${homePath(lang)}#contact">${STRINGS[lang].nav.contact}</a>
       </nav>
-      <p>© 2026 Omni</p>
+      <p>© 2026 Javo</p>
     </div>
   </footer>
 </body>
@@ -280,10 +280,10 @@ const articlePage = (lang, article) => {
       ...(AUTHOR.image && { image: new URL(AUTHOR.image, SITE).href }),
       ...(AUTHOR.linkedin && { sameAs: [AUTHOR.linkedin] })
     },
-    publisher: { "@type": "Organization", name: "Omni", url: SITE, logo: { "@type": "ImageObject", url: `${SITE}/assets/omni-logo.png` } },
+    publisher: { "@type": "Organization", name: "Javo", url: SITE, logo: { "@type": "ImageObject", url: `${SITE}/assets/javo-logo.png` } },
     citation: article.sources.map(source => new URL(source.url, SITE).href)
   };
-  return `${head({ lang, title: `${article.title} | Omni`, description: article.description, alternates, jsonLd })}
+  return `${head({ lang, title: `${article.title} | Javo`, description: article.description, alternates, jsonLd })}
   <main class="article">
     <div class="container article__container">
       <p class="breadcrumb"><a href="${indexPath(lang)}">${t.eyebrow}</a></p>

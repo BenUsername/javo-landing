@@ -84,7 +84,7 @@
       form.reset();
       setStatus(t.success, "success");
     } catch (error) {
-      console.error("[omni] lead not sent:", error);
+      console.error("[javo] lead not sent:", error);
       setStatus(t.failed, "error");
     } finally {
       submit.disabled = false;

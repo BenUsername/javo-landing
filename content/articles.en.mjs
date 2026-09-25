@@ -95,7 +95,7 @@ export const ARTICLES_EN = [
 </ul>
 <p>If the break-even point comes out at a few leads a year, the risk is low. If it is higher than the number of enquiries you receive today, measure first before you invest.</p>`,
     sources: [
-      { label: "Omni pricing: from €600 per product", url: "/#pricing" }
+      { label: "Javo pricing: from €600 per product", url: "/#pricing" }
     ]
   },
   {
@@ -103,7 +103,7 @@ export const ARTICLES_EN = [
     slug: "alyor-case-study",
     category: "Case study",
     title: "ALYOR: the chat takes over from the call button when the office is closed",
-    description: "How Omni was installed on all 22 pages of alyor.fr, and why, on mobile, the call button gives way to the chat outside opening hours.",
+    description: "How Javo was installed on all 22 pages of alyor.fr, and why, on mobile, the call button gives way to the chat outside opening hours.",
     date: PUBLISHED,
     readingMinutes: 5,
     insight: {
@@ -112,13 +112,13 @@ export const ARTICLES_EN = [
       label: "a year during which the chat takes the call button’s place on mobile: 77% of the hours in 2026",
       body: "The call button shows Monday to Friday, 9 am to 5 pm Paris time, excluding public holidays. The rest of the time, mobile visitors see the chat in its place.",
       formula: "8,760 h − (252 working days × 8 h) = 6,744 h",
-      source: "Omni configuration on alyor.fr; 2026 calendar.",
+      source: "Javo configuration on alyor.fr; 2026 calendar.",
       caveat: "Display time calculated from the configuration, not a number of conversations or leads."
     },
     body: `
 <p>ALYOR is a wealth advisory firm serving the self-employed: retirement, savings, health cover and income protection. Its website, alyor.fr, has 22 pages: the home page, product pages, articles, and contact and legal pages.</p>
 <h2>One line, on every page</h2>
-<p>The site is built from separate HTML pages with no shared template. Omni’s tag was therefore added just before the end of the page body on each of the 22 pages, once per page, and checked page by page.</p>
+<p>The site is built from separate HTML pages with no shared template. Javo’s tag was therefore added just before the end of the page body on each of the 22 pages, once per page, and checked page by page.</p>
 <h2>On mobile, three buttons were one too many</h2>
 <p>On phones, alyor.fr shows a fixed contact bar at the bottom of the screen: a main button such as “Être rappelé” (request a call back) and a call button. The chat bubble, placed by default in the bottom-right corner, sat on top of the call button. Even once moved, it made three options for the same intention: talking to someone.</p>
 <h2>The rule: call during opening hours, chat outside them</h2>

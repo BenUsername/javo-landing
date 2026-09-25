@@ -30,10 +30,10 @@ const notify = async lead => {
       method: "POST",
       headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
       body: JSON.stringify({
-        from: process.env.LEAD_NOTIFY_FROM || "Omni <onboarding@resend.dev>",
+        from: process.env.LEAD_NOTIFY_FROM || "Javo <onboarding@resend.dev>",
         to,
         reply_to: lead.email,
-        subject: `New Omni lead: ${lead.name}`,
+        subject: `New Javo lead: ${lead.name}`,
         text: rows.map(([label, value]) => `${label}: ${value || "-"}`).join("\n"),
         html: `<table cellpadding="6" style="border-collapse:collapse;font-family:sans-serif;font-size:14px">${rows.map(([label, value]) => `<tr><td style="color:#667;vertical-align:top">${label}</td><td style="white-space:pre-wrap">${html(value || "-")}</td></tr>`).join("")}</table>`
       }),
