@@ -5,10 +5,10 @@ Static landing page for Omni, the AI chat agent for websites. Plain HTML, CSS an
 - English is the default at `/`; French is under `/fr/`. Every page has an EN / FR switch and `hreflang` links to its other version.
 - `index.html`, `fr/index.html`, `articles/` and `fr/articles/` are generated: edit `content/` and run `node build.mjs`, never the generated HTML.
 - Landing page: hero with demo video, ALYOR client example, how it works, pricing (from €600 per product), the latest articles (`LATEST_ARTICLES_COUNT` in `content/site.mjs`), contact form.
-- `styles.css`: styles. Omni tokens: Manrope with Instrument Serif italics, pine green `#127a64` with an apricot accent, pill buttons, 18px cards.
+- `styles.css`: styles. Omni tokens, taken from the logo: primary blue `#084efb`, deep navy `#152648`, cyan accent `#05c5fc`, violet `#4e3eff`; Manrope with Instrument Serif italics, pill buttons, 18px cards.
 - `main.js`: contact form, messages in the page's language.
 - `api/`: Vercel functions that store leads and export them (see Leads).
-- `assets/`: demo video and poster, ALYOR logo, favicon.
+- `assets/`: demo videos and posters, Omni logo (`omni-logo.png`, `omni-mark.png` for the header), favicons, ALYOR logo.
 - `video-source/`: the animated scene behind the demo video and the script that records it.
 - `content/site.mjs`: landing page and page chrome text in each language, plus search engine verification tags.
 - `content/articles.en.mjs`, `content/articles.mjs`: the 20 articles in English and French (paired by `id`), and the author.

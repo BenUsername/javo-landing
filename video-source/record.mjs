@@ -24,6 +24,7 @@ for (const lang of LANGS) {
   demoUrl.search = `?lang=${lang}`;
   await page.goto(demoUrl.href);
   await page.evaluate(() => document.fonts.load('700 16px "Manrope"'));
+  await page.waitForFunction(() => [...document.images].every(image => image.complete && image.naturalWidth > 0));
 
   const frames = mkdtempSync(join(tmpdir(), "omni-frames-"));
   const duration = await page.evaluate(() => window.DURATION);

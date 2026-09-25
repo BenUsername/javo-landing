@@ -5,9 +5,9 @@
 <title>Omni demo scene</title>
 <style>
   @font-face { font-family: "Manrope"; src: url("Manrope-latin.woff2") format("woff2"); font-weight: 400 800; }
-  :root { --primary: #127a64; --tint: #e1f1eb; --ink: #111a17; --ink-55: rgba(17,26,23,.58); --ink-08: rgba(17,26,23,.08); }
+  :root { --primary: #084efb; --tint: #e6edff; --ink: #0f1a33; --ink-55: rgba(15,26,51,.58); --ink-08: rgba(15,26,51,.08); }
   * { box-sizing: border-box; }
-  html, body { margin: 0; width: 360px; height: 740px; overflow: hidden; font-family: "Manrope", system-ui, sans-serif; color: var(--ink); background: #fbfaf7; }
+  html, body { margin: 0; width: 360px; height: 740px; overflow: hidden; font-family: "Manrope", system-ui, sans-serif; color: var(--ink); background: #ffffff; }
   svg { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
   .status { position: absolute; top: 0; left: 0; right: 0; height: 44px; display: flex; align-items: center; justify-content: space-between; padding: 0 26px; font-size: 15px; font-weight: 600; z-index: 3; }
   .status__icons { display: flex; gap: 6px; align-items: center; }
@@ -23,38 +23,38 @@
   .site h1 { margin: 22px 0 0; font-size: 31px; line-height: 1.08; letter-spacing: -.025em; }
   .site p { margin: 14px 0 0; color: var(--ink-55); font-size: 15px; line-height: 1.5; }
   .site__cta { display: inline-block; margin-top: 20px; padding: 12px 18px; border-radius: 12px; background: #1f2a44; color: #fff; font-size: 14px; font-weight: 600; }
-  .site__img { height: 210px; margin-top: 26px; border-radius: 18px; background: linear-gradient(135deg, #cfe8df, #eef5ef 55%, #fbe3d2); }
+  .site__img { height: 210px; margin-top: 26px; border-radius: 18px; background: linear-gradient(135deg, #d7f5fe, #e6edff 55%, #e9e5ff); }
 
-  .bubble { position: absolute; right: 18px; bottom: 22px; width: 56px; height: 56px; border-radius: 50%; background: var(--primary); color: #fff; display: grid; place-items: center; box-shadow: 0 10px 24px -8px rgba(18,122,100,.6); z-index: 4; }
-  .bubble svg { width: 24px; height: 24px; }
-  .tap { position: absolute; right: 18px; bottom: 22px; width: 56px; height: 56px; border-radius: 50%; border: 3px solid rgba(18,122,100,.5); z-index: 5; opacity: 0; }
+  .bubble { position: absolute; right: 18px; bottom: 22px; width: 56px; height: 56px; border-radius: 50%; background: #fff; display: grid; place-items: center; box-shadow: 0 10px 24px -8px rgba(8,78,251,.55), 0 0 0 1px rgba(15,26,51,.06); z-index: 4; }
+  .bubble img { width: 44px; height: 44px; }
+  .tap { position: absolute; right: 18px; bottom: 22px; width: 56px; height: 56px; border-radius: 50%; border: 3px solid rgba(8,78,251,.45); z-index: 5; opacity: 0; }
 
-  .chat { position: absolute; left: 10px; right: 10px; bottom: 12px; height: 560px; border-radius: 22px; background: #fff; box-shadow: 0 24px 60px -18px rgba(17,40,34,.45), 0 0 0 1px var(--ink-08); display: flex; flex-direction: column; overflow: hidden; z-index: 6; opacity: 0; }
+  .chat { position: absolute; left: 10px; right: 10px; bottom: 12px; height: 560px; border-radius: 22px; background: #fff; box-shadow: 0 24px 60px -18px rgba(15,26,51,.45), 0 0 0 1px var(--ink-08); display: flex; flex-direction: column; overflow: hidden; z-index: 6; opacity: 0; }
   .chat__head { display: flex; align-items: center; gap: 12px; padding: 16px 18px; border-bottom: 1px solid var(--ink-08); }
-  .avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--primary); color: #fff; display: grid; place-items: center; }
-  .avatar svg { width: 19px; height: 19px; }
+  .avatar { width: 38px; height: 38px; display: block; }
+  
   .chat__title { font-weight: 700; font-size: 16px; line-height: 1.2; }
   .chat__sub { display: flex; align-items: center; gap: 6px; color: var(--ink-55); font-size: 12.5px; }
   .chat__sub::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #22a04b; }
   .chat__close { margin-left: auto; color: var(--ink-55); } .chat__close svg { width: 20px; height: 20px; }
   .msgs { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 10px; padding: 14px 16px; overflow: hidden; }
   .msg { max-width: 82%; padding: 10px 14px; border-radius: 18px; font-size: 14.5px; line-height: 1.42; display: none; }
-  .msg--bot { align-self: flex-start; background: #eef4f1; border-bottom-left-radius: 6px; }
+  .msg--bot { align-self: flex-start; background: #eef2fb; border-bottom-left-radius: 6px; }
   .msg--me { align-self: flex-end; background: var(--primary); color: #fff; border-bottom-right-radius: 6px; }
-  .typing { align-self: flex-start; display: none; gap: 5px; padding: 14px 16px; border-radius: 18px; border-bottom-left-radius: 6px; background: #eef4f1; }
-  .typing i { width: 7px; height: 7px; border-radius: 50%; background: rgba(15,11,30,.4); }
-  .lead { align-self: stretch; display: none; padding: 14px; border: 1px solid var(--ink-08); border-radius: 16px; background: #fff; box-shadow: 0 8px 24px -14px rgba(17,40,34,.35); }
+  .typing { align-self: flex-start; display: none; gap: 5px; padding: 14px 16px; border-radius: 18px; border-bottom-left-radius: 6px; background: #eef2fb; }
+  .typing i { width: 7px; height: 7px; border-radius: 50%; background: rgba(15,26,51,.4); }
+  .lead { align-self: stretch; display: none; padding: 14px; border: 1px solid var(--ink-08); border-radius: 16px; background: #fff; box-shadow: 0 8px 24px -14px rgba(15,26,51,.35); }
   .lead__row { margin-bottom: 10px; } .lead__row label { display: block; font-size: 12px; font-weight: 600; color: var(--ink-55); margin-bottom: 4px; }
-  .lead__row div { height: 38px; padding: 0 12px; border: 1px solid rgba(15,11,30,.14); border-radius: 10px; display: flex; align-items: center; font-size: 14.5px; }
+  .lead__row div { height: 38px; padding: 0 12px; border: 1px solid rgba(15,26,51,.14); border-radius: 10px; display: flex; align-items: center; font-size: 14.5px; }
   .lead__btn { height: 40px; border-radius: 999px; background: var(--primary); color: #fff; display: grid; place-items: center; font-weight: 600; font-size: 14.5px; }
-  .compose { display: flex; align-items: center; gap: 10px; margin: 0 14px 14px; padding: 6px 6px 6px 16px; border: 1px solid rgba(15,11,30,.14); border-radius: 16px; font-size: 14.5px; }
+  .compose { display: flex; align-items: center; gap: 10px; margin: 0 14px 14px; padding: 6px 6px 6px 16px; border: 1px solid rgba(15,26,51,.14); border-radius: 16px; font-size: 14.5px; }
   .compose__text { flex: 1; min-height: 20px; color: var(--ink); white-space: nowrap; overflow: hidden; }
-  .compose__text.is-empty { color: rgba(15,11,30,.4); }
+  .compose__text.is-empty { color: rgba(15,26,51,.4); }
   .caret { display: inline-block; width: 1.5px; height: 17px; margin-left: 1px; background: var(--primary); vertical-align: -3px; }
   .send { width: 36px; height: 36px; border-radius: 50%; background: var(--primary); color: #fff; display: grid; place-items: center; }
   .send svg { width: 17px; height: 17px; }
 
-  .toast { position: absolute; top: 52px; left: 14px; right: 14px; display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 18px; background: #111a17; color: #fff; box-shadow: 0 18px 40px -16px rgba(0,0,0,.5); z-index: 8; opacity: 0; }
+  .toast { position: absolute; top: 52px; left: 14px; right: 14px; display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 18px; background: #0f1a33; color: #fff; box-shadow: 0 18px 40px -16px rgba(0,0,0,.5); z-index: 8; opacity: 0; }
   .toast__icon { width: 34px; height: 34px; border-radius: 50%; background: #22a04b; display: grid; place-items: center; flex: none; }
   .toast__icon svg { width: 18px; height: 18px; stroke-width: 2.6; }
   .toast b { display: block; font-size: 14px; } .toast span { font-size: 12.5px; color: rgba(255,255,255,.7); }
@@ -71,12 +71,12 @@
     <div class="site__img"></div>
   </div>
 
-  <div class="bubble" id="bubble"><svg viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+  <div class="bubble" id="bubble"><img src="omni-logo.png" alt=""></div>
   <div class="tap" id="tap"></div>
 
   <div class="chat" id="chat">
     <div class="chat__head">
-      <span class="avatar"><svg viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span>
+      <img class="avatar" src="omni-logo.png" alt="">
       <span><span class="chat__title" data-t="firm"></span><span class="chat__sub" data-t="online"></span></span>
       <span class="chat__close"><svg viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
     </div>
