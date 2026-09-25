@@ -830,5 +830,400 @@ export const ARTICLES_EN = [
     sources: [
       { label: "Service-Public.fr, “Jours fériés et ponts dans le secteur privé”: list of French public holidays (in French)", url: "https://www.service-public.fr/particuliers/vosdroits/F2405" }
     ]
+  },
+  {
+    id: "demarchage-telephonique-consentement-2026",
+    slug: "cold-calling-consent-2026",
+    category: "Regulation",
+    title: "Since 11 August 2026, cold calls in France need consent, within a 45-hour weekly window",
+    description: "France has switched telephone canvassing of consumers to prior consent, and calls are limited to set hours on weekdays. Leads who ask to be called back have never been worth more.",
+    date: PUBLISHED_2,
+    readingMinutes: 5,
+    insight: {
+      title: "A narrow window, and now only for people who said yes",
+      value: "45 h",
+      label: "a week at most when a consumer can be canvassed by phone in France: 26.8% of the week, and since 11 August 2026 only with their prior consent",
+      body: "Calls to consumers are allowed Monday to Friday, from 10 am to 1 pm and 2 pm to 8 pm, except public holidays, and no more than 4 times in 30 days. Since 11 August 2026, the Consumer Code also bans canvassing a consumer by phone without their prior consent.",
+      formula: "(3 h + 6 h) × 5 days = 45 h; 45 ÷ 168 h = 26.8%",
+      source: "Sources: Consumer Code, article L223-1 as rewritten by law no. 2025-594 of 30 June 2025 (article 13), and article D223-9 as amended by decree no. 2026-662 of 23 July 2026, Légifrance.",
+      caveat: "These rules cover calls to consumers, not to businesses, and calling back someone who asked you to is not canvassing. Not legal advice."
+    },
+    body: `
+<p>For years, French consumers had to register on the Bloctel list to stop unwanted sales calls. Since 11 August 2026, the logic is reversed: a business may only canvass a consumer by phone if that consumer has agreed beforehand.</p>
+<h2>What changed on 11 August 2026</h2>
+<p>Article 13 of the law of 30 June 2025 against fraud rewrote article L223-1 of the Consumer Code. It now bans canvassing by phone a consumer who has not previously consented to it, and it is up to the business to prove that consent. The Bloctel opt-out articles are repealed.</p>
+<h2>The hours still apply</h2>
+<p>Article D223-9, amended in July 2026, keeps the calling window: Monday to Friday, 10 am to 1 pm and 2 pm to 8 pm, never on public holidays, and no more than 4 calls in 30 days.</p>
+<table>
+  <thead><tr><th>Rule</th><th>Limit</th></tr></thead>
+  <tbody>
+    <tr><td>Days</td><td>Monday to Friday, not public holidays</td></tr>
+    <tr><td>Hours</td><td>10 am to 1 pm and 2 pm to 8 pm</td></tr>
+    <tr><td>Frequency</td><td>4 calls in 30 days at most</td></tr>
+    <tr><td>Consent</td><td>Required beforehand, since 11 August 2026</td></tr>
+  </tbody>
+</table>
+<h2>Why inbound leads matter more now</h2>
+<p>A visitor who fills in your form or asks your chat to be called back has asked for contact. That is not canvassing. With cold calling now restricted to people who opted in, the leads your website collects become one of the few ways left to start a phone conversation with a new consumer.</p>
+<ul>
+  <li><strong>Record the request</strong>: keep the date and the wording of what the visitor asked for.</li>
+  <li><strong>Call back about what they asked</strong>, not about something else.</li>
+  <li><strong>Make the call back easy to ask for</strong>: a chat that collects a number and a preferred time does exactly that.</li>
+</ul>`,
+    sources: [
+      { label: "Law no. 2025-594 of 30 June 2025 against all fraud involving public aid, article 13, Légifrance (in French)", url: "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000051824325" },
+      { label: "Consumer Code, article D223-9 in force on 11 August 2026, Légifrance (in French)", url: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046422695/2026-08-11" },
+      { label: "Decree no. 2022-1313 of 13 October 2022 on the days, hours and frequency of telephone canvassing, Légifrance (in French)", url: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046421823" }
+    ]
+  },
+  {
+    id: "tpe-pme-sans-site-internet",
+    slug: "small-businesses-without-website",
+    category: "Visibility",
+    title: "One French small business in three still has no website",
+    description: "65% of French very small and small businesses have a website, and for the first time social media accounts are ahead. What the other 35% miss, and what a website should do for those who have one.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "A third of small businesses cannot be found on their own site",
+      value: "35%",
+      label: "of French very small and small businesses (TPE and PME) have no website presenting their business",
+      body: "The 2025 France Num barometer, run for the French ministry of the economy, surveyed 11,021 businesses. 65% have a website presenting the business, stable over a year, while 66% have a social media account: the first time social media comes out ahead.",
+      formula: "100% − 65% = 35%",
+      source: "Source: Baromètre France Num 2025 (DGE), 11,021 businesses surveyed from 26 March to 18 April 2025, report of 29 September 2025.",
+      caveat: "Survey of businesses with fewer than 250 employees. A social media page can play part of a website’s role, but you do not control it the same way."
+    },
+    body: `
+<p>Every year, the France Num barometer asks French very small and small businesses how they use digital tools. The 2025 edition has a surprise.</p>
+<h2>What the barometer found</h2>
+<ul>
+  <li><strong>65%</strong> have a website presenting the business, unchanged over a year.</li>
+  <li><strong>66%</strong> have a social media account: for the first time, more than have a website.</li>
+  <li><strong>84%</strong> have at least one online visibility tool.</li>
+  <li><strong>26%</strong> use artificial intelligence, twice as many as in 2024, and <strong>14%</strong> use a chatbot, assistant or AI search tool.</li>
+</ul>
+<h2>Why a website still matters</h2>
+<p>A social media page is rented space: the platform decides who sees it, how it looks and what happens to your contacts. A website is yours. It is also what search engines and AI assistants read when someone asks who can help them.</p>
+<h2>A website that works for you</h2>
+<ul>
+  <li><strong>Say clearly what you do, where and for whom</strong>, on the first screen.</li>
+  <li><strong>Show how to reach you</strong> and when you answer.</li>
+  <li><strong>Collect enquiries at any hour</strong>: a form, or a chat that answers questions and takes contact details.</li>
+</ul>`,
+    sources: [
+      { label: "Baromètre France Num 2025, report (DGE, PDF, in French)", url: "https://www.francenum.gouv.fr/files/2025-09/Barom%C3%A8tre%20France%20Num%202025%20-%20Rapport.pdf" }
+    ]
+  },
+  {
+    id: "chatgpt-utilisateurs-hebdomadaires",
+    slug: "chatgpt-weekly-users",
+    category: "Usage",
+    title: "One person in nine on the planet uses ChatGPT every week",
+    description: "ChatGPT reached 900 million weekly users in February 2026. Set against the world population, that is more than one person in ten. Your visitors are used to asking a question and getting an answer.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Asking a machine a question has become ordinary",
+      value: "10.9%",
+      label: "of the world’s population, the share that 900 million weekly ChatGPT users represent",
+      body: "OpenAI announced 900 million weekly active ChatGPT users in February 2026. The UN puts the world population at 8.23 billion in 2025.",
+      formula: "900 million ÷ 8,231,613,070 = 10.9%",
+      source: "Sources: OpenAI announcement reported by TechCrunch, 27 February 2026; United Nations, World Population Prospects 2024.",
+      caveat: "Weekly active users are accounts, not unique people, and usage is uneven across countries. In July 2026 OpenAI said its models reach more than one billion active users across all its products."
+    },
+    body: `
+<p>In a few years, asking a question to an AI has gone from a novelty to a habit for a large part of the world.</p>
+<h2>The figures</h2>
+<p>In February 2026, OpenAI said ChatGPT had reached 900 million weekly active users. The UN estimates the world population at 8.23 billion in 2025: that is roughly one person in nine. In July 2026, OpenAI added that its models reach more than one billion active users across all its products.</p>
+<p>In France, the 2026 Baromètre du numérique found that 48% of people aged 12 and over used generative AI in 2025.</p>
+<h2>What your visitors now expect</h2>
+<ul>
+  <li><strong>An answer, not a list of links</strong>: they type a question in plain words and expect a direct reply.</li>
+  <li><strong>At any hour</strong>: an assistant does not keep office hours.</li>
+  <li><strong>A clear next step</strong>: book, get a quote, be called back.</li>
+</ul>
+<h2>Meeting that expectation on your site</h2>
+<p>A chat agent configured with your services gives visitors the same experience on your site: they ask, it answers from your own information, and when a person is needed it collects their details.</p>`,
+    sources: [
+      { label: "TechCrunch, “ChatGPT reaches 900M weekly active users”, 27 February 2026", url: "https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users/" },
+      { label: "BNN Bloomberg (AFP), “OpenAI says it has more than 1 billion active users”, 31 July 2026", url: "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/07/31/openai-says-has-more-than-1-billion-active-users/" },
+      { label: "United Nations, World Population Prospects 2024", url: "https://population.un.org/wpp/" }
+    ]
+  },
+  {
+    id: "trafic-ia-sites-commerce",
+    slug: "ai-traffic-to-retail-sites",
+    category: "Usage",
+    title: "Traffic from AI assistants to retail sites has grown 14-fold in 19 months",
+    description: "Adobe measures a 1,324% rise in visits from generative AI tools to US retail sites between October 2024 and May 2026. More and more visitors arrive after asking an assistant first.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "AI assistants are becoming a way in to websites",
+      value: "14.2×",
+      label: "the level of traffic from generative AI tools to US retail sites in May 2026 compared with October 2024",
+      body: "Adobe Analytics, based on visits to US retail websites, measured a 1,324% rise in traffic from generative AI tools between October 2024 and May 2026. Over the same period, AI traffic to travel sites rose 2,215%.",
+      formula: "1 + 1,324% = 14.2 times the October 2024 level",
+      source: "Source: Adobe, announcement of 17 June 2026 (Adobe Analytics data).",
+      caveat: "US retail sites, starting from a small base: AI assistants still send far fewer visits than search engines. Not measured in France."
+    },
+    body: `
+<p>Before visiting a shop’s website, more and more people ask an AI assistant which product or provider to choose. Adobe measures the result on retail sites.</p>
+<h2>What Adobe measured</h2>
+<ul>
+  <li>Traffic from generative AI tools to US retail sites rose <strong>1,324%</strong> between October 2024 and May 2026.</li>
+  <li>To travel sites, it rose <strong>2,215%</strong> over the same period.</li>
+  <li>Over the 2025 holiday season, AI traffic to retail sites was <strong>693%</strong> higher than a year earlier.</li>
+</ul>
+<h2>What it means for you</h2>
+<p>These visitors arrive with context: they have already described their need to an assistant and been pointed to you. They expect your site to confirm what they were told and answer the next question quickly.</p>
+<ul>
+  <li><strong>Make your key facts easy to find and quote</strong>: services, prices, area, opening hours.</li>
+  <li><strong>Keep the conversation going</strong>: a visitor used to asking questions will ask one on your site too.</li>
+  <li><strong>Track it</strong>: check your analytics for visits from chatgpt.com, perplexity.ai and other assistants.</li>
+</ul>`,
+    sources: [
+      { label: "Adobe, “Introducing Adobe Brand Visibility”, 17 June 2026", url: "https://news.adobe.com/news/2026/06/introducing-adobe-brand-visibility" },
+      { label: "Adobe, 2025 holiday shopping season results, 7 January 2026 (PDF)", url: "https://news.adobe.com/news/downloads/pdfs/2026/01/010726-holiday-shopping-season-2025.pdf" }
+    ]
+  },
+  {
+    id: "trafic-bots-sites",
+    slug: "bot-traffic-websites",
+    category: "Visitors",
+    title: "Only 47 in 100 website visits now come from humans",
+    description: "Bots made up 53% of web traffic in 2025, and malicious bots alone 40%. What that does to your contact form and your visitor statistics.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "More than half of your “visitors” are machines",
+      value: "47",
+      label: "human visits out of every 100 on the web in 2025, once automated traffic is taken out",
+      body: "The 2026 Bad Bot Report by Imperva, part of Thales, found that bots made up 53% of all web traffic in 2025, up from 51%. Malicious bots alone accounted for 40%, up 3 points.",
+      formula: "100% − 53% = 47% human traffic",
+      source: "Source: Thales/Imperva, 2026 Bad Bot Report (2025 data), 29 April 2026.",
+      caveat: "An average across the whole web, measured by a security vendor. The share on a given small business site can be very different."
+    },
+    body: `
+<p>Your analytics show visitors, your form receives messages. A growing share of both are not people.</p>
+<h2>What Imperva measured</h2>
+<p>According to the 2026 Bad Bot Report by Imperva, bots accounted for 53% of all web traffic in 2025, up from 51% a year earlier. Malicious bots, which scrape content, test stolen passwords or fill in forms, accounted for 40% on their own.</p>
+<h2>What it does to a small business site</h2>
+<ul>
+  <li><strong>Inflated statistics</strong>: visit counts include automated traffic, so conversion rates look worse than they are.</li>
+  <li><strong>Junk leads</strong>: bots fill in contact forms with spam, which wastes time and can hide real enquiries.</li>
+</ul>
+<h2>Keeping bots out without annoying people</h2>
+<ul>
+  <li><strong>A hidden honeypot field</strong>: invisible to people, filled in by bots, so their messages can be dropped quietly.</li>
+  <li><strong>Check the fields on the server</strong>, not only in the browser.</li>
+  <li><strong>Measure real conversations</strong>: a lead who answered a question in a chat is much more likely to be a person than a form submission.</li>
+</ul>`,
+    sources: [
+      { label: "Imperva, “Bad Bot Report 2026: bots in the agentic age”", url: "https://www.imperva.com/blog/bad-bot-report-2026-bots-agentic-age/" },
+      { label: "Thales, “Bad bots in the agentic age”, 29 April 2026", url: "https://cpl.thalesgroup.com/blog/application-security/bad-bots-in-the-agentic-age" }
+    ]
+  },
+  {
+    id: "recherches-zero-clic-france",
+    slug: "zero-click-searches-france",
+    category: "Visibility",
+    title: "In France, it takes 3.7 Google searches to send one visitor to a website",
+    description: "65.3% of Google searches in France end without a click, and only 271 of every 1,000 send someone to the open web. Each visitor who does reach your site is worth more than ever.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Most searches never leave Google",
+      value: "3.7",
+      label: "Google searches in France for every click that reaches the open web, based on 271 such clicks per 1,000 searches in 2026",
+      body: "SparkToro’s 2026 study, using Similarweb data from January to April 2026, found that 65.3% of Google searches in France end without any click, and that 271 of every 1,000 searches send a click to the open web.",
+      formula: "1,000 ÷ 271 = 3.7 searches per visit to the open web",
+      source: "Source: SparkToro (Rand Fishkin), zero-click search study, 16 June 2026 (Similarweb data, January to April 2026).",
+      caveat: "The open web means websites not owned by Google; see SparkToro’s methodology for the exact definition. The figure is an average across all searches, not for your sector."
+    },
+    body: `
+<p>Search engines increasingly answer questions directly on the results page. SparkToro measures how many searches still send someone to a website.</p>
+<h2>What SparkToro measured in 2026</h2>
+<table>
+  <thead><tr><th>Country</th><th>Searches without a click</th><th>Clicks to the open web per 1,000 searches</th></tr></thead>
+  <tbody>
+    <tr><td>France</td><td>65.3%</td><td>271</td></tr>
+    <tr><td>Germany</td><td>62.1%</td><td>287</td></tr>
+    <tr><td>United States</td><td>68.0%</td><td>231</td></tr>
+    <tr><td>United Kingdom</td><td>69.5%</td><td>232</td></tr>
+  </tbody>
+</table>
+<p>In France, 271 of every 1,000 Google searches send a click to a website outside Google: one visit for every 3.7 searches.</p>
+<h2>What it means for your site</h2>
+<p>If fewer searches turn into visits, each visit counts for more. A visitor who reaches your site and leaves without an answer is harder to replace than before.</p>
+<ul>
+  <li><strong>Answer the question on the page they land on</strong>, not three clicks away.</li>
+  <li><strong>Give them a way to ask</strong> if the page does not answer: a chat is one tap away.</li>
+  <li><strong>Collect the contact</strong> before they leave, at any hour.</li>
+</ul>`,
+    sources: [
+      { label: "SparkToro, zero-click searches by country, 16 June 2026", url: "https://sparktoro.com/blog/zero-click-searches-highest-in-the-uk-lowest-in-germany-and-france-has-the-most-efficient-searchers/" },
+      { label: "SparkToro, “In 2026, less than one third of Google searches still send a click”, 8 June 2026", url: "https://sparktoro.com/blog/in-2026-less-than-one-third-of-google-searches-still-send-a-click/" }
+    ]
+  },
+  {
+    id: "e-commerce-france-2025",
+    slug: "french-ecommerce-2025",
+    category: "Usage",
+    title: "French shoppers made 101 online purchases every second in 2025",
+    description: "3.2 billion online transactions and €196.4 billion spent in France in 2025. Spread over the year, that is 101 purchases and more than €6,000 every second, day and night.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Online buying never closes",
+      value: "101 / s",
+      label: "online transactions every second in France in 2025, on average across every hour of the year",
+      body: "FEVAD, the French e-commerce federation, counted 3.2 billion online transactions in 2025, up 10%, for €196.4 billion of sales, up 7%, with an average basket of €62.",
+      formula: "3.2 billion ÷ (365 × 86,400 s) = 101.5 per second; €196.4 bn ÷ 31,536,000 s = €6,228 per second",
+      source: "Source: FEVAD, French e-commerce results for 2025, 11 February 2026.",
+      caveat: "An average: purchases are not spread evenly across the day. Services, including travel and tickets, make up €120.3 billion of the total."
+    },
+    body: `
+<p>French consumers buy online a little more every year. FEVAD’s 2025 figures show how much, and how constantly.</p>
+<h2>E-commerce in France in 2025</h2>
+<table>
+  <thead><tr><th>Indicator</th><th>2025</th></tr></thead>
+  <tbody>
+    <tr><td>Online sales</td><td>€196.4 billion (+7%)</td></tr>
+    <tr><td>of which services</td><td>€120.3 billion</td></tr>
+    <tr><td>of which products</td><td>€76.1 billion</td></tr>
+    <tr><td>Transactions</td><td>3.2 billion (+10%)</td></tr>
+    <tr><td>Average basket</td><td>€62 (−3%)</td></tr>
+  </tbody>
+</table>
+<p>Spread over the 31.5 million seconds in a year, that is 101 purchases and €6,228 every second, including nights and weekends.</p>
+<h2>What it means for a service business</h2>
+<p>People who buy online at any hour also look for services at any hour: an adviser, a craftsman, a practitioner. They are used to getting an answer or a confirmation straight away.</p>
+<ul>
+  <li><strong>Show your prices or price ranges</strong> where you can: online shoppers compare.</li>
+  <li><strong>Make the next step instant</strong>: booking, a quote request, a call back.</li>
+  <li><strong>Answer out of hours</strong>, when many of these decisions are made.</li>
+</ul>`,
+    sources: [
+      { label: "FEVAD, French e-commerce results for 2025, 11 February 2026 (in French)", url: "https://www.fevad.com/bilan-du-e-commerce-en-france-les-francais-ont-depense-pres-de-200-milliards-deuros-sur-internet-en-2025/" }
+    ]
+  },
+  {
+    id: "avis-clients-reponse",
+    slug: "online-reviews-responses",
+    category: "Reputation",
+    title: "The share of people who always read reviews jumped 41% in a year",
+    description: "97% of consumers read reviews of local businesses, and 41% now always do, up from 29%. 89% expect the owner to respond. Visitors want to see that someone answers.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Reviews are read more, and replies are expected",
+      value: "+41%",
+      label: "rise in the share of consumers who always read reviews of local businesses, from 29% to 41% in a year",
+      body: "BrightLocal’s 2026 Local Consumer Review Survey of 1,002 US adults found that 97% read reviews of local businesses and 41% always read them, up from 29%. 89% expect business owners to respond to reviews.",
+      formula: "41% ÷ 29% − 1 = +41%",
+      source: "Source: BrightLocal, Local Consumer Review Survey 2026, 1,002 US adults, published 11 February 2026.",
+      caveat: "A US survey by a local marketing software company. French habits may differ."
+    },
+    body: `
+<p>Before contacting a local business, people check what others say about it. BrightLocal’s 2026 survey shows that habit getting stronger.</p>
+<h2>What BrightLocal found</h2>
+<ul>
+  <li><strong>97%</strong> of consumers read reviews of local businesses.</li>
+  <li><strong>41%</strong> always read them, up from 29% a year earlier.</li>
+  <li><strong>89%</strong> expect owners to respond to reviews, and <strong>19%</strong> expect a reply the same day.</li>
+  <li><strong>42%</strong> are unlikely to use a business that does not respond to its reviews.</li>
+</ul>
+<h2>What reviews and questions have in common</h2>
+<p>A reply to a review shows that someone is listening. So does a quick answer to a question on your website. Visitors judge a business on both: what it has done for others, and how it treats them now.</p>
+<ul>
+  <li><strong>Reply to every review</strong>, including the good ones, within a week at most.</li>
+  <li><strong>Answer visitors’ questions quickly</strong>, including outside opening hours.</li>
+  <li><strong>Link the two</strong>: after a successful job, ask the client for a review.</li>
+</ul>`,
+    sources: [
+      { label: "BrightLocal, Local Consumer Review Survey 2026", url: "https://www.brightlocal.com/research/local-consumer-review-survey/" }
+    ]
+  },
+  {
+    id: "baisse-appels-telephoniques-france",
+    slug: "fewer-phone-calls-france",
+    category: "Usage",
+    title: "People in France make 16% fewer phone calls than in 2021",
+    description: "Voice traffic in France fell to 214.4 billion minutes in 2025, down from 256.5 billion in 2021. Landline calls have more than halved. The phone is no longer the obvious way to get in touch.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "The phone is losing ground, year after year",
+      value: "−16.4%",
+      label: "fall in outgoing voice minutes in France between 2021 and 2025, fixed and mobile together",
+      body: "Arcep, the French telecoms regulator, counted 214.4 billion minutes of outgoing voice calls in 2025, down 3.6% in a year and down from 256.5 billion in 2021. Landline minutes fell from 42.6 billion to 18.5 billion. SMS fell 26.9% in a year.",
+      formula: "(214.4 − 256.5) ÷ 256.5 = −16.4%; landlines: (18.5 − 42.6) ÷ 42.6 = −56.6%",
+      source: "Source: Arcep, electronic communications market in France, 2025 provisional results, 28 May 2026.",
+      caveat: "Counts traditional calls and SMS only: calls and messages in apps such as WhatsApp are not included, so part of the fall is a shift to those apps."
+    },
+    body: `
+<p>For a long time, “call us” was the default way for a business to be reached. Arcep’s figures show the French are using that channel less and less.</p>
+<h2>What Arcep measured</h2>
+<table>
+  <thead><tr><th>Outgoing voice traffic</th><th>2021</th><th>2025</th></tr></thead>
+  <tbody>
+    <tr><td>Total (billion minutes)</td><td>256.5</td><td>214.4</td></tr>
+    <tr><td>of which landlines</td><td>42.6</td><td>18.5</td></tr>
+  </tbody>
+</table>
+<p>Voice traffic has been falling since 2014. In 2025 it dropped 3.6% in a year. SMS fell even faster, down 26.9% in one year to 64.7 billion messages.</p>
+<h2>Where the conversations went</h2>
+<p>Traditional calls and SMS are giving way to messaging apps and written exchanges. People are used to typing a question and getting a reply, rather than calling and waiting for someone to pick up.</p>
+<h2>What it means for your contact options</h2>
+<ul>
+  <li><strong>Keep the phone</strong> for those who prefer it, and show when you answer.</li>
+  <li><strong>Offer a written channel that answers straight away</strong>: a chat on your site.</li>
+  <li><strong>Let people choose</strong>: a call back at a time that suits them, requested in a few words.</li>
+</ul>`,
+    sources: [
+      { label: "Arcep, electronic communications market in France, 2025 provisional results, 28 May 2026 (in French)", url: "https://www.arcep.fr/cartes-et-donnees/nos-publications-chiffrees/observatoire-des-marches-des-communications-electroniques-en-france/marche-communications-electroniques-france-2025-resultats-provisoires.html" }
+    ]
+  },
+  {
+    id: "creations-entreprises-2025",
+    slug: "business-creations-2025",
+    category: "Businesses",
+    title: "3,194 businesses were created in France every day of 2025",
+    description: "A record 1,165,800 businesses were created in France in 2025, two thirds of them as micro-entrepreneurs. Every one of them needs to be found and to answer its first clients.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "A record year for new businesses, mostly one-person ones",
+      value: "3,194",
+      label: "businesses created in France on average every day of 2025, of which about two thirds as micro-entrepreneurs",
+      body: "Insee counted a record 1,165,800 business creations in 2025, up 5% on 2024. 758,600 were micro-entrepreneurs, their highest level ever.",
+      formula: "1,165,800 ÷ 365 = 3,194 a day; 758,600 ÷ 1,165,800 = 65.1% micro-entrepreneurs",
+      source: "Source: Insee Première no. 2092, business creations in 2025, 28 January 2026.",
+      caveat: "Creations are not all active businesses: some micro-entrepreneurs register without starting, and others stop within a few years."
+    },
+    body: `
+<p>France keeps breaking its record for new businesses. In 2025, Insee counted 1,165,800 creations.</p>
+<h2>What Insee counted</h2>
+<table>
+  <thead><tr><th>Type of creation, 2025</th><th>Number</th><th>Change</th></tr></thead>
+  <tbody>
+    <tr><td>Micro-entrepreneurs</td><td>758,600</td><td>+6%</td></tr>
+    <tr><td>Companies</td><td>301,300</td><td>+6%</td></tr>
+    <tr><td>Other sole proprietorships</td><td>105,900</td><td>−4%</td></tr>
+    <tr><td>Total</td><td>1,165,800</td><td>+5%</td></tr>
+  </tbody>
+</table>
+<p>That is 3,194 new businesses a day, two thirds of them micro-entrepreneurs.</p>
+<h2>What a new business needs first</h2>
+<p>A new business has to be found, and to convert its first visitors into clients, often with nobody to answer the phone while the founder works.</p>
+<ul>
+  <li><strong>A simple website</strong> that says what you do, where and for whom.</li>
+  <li><strong>One clear way to get in touch</strong>, with the hours when you answer.</li>
+  <li><strong>Something that answers when you cannot</strong>: a chat that replies to the usual questions and takes contact details.</li>
+</ul>`,
+    sources: [
+      { label: "Insee Première no. 2092, business creations in 2025, 28 January 2026 (in French)", url: "https://www.insee.fr/fr/statistiques/8721354" }
+    ]
   }
 ];

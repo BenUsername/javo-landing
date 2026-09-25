@@ -840,5 +840,400 @@ export const ARTICLES_FR = [
     sources: [
       { label: "Service-Public.fr, « Jours fériés et ponts dans le secteur privé »", url: "https://www.service-public.fr/particuliers/vosdroits/F2405" }
     ]
+  },
+  {
+    id: "demarchage-telephonique-consentement-2026",
+    slug: "demarchage-telephonique-consentement-2026",
+    category: "Réglementation",
+    title: "Depuis le 11 août 2026, le démarchage téléphonique exige un consentement, dans une fenêtre de 45 heures par semaine",
+    description: "La France est passée au consentement préalable pour le démarchage téléphonique des consommateurs, et les appels restent limités à certains horaires en semaine. Les contacts qui demandent à être rappelés n’ont jamais eu autant de valeur.",
+    date: PUBLISHED_2,
+    readingMinutes: 5,
+    insight: {
+      title: "Une fenêtre étroite, et désormais seulement pour ceux qui ont dit oui",
+      value: "45 h",
+      label: "par semaine au maximum pendant lesquelles un consommateur peut être démarché par téléphone en France, soit 26,8 % de la semaine, et depuis le 11 août 2026 seulement avec son consentement préalable",
+      body: "Les appels aux consommateurs sont autorisés du lundi au vendredi, de 10 h à 13 h et de 14 h à 20 h, hors jours fériés, et au plus 4 fois en 30 jours. Depuis le 11 août 2026, le Code de la consommation interdit en outre de démarcher par téléphone un consommateur qui n’y a pas consenti au préalable.",
+      formula: "(3 h + 6 h) × 5 jours = 45 h ; 45 ÷ 168 h = 26,8 %",
+      source: "Sources : Code de la consommation, article L223-1 réécrit par la loi n° 2025-594 du 30 juin 2025 (article 13), et article D223-9 modifié par le décret n° 2026-662 du 23 juillet 2026, Légifrance.",
+      caveat: "Ces règles visent les appels aux consommateurs, pas aux entreprises, et rappeler quelqu’un qui vous l’a demandé n’est pas du démarchage. Pas un avis juridique."
+    },
+    body: `
+<p>Pendant des années, les consommateurs devaient s’inscrire sur Bloctel pour ne plus recevoir d’appels commerciaux. Depuis le 11 août 2026, la logique est inversée : une entreprise ne peut démarcher un consommateur par téléphone que s’il l’a accepté au préalable.</p>
+<h2>Ce qui a changé le 11 août 2026</h2>
+<p>L’article 13 de la loi du 30 juin 2025 contre toutes les fraudes aux aides publiques a réécrit l’article L223-1 du Code de la consommation. Il interdit désormais de démarcher par téléphone un consommateur qui n’a pas exprimé préalablement son consentement, et c’est au professionnel d’en apporter la preuve. Les articles sur la liste d’opposition Bloctel sont abrogés.</p>
+<h2>Les horaires s’appliquent toujours</h2>
+<p>L’article D223-9, modifié en juillet 2026, maintient la fenêtre d’appel : du lundi au vendredi, de 10 h à 13 h et de 14 h à 20 h, jamais les jours fériés, et au plus 4 appels en 30 jours.</p>
+<table>
+  <thead><tr><th>Règle</th><th>Limite</th></tr></thead>
+  <tbody>
+    <tr><td>Jours</td><td>Du lundi au vendredi, hors jours fériés</td></tr>
+    <tr><td>Horaires</td><td>10 h à 13 h et 14 h à 20 h</td></tr>
+    <tr><td>Fréquence</td><td>4 appels en 30 jours au maximum</td></tr>
+    <tr><td>Consentement</td><td>Préalable, depuis le 11 août 2026</td></tr>
+  </tbody>
+</table>
+<h2>Pourquoi les demandes entrantes comptent davantage</h2>
+<p>Un visiteur qui remplit votre formulaire ou demande à votre chat d’être rappelé a sollicité le contact. Ce n’est pas du démarchage. Avec un démarchage désormais réservé aux personnes qui l’ont accepté, les contacts recueillis par votre site deviennent l’un des rares moyens d’engager une conversation téléphonique avec un nouveau client particulier.</p>
+<ul>
+  <li><strong>Gardez une trace de la demande</strong> : sa date et ce que le visiteur a demandé.</li>
+  <li><strong>Rappelez pour ce qui a été demandé</strong>, pas pour autre chose.</li>
+  <li><strong>Facilitez la demande de rappel</strong> : un chat qui recueille un numéro et un créneau préféré fait exactement cela.</li>
+</ul>`,
+    sources: [
+      { label: "Loi n° 2025-594 du 30 juin 2025 contre toutes les fraudes aux aides publiques, article 13 (Légifrance)", url: "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000051824325" },
+      { label: "Code de la consommation, article D223-9 en vigueur au 11 août 2026 (Légifrance)", url: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046422695/2026-08-11" },
+      { label: "Décret n° 2022-1313 du 13 octobre 2022 relatif aux jours, horaires et fréquence du démarchage téléphonique (Légifrance)", url: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046421823" }
+    ]
+  },
+  {
+    id: "tpe-pme-sans-site-internet",
+    slug: "tpe-pme-sans-site-internet",
+    category: "Visibilité",
+    title: "Une TPE-PME sur trois n’a toujours pas de site internet",
+    description: "65 % des TPE et PME françaises ont un site internet, et pour la première fois les réseaux sociaux passent devant. Ce que manquent les 35 % restantes, et ce qu’un site devrait faire pour les autres.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Un tiers des petites entreprises ne peuvent pas être trouvées sur leur propre site",
+      value: "35 %",
+      label: "des TPE et PME françaises n’ont pas de site internet présentant leur activité",
+      body: "Le Baromètre France Num 2025, réalisé pour la Direction générale des entreprises, a interrogé 11 021 entreprises. 65 % ont un site internet présentant l’entreprise, un chiffre stable sur un an, quand 66 % ont un compte sur les réseaux sociaux : c’est la première fois que les réseaux sociaux passent devant.",
+      formula: "100 % − 65 % = 35 %",
+      source: "Source : Baromètre France Num 2025 (DGE), 11 021 entreprises interrogées du 26 mars au 18 avril 2025, rapport du 29 septembre 2025.",
+      caveat: "Enquête auprès des entreprises de moins de 250 salariés. Une page sur les réseaux sociaux peut remplir une partie du rôle d’un site, mais vous ne la maîtrisez pas de la même façon."
+    },
+    body: `
+<p>Chaque année, le Baromètre France Num interroge les TPE et PME françaises sur leurs usages numériques. L’édition 2025 réserve une surprise.</p>
+<h2>Ce que montre le baromètre</h2>
+<ul>
+  <li><strong>65 %</strong> ont un site internet présentant l’entreprise, sans changement sur un an.</li>
+  <li><strong>66 %</strong> ont un compte sur les réseaux sociaux : pour la première fois, plus que celles qui ont un site.</li>
+  <li><strong>84 %</strong> disposent d’au moins un outil de visibilité en ligne.</li>
+  <li><strong>26 %</strong> utilisent l’intelligence artificielle, deux fois plus qu’en 2024, et <strong>14 %</strong> un chatbot, un assistant ou un outil de recherche d’informations.</li>
+</ul>
+<h2>Pourquoi un site reste utile</h2>
+<p>Une page sur un réseau social est un espace loué : la plateforme décide qui la voit, à quoi elle ressemble et ce que deviennent vos contacts. Un site vous appartient. C’est aussi ce que lisent les moteurs de recherche et les assistants d’IA quand quelqu’un demande qui peut l’aider.</p>
+<h2>Un site qui travaille pour vous</h2>
+<ul>
+  <li><strong>Dites clairement ce que vous faites, où et pour qui</strong>, dès le premier écran.</li>
+  <li><strong>Indiquez comment vous joindre</strong> et quand vous répondez.</li>
+  <li><strong>Recueillez les demandes à toute heure</strong> : un formulaire, ou un chat qui répond aux questions et prend les coordonnées.</li>
+</ul>`,
+    sources: [
+      { label: "Baromètre France Num 2025, rapport (DGE, PDF)", url: "https://www.francenum.gouv.fr/files/2025-09/Barom%C3%A8tre%20France%20Num%202025%20-%20Rapport.pdf" }
+    ]
+  },
+  {
+    id: "chatgpt-utilisateurs-hebdomadaires",
+    slug: "chatgpt-utilisateurs-hebdomadaires",
+    category: "Usages",
+    title: "Une personne sur neuf dans le monde utilise ChatGPT chaque semaine",
+    description: "ChatGPT a atteint 900 millions d’utilisateurs hebdomadaires en février 2026. Rapporté à la population mondiale, c’est plus d’une personne sur dix. Vos visiteurs ont pris l’habitude de poser une question et d’obtenir une réponse.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Poser une question à une machine est devenu banal",
+      value: "10,9 %",
+      label: "de la population mondiale : la part que représentent les 900 millions d’utilisateurs hebdomadaires de ChatGPT",
+      body: "OpenAI a annoncé 900 millions d’utilisateurs actifs hebdomadaires de ChatGPT en février 2026. L’ONU estime la population mondiale à 8,23 milliards en 2025.",
+      formula: "900 millions ÷ 8 231 613 070 = 10,9 %",
+      source: "Sources : annonce d’OpenAI rapportée par TechCrunch, 27 février 2026 ; Nations unies, World Population Prospects 2024.",
+      caveat: "Les utilisateurs actifs hebdomadaires sont des comptes, pas des personnes uniques, et l’usage varie beaucoup selon les pays. En juillet 2026, OpenAI a indiqué que ses modèles touchent plus d’un milliard d’utilisateurs actifs, tous produits confondus."
+    },
+    body: `
+<p>En quelques années, poser une question à une IA est passé de la curiosité à l’habitude pour une grande partie du monde.</p>
+<h2>Les chiffres</h2>
+<p>En février 2026, OpenAI a annoncé que ChatGPT comptait 900 millions d’utilisateurs actifs hebdomadaires. L’ONU estime la population mondiale à 8,23 milliards en 2025 : c’est environ une personne sur neuf. En juillet 2026, OpenAI a ajouté que ses modèles touchent plus d’un milliard d’utilisateurs actifs, tous produits confondus.</p>
+<p>En France, le Baromètre du numérique 2026 indique que 48 % des personnes de 12 ans et plus ont utilisé l’IA générative en 2025.</p>
+<h2>Ce que vos visiteurs attendent désormais</h2>
+<ul>
+  <li><strong>Une réponse, pas une liste de liens</strong> : ils posent une question en langage courant et attendent une réponse directe.</li>
+  <li><strong>À toute heure</strong> : un assistant n’a pas d’horaires de bureau.</li>
+  <li><strong>Une étape suivante claire</strong> : réserver, obtenir un devis, être rappelé.</li>
+</ul>
+<h2>Répondre à cette attente sur votre site</h2>
+<p>Un agent de chat configuré avec vos services offre la même expérience sur votre site : le visiteur demande, l’agent répond à partir de vos propres informations et, quand une personne est nécessaire, il recueille ses coordonnées.</p>`,
+    sources: [
+      { label: "TechCrunch, « ChatGPT reaches 900M weekly active users », 27 février 2026 (en anglais)", url: "https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users/" },
+      { label: "BNN Bloomberg (AFP), « OpenAI says it has more than 1 billion active users », 31 juillet 2026 (en anglais)", url: "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/07/31/openai-says-has-more-than-1-billion-active-users/" },
+      { label: "Nations unies, World Population Prospects 2024 (en anglais)", url: "https://population.un.org/wpp/" }
+    ]
+  },
+  {
+    id: "trafic-ia-sites-commerce",
+    slug: "trafic-ia-sites-commerce",
+    category: "Usages",
+    title: "Le trafic des assistants d’IA vers les sites marchands a été multiplié par 14 en 19 mois",
+    description: "Adobe mesure une hausse de 1 324 % des visites issues des outils d’IA générative vers les sites marchands américains entre octobre 2024 et mai 2026. De plus en plus de visiteurs arrivent après avoir interrogé un assistant.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Les assistants d’IA deviennent une porte d’entrée vers les sites",
+      value: "14,2×",
+      label: "le niveau du trafic issu des outils d’IA générative vers les sites marchands américains en mai 2026, par rapport à octobre 2024",
+      body: "Adobe Analytics, à partir des visites sur les sites marchands américains, a mesuré une hausse de 1 324 % du trafic issu des outils d’IA générative entre octobre 2024 et mai 2026. Sur la même période, ce trafic vers les sites de voyage a augmenté de 2 215 %.",
+      formula: "1 + 1 324 % = 14,2 fois le niveau d’octobre 2024",
+      source: "Source : Adobe, annonce du 17 juin 2026 (données Adobe Analytics).",
+      caveat: "Sites marchands américains, à partir d’un niveau de départ faible : les assistants d’IA envoient encore bien moins de visites que les moteurs de recherche. Non mesuré en France."
+    },
+    body: `
+<p>Avant de visiter le site d’une boutique, de plus en plus de gens demandent à un assistant d’IA quel produit ou quel prestataire choisir. Adobe en mesure l’effet sur les sites marchands.</p>
+<h2>Ce qu’a mesuré Adobe</h2>
+<ul>
+  <li>Le trafic issu des outils d’IA générative vers les sites marchands américains a augmenté de <strong>1 324 %</strong> entre octobre 2024 et mai 2026.</li>
+  <li>Vers les sites de voyage, il a augmenté de <strong>2 215 %</strong> sur la même période.</li>
+  <li>Pendant les fêtes de fin d’année 2025, ce trafic vers les sites marchands était <strong>693 %</strong> plus élevé qu’un an plus tôt.</li>
+</ul>
+<h2>Ce que cela signifie pour vous</h2>
+<p>Ces visiteurs arrivent avec du contexte : ils ont déjà décrit leur besoin à un assistant, qui les a orientés vers vous. Ils attendent que votre site confirme ce qu’on leur a dit et réponde vite à la question suivante.</p>
+<ul>
+  <li><strong>Rendez vos informations clés faciles à trouver et à citer</strong> : services, prix, zone, horaires.</li>
+  <li><strong>Prolongez la conversation</strong> : un visiteur habitué à poser des questions en posera aussi sur votre site.</li>
+  <li><strong>Mesurez-le</strong> : repérez dans vos statistiques les visites venant de chatgpt.com, perplexity.ai et d’autres assistants.</li>
+</ul>`,
+    sources: [
+      { label: "Adobe, « Introducing Adobe Brand Visibility », 17 juin 2026 (en anglais)", url: "https://news.adobe.com/news/2026/06/introducing-adobe-brand-visibility" },
+      { label: "Adobe, bilan des fêtes de fin d’année 2025, 7 janvier 2026 (PDF, en anglais)", url: "https://news.adobe.com/news/downloads/pdfs/2026/01/010726-holiday-shopping-season-2025.pdf" }
+    ]
+  },
+  {
+    id: "trafic-bots-sites",
+    slug: "trafic-bots-sites",
+    category: "Visiteurs",
+    title: "Seules 47 visites sur 100 viennent désormais d’humains",
+    description: "Les robots représentaient 53 % du trafic web en 2025, et les robots malveillants 40 % à eux seuls. Ce que cela change pour votre formulaire de contact et vos statistiques de visites.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Plus de la moitié de vos « visiteurs » sont des machines",
+      value: "47",
+      label: "visites humaines sur 100 sur le web en 2025, une fois le trafic automatisé retiré",
+      body: "Le Bad Bot Report 2026 d’Imperva, filiale de Thales, indique que les robots représentaient 53 % de tout le trafic web en 2025, contre 51 % un an plus tôt. Les robots malveillants représentaient à eux seuls 40 %, en hausse de 3 points.",
+      formula: "100 % − 53 % = 47 % de trafic humain",
+      source: "Source : Thales/Imperva, Bad Bot Report 2026 (données 2025), 29 avril 2026.",
+      caveat: "Une moyenne sur l’ensemble du web, mesurée par un éditeur de sécurité. La part sur le site d’une petite entreprise peut être très différente."
+    },
+    body: `
+<p>Vos statistiques affichent des visiteurs, votre formulaire reçoit des messages. Une part croissante des deux ne sont pas des personnes.</p>
+<h2>Ce qu’a mesuré Imperva</h2>
+<p>Selon le Bad Bot Report 2026 d’Imperva, les robots représentaient 53 % de tout le trafic web en 2025, contre 51 % un an plus tôt. Les robots malveillants, qui aspirent les contenus, testent des mots de passe volés ou remplissent des formulaires, en représentaient 40 % à eux seuls.</p>
+<h2>Ce que cela change pour le site d’une petite entreprise</h2>
+<ul>
+  <li><strong>Des statistiques gonflées</strong> : le nombre de visites inclut du trafic automatisé, et votre taux de conversion paraît plus faible qu’il ne l’est.</li>
+  <li><strong>De faux contacts</strong> : des robots remplissent les formulaires avec du spam, ce qui fait perdre du temps et peut masquer de vraies demandes.</li>
+</ul>
+<h2>Écarter les robots sans gêner les visiteurs</h2>
+<ul>
+  <li><strong>Un champ piège caché</strong> : invisible pour les personnes, rempli par les robots, dont les messages peuvent être écartés discrètement.</li>
+  <li><strong>Vérifiez les champs côté serveur</strong>, pas seulement dans le navigateur.</li>
+  <li><strong>Comptez les vraies conversations</strong> : un contact qui a répondu à une question dans un chat a bien plus de chances d’être une personne qu’un formulaire envoyé.</li>
+</ul>`,
+    sources: [
+      { label: "Imperva, « Bad Bot Report 2026: bots in the agentic age » (en anglais)", url: "https://www.imperva.com/blog/bad-bot-report-2026-bots-agentic-age/" },
+      { label: "Thales, « Bad bots in the agentic age », 29 avril 2026 (en anglais)", url: "https://cpl.thalesgroup.com/blog/application-security/bad-bots-in-the-agentic-age" }
+    ]
+  },
+  {
+    id: "recherches-zero-clic-france",
+    slug: "recherches-zero-clic-france",
+    category: "Visibilité",
+    title: "En France, il faut 3,7 recherches Google pour envoyer un visiteur vers un site",
+    description: "65,3 % des recherches Google en France se terminent sans clic, et seules 271 sur 1 000 envoient quelqu’un vers le web ouvert. Chaque visiteur qui arrive sur votre site vaut plus que jamais.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "La plupart des recherches ne quittent jamais Google",
+      value: "3,7",
+      label: "recherches Google en France pour chaque clic qui atteint le web ouvert, sur la base de 271 clics de ce type pour 1 000 recherches en 2026",
+      body: "L’étude 2026 de SparkToro, fondée sur les données Similarweb de janvier à avril 2026, indique que 65,3 % des recherches Google en France se terminent sans aucun clic, et que 271 recherches sur 1 000 envoient un clic vers le web ouvert.",
+      formula: "1 000 ÷ 271 = 3,7 recherches par visite vers le web ouvert",
+      source: "Source : SparkToro (Rand Fishkin), étude sur les recherches sans clic, 16 juin 2026 (données Similarweb, janvier à avril 2026).",
+      caveat: "Le web ouvert désigne les sites qui n’appartiennent pas à Google ; voir la méthodologie de SparkToro pour la définition exacte. Le chiffre est une moyenne sur toutes les recherches, pas pour votre secteur."
+    },
+    body: `
+<p>Les moteurs de recherche répondent de plus en plus directement sur la page de résultats. SparkToro mesure combien de recherches envoient encore quelqu’un vers un site.</p>
+<h2>Ce qu’a mesuré SparkToro en 2026</h2>
+<table>
+  <thead><tr><th>Pays</th><th>Recherches sans clic</th><th>Clics vers le web ouvert pour 1 000 recherches</th></tr></thead>
+  <tbody>
+    <tr><td>France</td><td>65,3 %</td><td>271</td></tr>
+    <tr><td>Allemagne</td><td>62,1 %</td><td>287</td></tr>
+    <tr><td>États-Unis</td><td>68,0 %</td><td>231</td></tr>
+    <tr><td>Royaume-Uni</td><td>69,5 %</td><td>232</td></tr>
+  </tbody>
+</table>
+<p>En France, 271 recherches Google sur 1 000 envoient un clic vers un site extérieur à Google : une visite toutes les 3,7 recherches.</p>
+<h2>Ce que cela signifie pour votre site</h2>
+<p>Si moins de recherches se transforment en visites, chaque visite compte davantage. Un visiteur qui arrive sur votre site et repart sans réponse est plus difficile à remplacer qu’avant.</p>
+<ul>
+  <li><strong>Répondez à la question sur la page d’arrivée</strong>, pas trois clics plus loin.</li>
+  <li><strong>Donnez un moyen de demander</strong> si la page ne répond pas : un chat est à un geste.</li>
+  <li><strong>Recueillez le contact</strong> avant qu’il ne parte, à toute heure.</li>
+</ul>`,
+    sources: [
+      { label: "SparkToro, recherches sans clic par pays, 16 juin 2026 (en anglais)", url: "https://sparktoro.com/blog/zero-click-searches-highest-in-the-uk-lowest-in-germany-and-france-has-the-most-efficient-searchers/" },
+      { label: "SparkToro, « In 2026, less than one third of Google searches still send a click », 8 juin 2026 (en anglais)", url: "https://sparktoro.com/blog/in-2026-less-than-one-third-of-google-searches-still-send-a-click/" }
+    ]
+  },
+  {
+    id: "e-commerce-france-2025",
+    slug: "e-commerce-france-2025",
+    category: "Usages",
+    title: "Les Français ont réalisé 101 achats en ligne par seconde en 2025",
+    description: "3,2 milliards de transactions en ligne et 196,4 milliards d’euros dépensés en France en 2025. Répartis sur l’année, cela fait 101 achats et plus de 6 000 euros chaque seconde, de jour comme de nuit.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "L’achat en ligne ne ferme jamais",
+      value: "101 / s",
+      label: "transactions en ligne chaque seconde en France en 2025, en moyenne sur toutes les heures de l’année",
+      body: "La FEVAD, fédération du e-commerce et de la vente à distance, a compté 3,2 milliards de transactions en ligne en 2025, en hausse de 10 %, pour 196,4 milliards d’euros de ventes, en hausse de 7 %, avec un panier moyen de 62 euros.",
+      formula: "3,2 milliards ÷ (365 × 86 400 s) = 101,5 par seconde ; 196,4 Md€ ÷ 31 536 000 s = 6 228 € par seconde",
+      source: "Source : FEVAD, bilan du e-commerce en France en 2025, 11 février 2026.",
+      caveat: "Une moyenne : les achats ne sont pas répartis uniformément dans la journée. Les services, dont les voyages et la billetterie, représentent 120,3 milliards d’euros du total."
+    },
+    body: `
+<p>Les Français achètent un peu plus en ligne chaque année. Les chiffres 2025 de la FEVAD montrent à quel point, et avec quelle constance.</p>
+<h2>Le e-commerce en France en 2025</h2>
+<table>
+  <thead><tr><th>Indicateur</th><th>2025</th></tr></thead>
+  <tbody>
+    <tr><td>Ventes en ligne</td><td>196,4 milliards d’euros (+7 %)</td></tr>
+    <tr><td>dont services</td><td>120,3 milliards d’euros</td></tr>
+    <tr><td>dont produits</td><td>76,1 milliards d’euros</td></tr>
+    <tr><td>Transactions</td><td>3,2 milliards (+10 %)</td></tr>
+    <tr><td>Panier moyen</td><td>62 euros (−3 %)</td></tr>
+  </tbody>
+</table>
+<p>Réparti sur les 31,5 millions de secondes d’une année, cela fait 101 achats et 6 228 euros chaque seconde, nuits et week-ends compris.</p>
+<h2>Ce que cela signifie pour une entreprise de services</h2>
+<p>Ceux qui achètent en ligne à toute heure cherchent aussi des services à toute heure : un conseiller, un artisan, un praticien. Ils ont l’habitude d’obtenir une réponse ou une confirmation tout de suite.</p>
+<ul>
+  <li><strong>Affichez vos prix ou vos fourchettes de prix</strong> quand c’est possible : les acheteurs en ligne comparent.</li>
+  <li><strong>Rendez l’étape suivante immédiate</strong> : réservation, demande de devis, rappel.</li>
+  <li><strong>Répondez hors horaires</strong>, quand beaucoup de ces décisions se prennent.</li>
+</ul>`,
+    sources: [
+      { label: "FEVAD, bilan du e-commerce en France en 2025, 11 février 2026", url: "https://www.fevad.com/bilan-du-e-commerce-en-france-les-francais-ont-depense-pres-de-200-milliards-deuros-sur-internet-en-2025/" }
+    ]
+  },
+  {
+    id: "avis-clients-reponse",
+    slug: "avis-clients-reponse",
+    category: "Réputation",
+    title: "La part des consommateurs qui lisent toujours les avis a bondi de 41 % en un an",
+    description: "97 % des consommateurs lisent les avis sur les commerces et services locaux, et 41 % les lisent désormais toujours, contre 29 %. 89 % attendent une réponse du dirigeant. Les visiteurs veulent voir que quelqu’un répond.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Les avis sont plus lus, et les réponses attendues",
+      value: "+41 %",
+      label: "de hausse de la part des consommateurs qui lisent toujours les avis sur les entreprises locales, de 29 % à 41 % en un an",
+      body: "L’enquête Local Consumer Review Survey 2026 de BrightLocal, menée auprès de 1 002 adultes américains, indique que 97 % lisent les avis sur les entreprises locales et que 41 % les lisent toujours, contre 29 %. 89 % attendent des dirigeants qu’ils répondent aux avis.",
+      formula: "41 % ÷ 29 % − 1 = +41 %",
+      source: "Source : BrightLocal, Local Consumer Review Survey 2026, 1 002 adultes américains, publiée le 11 février 2026.",
+      caveat: "Une enquête américaine menée par un éditeur de logiciels de marketing local. Les habitudes françaises peuvent différer."
+    },
+    body: `
+<p>Avant de contacter une entreprise locale, on regarde ce qu’en disent les autres. L’enquête 2026 de BrightLocal montre que cette habitude se renforce.</p>
+<h2>Ce qu’a trouvé BrightLocal</h2>
+<ul>
+  <li><strong>97 %</strong> des consommateurs lisent les avis sur les entreprises locales.</li>
+  <li><strong>41 %</strong> les lisent toujours, contre 29 % un an plus tôt.</li>
+  <li><strong>89 %</strong> attendent des dirigeants qu’ils répondent aux avis, et <strong>19 %</strong> attendent une réponse le jour même.</li>
+  <li><strong>42 %</strong> ont peu de chances de faire appel à une entreprise qui ne répond pas à ses avis.</li>
+</ul>
+<h2>Ce que les avis et les questions ont en commun</h2>
+<p>Répondre à un avis montre que quelqu’un écoute. Répondre vite à une question sur votre site aussi. Les visiteurs jugent une entreprise sur les deux : ce qu’elle a fait pour d’autres, et la façon dont elle les traite maintenant.</p>
+<ul>
+  <li><strong>Répondez à chaque avis</strong>, y compris aux bons, dans la semaine au plus tard.</li>
+  <li><strong>Répondez vite aux questions des visiteurs</strong>, y compris en dehors des horaires.</li>
+  <li><strong>Reliez les deux</strong> : après une prestation réussie, demandez un avis au client.</li>
+</ul>`,
+    sources: [
+      { label: "BrightLocal, Local Consumer Review Survey 2026 (en anglais)", url: "https://www.brightlocal.com/research/local-consumer-review-survey/" }
+    ]
+  },
+  {
+    id: "baisse-appels-telephoniques-france",
+    slug: "baisse-appels-telephoniques-france",
+    category: "Usages",
+    title: "Les Français téléphonent 16 % de moins qu’en 2021",
+    description: "Le trafic vocal en France est tombé à 214,4 milliards de minutes en 2025, contre 256,5 milliards en 2021. Les appels depuis les lignes fixes ont été divisés par plus de deux. Le téléphone n’est plus le moyen évident de prendre contact.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Le téléphone recule, année après année",
+      value: "−16,4 %",
+      label: "de baisse des minutes d’appels sortants en France entre 2021 et 2025, fixe et mobile confondus",
+      body: "L’Arcep a compté 214,4 milliards de minutes d’appels sortants en 2025, en baisse de 3,6 % sur un an et contre 256,5 milliards en 2021. Les minutes depuis les lignes fixes sont passées de 42,6 à 18,5 milliards. Les SMS ont reculé de 26,9 % en un an.",
+      formula: "(214,4 − 256,5) ÷ 256,5 = −16,4 % ; lignes fixes : (18,5 − 42,6) ÷ 42,6 = −56,6 %",
+      source: "Source : Arcep, marché des communications électroniques en France, résultats provisoires 2025, 28 mai 2026.",
+      caveat: "Ne compte que les appels et SMS classiques : les appels et messages passés dans des applications comme WhatsApp ne sont pas inclus, et une partie de la baisse correspond à un transfert vers ces applications."
+    },
+    body: `
+<p>Longtemps, « appelez-nous » a été la façon par défaut de joindre une entreprise. Les chiffres de l’Arcep montrent que les Français utilisent de moins en moins ce canal.</p>
+<h2>Ce qu’a mesuré l’Arcep</h2>
+<table>
+  <thead><tr><th>Trafic vocal sortant</th><th>2021</th><th>2025</th></tr></thead>
+  <tbody>
+    <tr><td>Total (milliards de minutes)</td><td>256,5</td><td>214,4</td></tr>
+    <tr><td>dont lignes fixes</td><td>42,6</td><td>18,5</td></tr>
+  </tbody>
+</table>
+<p>Le trafic vocal baisse depuis 2014. En 2025, il a reculé de 3,6 % en un an. Les SMS ont baissé encore plus vite, de 26,9 % en un an, à 64,7 milliards de messages.</p>
+<h2>Où sont passées les conversations</h2>
+<p>Les appels et SMS classiques cèdent la place aux messageries et aux échanges écrits. On a pris l’habitude de taper une question et d’obtenir une réponse, plutôt que d’appeler et d’attendre que quelqu’un décroche.</p>
+<h2>Ce que cela change pour vos moyens de contact</h2>
+<ul>
+  <li><strong>Gardez le téléphone</strong> pour ceux qui le préfèrent, et indiquez quand vous répondez.</li>
+  <li><strong>Proposez un canal écrit qui répond tout de suite</strong> : un chat sur votre site.</li>
+  <li><strong>Laissez choisir</strong> : un rappel au moment qui convient, demandé en quelques mots.</li>
+</ul>`,
+    sources: [
+      { label: "Arcep, marché des communications électroniques en France, résultats provisoires 2025, 28 mai 2026", url: "https://www.arcep.fr/cartes-et-donnees/nos-publications-chiffrees/observatoire-des-marches-des-communications-electroniques-en-france/marche-communications-electroniques-france-2025-resultats-provisoires.html" }
+    ]
+  },
+  {
+    id: "creations-entreprises-2025",
+    slug: "creations-entreprises-2025",
+    category: "Entreprises",
+    title: "3 194 entreprises ont été créées en France chaque jour de 2025",
+    description: "Un record de 1 165 800 entreprises créées en France en 2025, dont deux tiers de micro-entrepreneurs. Chacune doit se faire trouver et répondre à ses premiers clients.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Une année record pour les créations, surtout de micro-entreprises",
+      value: "3 194",
+      label: "entreprises créées en France en moyenne chaque jour de 2025, dont environ deux tiers sous le régime du micro-entrepreneur",
+      body: "L’Insee a compté un record de 1 165 800 créations d’entreprises en 2025, en hausse de 5 % sur 2024. 758 600 étaient des micro-entrepreneurs, leur plus haut niveau historique.",
+      formula: "1 165 800 ÷ 365 = 3 194 par jour ; 758 600 ÷ 1 165 800 = 65,1 % de micro-entrepreneurs",
+      source: "Source : Insee Première n° 2092, créations d’entreprises en 2025, 28 janvier 2026.",
+      caveat: "Toutes les créations ne deviennent pas des entreprises actives : certains micro-entrepreneurs s’immatriculent sans démarrer, d’autres cessent en quelques années."
+    },
+    body: `
+<p>La France continue de battre son record de créations d’entreprises. En 2025, l’Insee en a compté 1 165 800.</p>
+<h2>Ce qu’a compté l’Insee</h2>
+<table>
+  <thead><tr><th>Type de création, 2025</th><th>Nombre</th><th>Évolution</th></tr></thead>
+  <tbody>
+    <tr><td>Micro-entrepreneurs</td><td>758 600</td><td>+6 %</td></tr>
+    <tr><td>Sociétés</td><td>301 300</td><td>+6 %</td></tr>
+    <tr><td>Entreprises individuelles classiques</td><td>105 900</td><td>−4 %</td></tr>
+    <tr><td>Total</td><td>1 165 800</td><td>+5 %</td></tr>
+  </tbody>
+</table>
+<p>Cela fait 3 194 nouvelles entreprises par jour, dont deux tiers de micro-entrepreneurs.</p>
+<h2>Ce dont une nouvelle entreprise a besoin d’abord</h2>
+<p>Une nouvelle entreprise doit se faire trouver et transformer ses premiers visiteurs en clients, souvent sans personne pour décrocher pendant que le fondateur travaille.</p>
+<ul>
+  <li><strong>Un site simple</strong> qui dit ce que vous faites, où et pour qui.</li>
+  <li><strong>Un moyen clair de vous joindre</strong>, avec les horaires où vous répondez.</li>
+  <li><strong>Quelque chose qui répond quand vous ne pouvez pas</strong> : un chat qui répond aux questions courantes et prend les coordonnées.</li>
+</ul>`,
+    sources: [
+      { label: "Insee Première n° 2092, créations d’entreprises en 2025, 28 janvier 2026", url: "https://www.insee.fr/fr/statistiques/8721354" }
+    ]
   }
 ];

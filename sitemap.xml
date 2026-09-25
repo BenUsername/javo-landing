@@ -264,4 +264,124 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/calendrier-2027-ponts/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/calendar-2027-bridges/"/>
   </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/cold-calling-consent-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/cold-calling-consent-2026/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/demarchage-telephonique-consentement-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/cold-calling-consent-2026/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/demarchage-telephonique-consentement-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/cold-calling-consent-2026/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/demarchage-telephonique-consentement-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/cold-calling-consent-2026/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/small-businesses-without-website/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/small-businesses-without-website/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/tpe-pme-sans-site-internet/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/small-businesses-without-website/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/tpe-pme-sans-site-internet/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/small-businesses-without-website/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/tpe-pme-sans-site-internet/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/small-businesses-without-website/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/chatgpt-weekly-users/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/chatgpt-weekly-users/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/chatgpt-utilisateurs-hebdomadaires/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/chatgpt-weekly-users/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/chatgpt-utilisateurs-hebdomadaires/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/chatgpt-weekly-users/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/chatgpt-utilisateurs-hebdomadaires/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/chatgpt-weekly-users/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/ai-traffic-to-retail-sites/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/ai-traffic-to-retail-sites/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/trafic-ia-sites-commerce/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/ai-traffic-to-retail-sites/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/trafic-ia-sites-commerce/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/ai-traffic-to-retail-sites/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/trafic-ia-sites-commerce/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/ai-traffic-to-retail-sites/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/bot-traffic-websites/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/bot-traffic-websites/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/trafic-bots-sites/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/bot-traffic-websites/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/trafic-bots-sites/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/bot-traffic-websites/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/trafic-bots-sites/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/bot-traffic-websites/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/zero-click-searches-france/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/zero-click-searches-france/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/recherches-zero-clic-france/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/zero-click-searches-france/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/recherches-zero-clic-france/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/zero-click-searches-france/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/recherches-zero-clic-france/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/zero-click-searches-france/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/french-ecommerce-2025/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/french-ecommerce-2025/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/e-commerce-france-2025/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/french-ecommerce-2025/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/e-commerce-france-2025/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/french-ecommerce-2025/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/e-commerce-france-2025/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/french-ecommerce-2025/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/online-reviews-responses/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/online-reviews-responses/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/avis-clients-reponse/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/online-reviews-responses/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/avis-clients-reponse/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/online-reviews-responses/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/avis-clients-reponse/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/online-reviews-responses/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/fewer-phone-calls-france/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/fewer-phone-calls-france/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/baisse-appels-telephoniques-france/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/fewer-phone-calls-france/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/baisse-appels-telephoniques-france/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/fewer-phone-calls-france/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/baisse-appels-telephoniques-france/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/fewer-phone-calls-france/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/business-creations-2025/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/business-creations-2025/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/creations-entreprises-2025/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/business-creations-2025/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/creations-entreprises-2025/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/business-creations-2025/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/creations-entreprises-2025/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/business-creations-2025/"/>
+  </url>
 </urlset>
