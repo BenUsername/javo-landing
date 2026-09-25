@@ -11,7 +11,7 @@ Static landing page for Omni, the AI chat agent for websites. Plain HTML, CSS an
 - `assets/`: demo video and poster, ALYOR logo, favicon.
 - `video-source/`: the animated scene behind the demo video and the script that records it.
 - `content/site.mjs`: landing page and page chrome text in each language, plus search engine verification tags.
-- `content/articles.en.mjs`, `content/articles.mjs`: the 10 articles in English and French (paired by `id`), and the author.
+- `content/articles.en.mjs`, `content/articles.mjs`: the 20 articles in English and French (paired by `id`), and the author.
 - `build.mjs`: generates all pages and `sitemap.xml`.
 - `vercel.json`: redirects the original French article URLs (`/articles/<french-slug>/`) to `/fr/articles/`.
 

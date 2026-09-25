@@ -2,6 +2,7 @@
 // versions in articles.mjs; each `id` pairs an article with its French version.
 
 const PUBLISHED = "2026-09-24";
+const PUBLISHED_2 = "2026-09-25";
 const HOLIDAYS_SOURCE = { label: "Service-Public.fr, “Jours fériés et ponts dans le secteur privé”: 2026 public holiday calendar (in French)", url: "https://www.service-public.fr/particuliers/vosdroits/F2405" };
 
 export const ARTICLES_EN = [
@@ -427,6 +428,407 @@ export const ARTICLES_EN = [
 <p>Just over half of people do not use generative AI yet. A chat has to stay simple for them: one question, one answer, and a clear way to be called back by a person.</p>`,
     sources: [
       { label: "Arcep, Baromètre du numérique, 2026 edition (infographic, in French)", url: "https://www.arcep.fr/uploads/tx_gspublication/barometre-du-numerique-edition-2026_INFOGRAPHIE.pdf" }
+    ]
+  },
+  {
+    id: "accessibilite-eaa-microentreprises",
+    slug: "accessibility-act-microenterprise-exemption",
+    category: "Regulation",
+    title: "96.5% of French businesses are exempt from the Accessibility Act’s service rules. Your chat should still be usable",
+    description: "The European Accessibility Act has applied since 28 June 2025, with an exemption for microenterprises providing services. Insee’s figures show how many businesses that covers, and why accessibility still pays.",
+    date: PUBLISHED_2,
+    readingMinutes: 5,
+    insight: {
+      title: "The microenterprise exemption covers almost every French business",
+      value: "96.5%",
+      label: "of French enterprises are microenterprises in Insee’s 2023 count, the same definition the Accessibility Act uses for its exemption",
+      body: "The Act exempts microenterprises providing services: fewer than 10 people and an annual turnover or balance sheet of no more than €2 million. Insee counts 4,995,894 such enterprises out of 5,178,283 in the market sectors outside agriculture and finance.",
+      formula: "4,995,894 ÷ 5,178,283 = 96.5%",
+      source: "Sources: Directive (EU) 2019/882, Articles 3(23), 4(5) and 31; Insee, “L’essentiel sur… les entreprises”, 26 January 2026 (2023 data).",
+      caveat: "The exemption covers services in the Act’s scope, not products, and Insee’s count excludes agriculture and finance. Being exempt does not make an inaccessible chat a good idea. Not legal advice."
+    },
+    body: `
+<p>Since 28 June 2025, the European Accessibility Act has required many digital services sold to consumers, including e-commerce, to be accessible to people with disabilities. France transposed it through the law of 9 March 2023 and a decree of 9 October 2023.</p>
+<h2>Who is exempt</h2>
+<p>Article 4(5) of the directive exempts microenterprises providing services. Article 3(23) defines a microenterprise as one that employs fewer than 10 people and has an annual turnover or an annual balance sheet total of no more than €2 million. French law uses the same thresholds.</p>
+<p>That is exactly Insee’s definition of a microenterprise. In 2023, Insee counted 5,178,283 enterprises in the market sectors outside agriculture and finance, of which 4,995,894 were microenterprises.</p>
+<table>
+  <thead><tr><th>Category (Insee, 2023)</th><th>Enterprises</th></tr></thead>
+  <tbody>
+    <tr><td>Microenterprises</td><td>4,995,894</td></tr>
+    <tr><td>Small and medium-sized (excluding micro)</td><td>174,614</td></tr>
+    <tr><td>Intermediate-sized</td><td>7,442</td></tr>
+    <tr><td>Large</td><td>333</td></tr>
+  </tbody>
+</table>
+<h2>Why accessibility still matters for your chat</h2>
+<p>An exemption is not a reason to shut people out. A visitor who uses a screen reader or a keyboard, or who has poor eyesight, is still a potential client, and a chat window they cannot operate costs you that lead.</p>
+<ul>
+  <li><strong>Keyboard access</strong>: the chat opens, can be used and closes without a mouse, and Escape closes it.</li>
+  <li><strong>Labels</strong>: the chat button and fields have text a screen reader can announce.</li>
+  <li><strong>Contrast and size</strong>: text stays readable, and the window does not hide the whole page on a phone.</li>
+  <li><strong>Another way to reach you</strong>: a phone number or form stays available for anyone who prefers it.</li>
+</ul>
+<p>If your business grows past 10 people or €2 million, the rules apply in full. Choosing an accessible tool now saves you from changing later.</p>`,
+    sources: [
+      { label: "Directive (EU) 2019/882 on the accessibility requirements for products and services (EUR-Lex)", url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019L0882" },
+      { label: "Law no. 2023-171 of 9 March 2023, Article 16, Légifrance (in French)", url: "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000047281814" },
+      { label: "Insee, “L’essentiel sur… les entreprises”, 26 January 2026 (in French)", url: "https://www.insee.fr/fr/statistiques/5424748" }
+    ]
+  },
+  {
+    id: "entreprises-sans-salarie",
+    slug: "businesses-without-employees",
+    category: "Availability",
+    title: "76% of French businesses have no employee to answer the phone",
+    description: "Three quarters of active French businesses have no salaried staff. When the owner is with a client, nobody picks up. What that means for enquiries from your website.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "In three businesses out of four, the person who answers is also the person who works",
+      value: "76.2%",
+      label: "of economically active French businesses had no employee in 2024",
+      body: "Insee counted 5,987,885 economically active legal units in industry, construction, trade and services in 2024. 4,562,923 of them had no salaried employee.",
+      formula: "4,562,923 ÷ 5,987,885 = 76.2%",
+      source: "Source: Insee, “Nombre d’unités légales et d’établissements par tranche d’effectif salarié”, 2024 data, published 23 July 2026.",
+      caveat: "A business without employees may still have a partner, a relative or a service answering for it. The figure counts legal units, not people, and includes very small activities."
+    },
+    body: `
+<p>A plumber on a job, a physiotherapist with a patient, a consultant in a meeting: when a business has no staff, the phone rings while the owner is working. Most French businesses are in exactly that position.</p>
+<h2>What Insee counts</h2>
+<p>In 2024, Insee counted 5,987,885 economically active legal units in France in industry, construction, trade and services. 4,562,923 of them had no salaried employee: 76.2%. The year before, the count was 4,317,601 out of 5,741,792.</p>
+<p>Insee already noted in 2022 that three quarters of microenterprises have no employee at all.</p>
+<h2>The real opening hours of a one-person business</h2>
+<p>For a business with no staff, “opening hours” means the hours when the owner is free to answer, which is fewer than the hours they work. Every hour spent with a client is an hour when a website visitor with a question gets no reply.</p>
+<h2>Three ways to answer without stopping work</h2>
+<ul>
+  <li><strong>Say when you will call back</strong>: a clear message on your site or voicemail beats silence.</li>
+  <li><strong>Batch your call backs</strong>: set two slots a day to return calls and enquiries, and show them on your site.</li>
+  <li><strong>Let a chat agent take the first step</strong>: it answers common questions straight away and collects the details you need to call back, without interrupting you.</li>
+</ul>`,
+    sources: [
+      { label: "Insee, number of legal units and establishments by employee size band, 2024 (in French)", url: "https://www.insee.fr/fr/statistiques/9027479" },
+      { label: "Insee, Les entreprises en France, 2022 edition: three quarters of microenterprises have no employee (in French)", url: "https://www.insee.fr/fr/statistiques/6666957?sommaire=6667157" }
+    ]
+  },
+  {
+    id: "conservation-donnees-prospects-3-ans",
+    slug: "keeping-lead-data-three-years",
+    category: "Personal data",
+    title: "A lead collected by your chat today can be kept until 25 September 2029",
+    description: "The CNIL’s guidance lets businesses keep prospect data for three years from collection or the prospect’s last contact. How to apply that to leads from a website chat.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Three years, counted from the prospect’s last move, not yours",
+      value: "1,096 days",
+      label: "the CNIL’s three-year guideline for a lead collected on 25 September 2026, unless the prospect gets back in touch",
+      body: "The CNIL says prospect data can be kept for three years from collection or from the last contact coming from the prospect, such as a reply or a click on a link. An email you send does not restart the clock, and neither does the prospect simply opening it.",
+      formula: "25 September 2026 + 3 years = 25 September 2029, i.e. 1,096 days (2028 is a leap year)",
+      source: "Source: CNIL, Q&A on the référentiels for managing commercial activities, 28 January 2022.",
+      caveat: "CNIL référentiels are guidance, not binding rules, and a lead who becomes a client falls under client-data rules instead. Not legal advice."
+    },
+    body: `
+<p>Every contact your chat collects is personal data. The GDPR requires you to set a retention period, and the CNIL gives a clear benchmark for prospects.</p>
+<h2>The CNIL’s benchmark</h2>
+<p>In its guidance on managing commercial activities, the CNIL says prospect data can be kept for three years from collection or from the last contact coming from the prospect. It gives a click on a link in an email as an example of such contact. Its sanction decisions add that simply opening an email does not count.</p>
+<h2>What that means for a lead from your chat</h2>
+<table>
+  <thead><tr><th>Situation</th><th>Keep until</th></tr></thead>
+  <tbody>
+    <tr><td>Lead collected on 25 September 2026, no further contact</td><td>25 September 2029</td></tr>
+    <tr><td>The same lead replies to you on 10 March 2027</td><td>10 March 2030</td></tr>
+    <tr><td>The lead becomes a client</td><td>Client-data rules apply</td></tr>
+  </tbody>
+</table>
+<h2>Four good habits</h2>
+<ul>
+  <li><strong>Date every lead</strong> when it arrives, and record the prospect’s last contact.</li>
+  <li><strong>Review once a year</strong> and delete leads older than three years without any contact from them.</li>
+  <li><strong>Keep the conversation only as long as needed</strong>: the chat transcript does not need to outlive the lead.</li>
+  <li><strong>Say it up front</strong>: tell visitors how long you keep their details, in the chat and in your privacy policy.</li>
+</ul>`,
+    sources: [
+      { label: "CNIL, Q&A on the référentiels for managing commercial activities, 28 January 2022 (in French)", url: "https://www.cnil.fr/fr/questions-reponses-sur-les-referentiels-relatifs-la-gestion-des-activites-commerciales-et-des" },
+      { label: "CNIL, €80,000 sanction against CALOGA: opening an email is not a contact from the prospect (in French)", url: "https://www.cnil.fr/fr/sanction-de-80-000-euros-societe-caloga" }
+    ]
+  },
+  {
+    id: "conges-payes-independant-fermeture",
+    slug: "paid-leave-closed-hours",
+    category: "Availability",
+    title: "With five weeks off, a one-person business is closed 79% of the year",
+    description: "France’s standard five weeks of paid leave, applied to a business with nobody else to answer, pushes its closed hours from 77% to 79% of the year. The calculation and how to handle the gap.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Holidays turn a closed evening into a closed month",
+      value: "79.3%",
+      label: "of the hours in 2026 fall outside opening hours for a 9-to-5 business that also takes five weeks off",
+      body: "French employees earn 2.5 working days of paid leave per month, 30 working days or five weeks a year. Five weeks is 25 weekdays. Taken off 2026’s 252 working days, that leaves 227 days of 8 hours.",
+      formula: "1 − (252 − 25) × 8 h ÷ 8,760 h = 1 − 1,816 ÷ 8,760 = 79.3%",
+      source: "Sources: Service-Public.gouv.fr, paid leave (fiche F2258); 2026 calendar and public holidays from Service-Public.fr.",
+      caveat: "The self-employed have no statutory paid leave; five weeks is used here as a common benchmark. A business with staff can rotate holidays and stay open."
+    },
+    body: `
+<p>The self-employed have no legal entitlement to paid leave, but most take holidays, and the French benchmark is five weeks. For a business where nobody else can answer, those weeks are weeks without a reply.</p>
+<h2>The calculation</h2>
+<p>An employee earns 2.5 working days (jours ouvrables) of leave per month, 30 a year: five weeks. Counted in weekdays, five weeks is 25 days.</p>
+<table>
+  <thead><tr><th>2026, open 9 am to 5 pm</th><th>Working days</th><th>Share of hours closed</th></tr></thead>
+  <tbody>
+    <tr><td>No holidays</td><td>252</td><td>77.0%</td></tr>
+    <tr><td>Five weeks off</td><td>227</td><td>79.3%</td></tr>
+  </tbody>
+</table>
+<p>The difference looks small over a year, but it is concentrated: two or three weeks in August and one at Christmas, when enquiries do not stop.</p>
+<h2>Before you go on holiday</h2>
+<ul>
+  <li><strong>Say it on your site</strong>: show the dates you are away and when you will reply.</li>
+  <li><strong>Update your voicemail and email auto-reply</strong> with the same dates.</li>
+  <li><strong>Keep answering the easy questions</strong>: a chat agent can reply about your services and prices, and collect contact details for when you are back.</li>
+  <li><strong>Plan your return</strong>: block the first morning back for the leads that came in while you were away.</li>
+</ul>`,
+    sources: [
+      { label: "Service-Public.gouv.fr, “Congés payés du salarié dans le secteur privé” (fiche F2258, in French)", url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258" },
+      HOLIDAYS_SOURCE
+    ]
+  },
+  {
+    id: "ecart-ia-francais-entreprises",
+    slug: "ai-adoption-gap-people-businesses",
+    category: "Usage",
+    title: "People in France use AI 2.7 times as often as French businesses do",
+    description: "48% of people in France use generative AI, but only 18% of French businesses with 10 or more employees use any AI. Your visitors are ahead of most companies they deal with.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Your customers adopted AI faster than the businesses they buy from",
+      value: "2.7×",
+      label: "the share of people in France using generative AI (48% in 2025) compared with French businesses of 10+ employees using AI (18% in 2025)",
+      body: "The 2026 Baromètre du numérique found that 48% of people aged 12 and over used generative AI in 2025. Insee found that 18% of French businesses with 10 or more employees used at least one AI technology in 2025, up 8 points in a year.",
+      formula: "48% ÷ 18% = 2.7",
+      source: "Sources: Baromètre du numérique 2026 (CREDOC for Arcep, Arcom, CGE and ANCT); Insee Première no. 2120, 21 July 2026; Eurostat, isoc_eb_ai.",
+      caveat: "The two surveys measure different things: personal use of generative AI versus a business’s use of any AI technology. Businesses under 10 employees are not in Insee’s figure."
+    },
+    body: `
+<p>Your visitors have got used to asking questions to an AI. Most businesses have not caught up.</p>
+<h2>Two surveys, one gap</h2>
+<ul>
+  <li><strong>People</strong>: according to the Baromètre du numérique 2026, 48% of people in France aged 12 and over used generative AI in 2025, up from 20% in 2023.</li>
+  <li><strong>Businesses</strong>: according to Insee, 18% of French businesses with 10 or more employees used at least one AI technology in 2025, up from about 10% in 2024. Among businesses with 10 to 49 employees, the share is 15%.</li>
+</ul>
+<p>Across the EU, Eurostat puts business use of AI at 20% in 2025. France is slightly behind the European average.</p>
+<h2>Why businesses hold back</h2>
+<p>Among French businesses that do not use AI, 71% say they do not see the point, according to Insee. For a small business, the use has to be concrete: saving time or winning clients.</p>
+<h2>Where it makes sense to start</h2>
+<p>Answering visitors is one of the simplest places to start, because the demand already exists: people arrive with questions, often outside opening hours. A chat agent answers the usual questions and passes on the contact details. Your team keeps the conversations that need a person.</p>`,
+    sources: [
+      { label: "Insee Première no. 2120, use of AI in businesses, 21 July 2026 (in French)", url: "https://www.insee.fr/fr/statistiques/9025878?sommaire=7667330" },
+      { label: "Eurostat, “Use of artificial intelligence in enterprises”", url: "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Use_of_artificial_intelligence_in_enterprises" },
+      { label: "Arcep, Baromètre du numérique, 2026 edition (infographic, in French)", url: "https://www.arcep.fr/uploads/tx_gspublication/barometre-du-numerique-edition-2026_INFOGRAPHIE.pdf" }
+    ]
+  },
+  {
+    id: "taux-conversion-landing-page",
+    slug: "landing-page-conversion-rate",
+    category: "Conversion",
+    title: "934 out of 1,000 visitors leave a typical landing page without getting in touch",
+    description: "The median landing page converts 6.6% of its visitors. What happens to the other 93.4%, and how a chat can give some of them a reason to stay.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Most visitors leave without a word",
+      value: "934",
+      label: "visitors out of every 1,000 leave a median landing page without converting",
+      body: "Unbounce analysed 41,000 landing pages with 464 million visits and 57 million conversions in the fourth quarter of 2024. The median conversion rate across industries was 6.6%.",
+      formula: "1,000 × (1 − 6.6%) = 934",
+      source: "Source: Unbounce, Conversion Benchmark Report, Q4 2024 data, updated 4 March 2025.",
+      caveat: "A median across industries and page types, measured by a landing page vendor, mostly on English-speaking sites. Your own rate depends on your traffic and offer."
+    },
+    body: `
+<p>Most visitors to a page leave without filling in the form, calling or booking. That is normal, and a benchmark shows how normal.</p>
+<h2>What the benchmark says</h2>
+<p>Unbounce studied 41,000 landing pages in the fourth quarter of 2024: 464 million visits and 57 million conversions. The median conversion rate across industries was 6.6%. On 1,000 visitors, that is 66 who convert and 934 who leave.</p>
+<h2>Why visitors leave</h2>
+<p>Some are not ready, some came by mistake, some compare several offers. But a share of them leave because of an unanswered question: the price, a delay, whether you cover their area. A form does not answer that question; it asks them to wait.</p>
+<h2>Give the hesitant a quicker path</h2>
+<ul>
+  <li><strong>Answer the objections on the page</strong>: prices, delays and area served, in plain words.</li>
+  <li><strong>Offer a low-effort next step</strong>: a question in a chat is easier than a form with eight fields.</li>
+  <li><strong>Measure it separately</strong>: count chat leads apart from form leads, so you know what the chat really adds.</li>
+</ul>
+<p>Even a single percentage point matters: on 1,000 visitors, it is 10 extra leads.</p>`,
+    sources: [
+      { label: "Unbounce, “Average conversion rates for landing pages”, updated 4 March 2025", url: "https://unbounce.com/average-conversion-rates-landing-pages/" },
+      { label: "Unbounce, Conversion Benchmark Report", url: "https://unbounce.com/conversion-benchmark-report/" }
+    ]
+  },
+  {
+    id: "reponse-emails-entreprises",
+    slug: "email-response-times",
+    category: "Responsiveness",
+    title: "Companies took 73 times longer than the 10 minutes customers expect to answer an email",
+    description: "In a test of 1,000 companies, 62% never answered a customer email, and the others took 12 hours 10 minutes on average. Set against what customers call an immediate reply, the gap is large.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Between silence and a half-day wait",
+      value: "73×",
+      label: "longer than the 10 minutes most people call “immediate”: the 12 h 10 min average email response time measured by SuperOffice",
+      body: "In 2018, SuperOffice emailed 1,000 companies with a customer question. 62% never replied. Among those that did, the average response time was 12 hours 10 minutes. In HubSpot’s 2018 survey, 62% of consumers defined an immediate reply to a sales question as 10 minutes or less.",
+      formula: "12 h 10 min = 730 min; 730 ÷ 10 = 73",
+      source: "Sources: SuperOffice, Customer Service Benchmark Report, 2018; HubSpot Research, Consumer Customer Support Survey, Q2 2018.",
+      caveat: "Both studies date from 2018 and were not run in France. No more recent public benchmark of company email response times was found."
+    },
+    body: `
+<p>Email feels like a safe channel: the request is written, nothing gets lost. In practice, many businesses answer late, or not at all.</p>
+<h2>What SuperOffice measured</h2>
+<p>In 2018, SuperOffice sent a customer service email to 1,000 companies and timed the answers.</p>
+<ul>
+  <li><strong>62%</strong> never replied.</li>
+  <li><strong>90%</strong> did not acknowledge receipt.</li>
+  <li>The average response time was <strong>12 hours 10 minutes</strong>.</li>
+</ul>
+<h2>Set against what customers expect</h2>
+<p>The same year, HubSpot asked 1,000 consumers what “immediate” means: 62% put it at 10 minutes or less for a sales question. The average measured by SuperOffice is 73 times that.</p>
+<table>
+  <thead><tr><th>Out of 100 emails sent</th><th>Result</th></tr></thead>
+  <tbody>
+    <tr><td>No reply at all</td><td>62</td></tr>
+    <tr><td>A reply, after 12 h 10 min on average</td><td>38</td></tr>
+  </tbody>
+</table>
+<h2>Closing the gap</h2>
+<ul>
+  <li><strong>Acknowledge every request</strong> straight away, with a realistic time for the full answer.</li>
+  <li><strong>Answer the frequent questions without waiting</strong>: a chat agent can do this at any hour.</li>
+  <li><strong>Keep email for what needs thought</strong>, and track how long your replies really take.</li>
+</ul>`,
+    sources: [
+      { label: "SuperOffice, “Customer Service Benchmark Report”, 2018", url: "https://www.superoffice.co.uk/resources/articles/customer-service-study/" },
+      { label: "HubSpot, “Live chat and the go-to-market flaw”, with results of the 2018 Consumer Customer Support Survey", url: "https://blog.hubspot.com/sales/live-chat-go-to-market-flaw" }
+    ]
+  },
+  {
+    id: "appels-manques-messagerie",
+    slug: "missed-calls-voicemail",
+    category: "Responsiveness",
+    title: "44% of calls to businesses never reach a person, and the famous voicemail statistic has no source",
+    description: "A 2026 analysis of more than 70 million calls finds that only 56% are answered by a person. Meanwhile, the “80% of callers don’t leave a voicemail” figure repeated everywhere cannot be traced to any study.",
+    date: PUBLISHED_2,
+    readingMinutes: 5,
+    insight: {
+      title: "Almost one call in two ends without a conversation",
+      value: "44%",
+      label: "of calls to businesses are not answered by a person, according to an analysis of more than 70 million calls",
+      body: "Invoca’s 2026 benchmark report, based on more than 70 million calls, finds that across all industries 56% of calls to businesses are answered by a person. The rest go to voicemail, a menu or nowhere.",
+      formula: "100% − 56% = 44%",
+      source: "Source: Invoca, Lead Conversion Benchmarks Report, July 2026.",
+      caveat: "Invoca sells call-tracking software, and its data covers mostly US businesses of all sizes, not small French ones."
+    },
+    body: `
+<p>“62% of calls to small businesses go unanswered.” “80% of callers sent to voicemail don’t leave a message.” These figures appear in countless articles. We tried to trace them.</p>
+<h2>Where the popular figures come from</h2>
+<ul>
+  <li><strong>The 62%</strong> comes from a 2016 study by 411 Locals, a marketing agency, covering 85 businesses over 30 days. It counts calls that went to voicemail as unanswered: 37.8% answered, 37.8% voicemail, 24.3% no response.</li>
+  <li><strong>The 80%</strong> could not be traced to any study. The earliest mention found, from 2014, attributes it to “statistics from Forbes” without a reference.</li>
+</ul>
+<h2>A more solid figure</h2>
+<p>Invoca’s 2026 benchmark report, based on more than 70 million calls, finds that 56% of calls to businesses are answered by a person, so 44% are not. It is a vendor study, mostly American, but it rests on a large and documented sample.</p>
+<h2>What it means for a small business</h2>
+<p>If nearly half of calls do not reach a person across businesses of all sizes, a one-person business busy with a client is unlikely to do better. And a caller who reaches voicemail can simply try the next business on the list.</p>
+<ul>
+  <li><strong>Show when you pick up</strong>, next to your phone number.</li>
+  <li><strong>Offer a channel that answers straight away</strong> when you cannot: a chat that replies and takes details for a call back.</li>
+  <li><strong>Check your own numbers</strong>: your phone provider can often show how many calls you miss.</li>
+</ul>`,
+    sources: [
+      { label: "Invoca, Lead Conversion Benchmarks Report, July 2026", url: "https://www.invoca.com/reports/the-invoca-call-conversion-industry-benchmarks-report-2025" },
+      { label: "411 Locals, “Small business owners don’t answer 62% of phone calls”, 18 January 2016", url: "https://411locals.us/small-business-owners-dont-answer-62-of-phone-calls/" },
+      { label: "CRM magazine, “Business voicemail goes unanswered”, 1 November 2014", url: "https://www.destinationcrm.com/Articles/CRM-Insights/Insight/Business-Voicemail-Goes-Unanswered-100080.aspx" }
+    ]
+  },
+  {
+    id: "temps-en-ligne-francais",
+    slug: "time-spent-online-france",
+    category: "Usage",
+    title: "People in France now spend over 1,000 hours a year online",
+    description: "Médiamétrie measured more than three hours online per day in 2025, a record, with mobile accounting for 80% of that time. Over a year, that is more than 1,095 hours, most of them on a phone.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Your visitors’ time online adds up to more than half your opening hours",
+      value: "1,095 h",
+      label: "a year spent online, at the more than 3 hours a day Médiamétrie measured in 2025: 54% of the 2,016 hours a 9-to-5 business is open",
+      body: "Médiamétrie’s L’Année Internet 2025 found that people in France now spend more than 3 hours a day online, a record, and nearly 5 hours for 15 to 24-year-olds. Mobile accounts for 80% of time online.",
+      formula: "3 h × 365 days = 1,095 h; 1,095 ÷ 2,016 = 54%; 80% on mobile = 876 h",
+      source: "Source: Médiamétrie, L’Année Internet 2025, 12 February 2026.",
+      caveat: "“More than 3 hours” makes 1,095 hours a floor. The exact population behind the average is not stated on Médiamétrie’s summary page, and the study does not say at what time of day people are online."
+    },
+    body: `
+<p>Time online in France keeps rising. According to Médiamétrie, it passed three hours a day in 2025.</p>
+<h2>What Médiamétrie measured</h2>
+<ul>
+  <li><strong>More than 3 hours a day</strong> online on average, a record. Trade press reporting the presentation gives 3 h 01, up from 2 h 40 in 2024.</li>
+  <li><strong>Nearly 5 hours</strong> for 15 to 24-year-olds.</li>
+  <li><strong>48.6 million</strong> people online every day.</li>
+  <li><strong>80%</strong> of time online spent on mobile.</li>
+</ul>
+<h2>Over a year</h2>
+<p>At three hours a day, that is 1,095 hours a year, of which 876 are on a phone. A business open 9 to 5 on weekdays is open 2,016 hours in 2026: its visitors’ time online adds up to more than half of that. Médiamétrie does not say at what time of day people are online, so check your own analytics to see how much of your traffic arrives after hours.</p>
+<h2>What to take from it</h2>
+<ul>
+  <li><strong>Design for the phone first</strong>: that is where most of the time is spent.</li>
+  <li><strong>Expect questions outside your hours</strong> and give visitors a way to get an answer then.</li>
+  <li><strong>Keep it short</strong>: on a phone, a question in a chat is easier than a long form.</li>
+</ul>`,
+    sources: [
+      { label: "Médiamétrie, L’Année Internet 2025, 12 February 2026 (in French)", url: "https://www.mediametrie.fr/fr/audiences-et-resultats/internet/lannee-internet" },
+      { label: "CB News, report on Médiamétrie’s L’Année Internet 2025, 12 February 2026 (in French)", url: "https://www.cbnews.fr/etudes/internet-francais-accelere-plus-temps-plus-mobile-plus-ia-mediametrie" }
+    ]
+  },
+  {
+    id: "calendrier-2027-ponts",
+    slug: "calendar-2027-bridges",
+    category: "Availability",
+    title: "2027 has two more working days than 2026, and two 112-hour bridge weekends",
+    description: "Four public holidays fall at the weekend in 2027, giving 254 working days. But Ascension Day and 11 November fall on a Thursday: take the Friday off and your business is closed 112 hours in a row.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "A Thursday holiday plus a bridge day makes the longest closure of the year",
+      value: "112 h",
+      label: "closed in a row from Wednesday 5 pm to Monday 9 am if you take the Friday after Ascension Day (6 May 2027) or 11 November 2027",
+      body: "In 2027, 1 May, 8 May and Christmas fall on a Saturday and 15 August on a Sunday, so only 7 public holidays fall on a weekday. That gives 254 working days, two more than 2026. Ascension Day and 11 November both fall on a Thursday.",
+      formula: "Wednesday 5 pm → Monday 9 am = 4 × 24 h + 16 h = 112 h",
+      source: "2027 calendar; French public holidays (Service-Public.fr); Easter Sunday 2027 on 28 March.",
+      caveat: "Bridge days are not public holidays: whether you close is your choice. Without the bridge, the longest 2027 closures last 88 hours, as in 2026."
+    },
+    body: `
+<p>Planning 2027 starts with the calendar. The good news: more working days. The trap: two Thursdays that invite a long weekend.</p>
+<h2>2027 in numbers</h2>
+<table>
+  <thead><tr><th></th><th>2026</th><th>2027</th></tr></thead>
+  <tbody>
+    <tr><td>Weekdays</td><td>261</td><td>261</td></tr>
+    <tr><td>Public holidays on a weekday</td><td>9</td><td>7</td></tr>
+    <tr><td>Working days</td><td>252</td><td>254</td></tr>
+    <tr><td>Hours closed (9 am to 5 pm)</td><td>6,744</td><td>6,728</td></tr>
+    <tr><td>Share of the year closed</td><td>77.0%</td><td>76.8%</td></tr>
+  </tbody>
+</table>
+<p>In 2027, 1 May, 8 May and Christmas Day fall on a Saturday, and 15 August on a Sunday. Easter Monday is 29 March, Ascension Day 6 May and Whit Monday 17 May.</p>
+<h2>The two bridges</h2>
+<p>Ascension Day (Thursday 6 May) and Armistice Day (Thursday 11 November) invite a bridge on the Friday. With the bridge, the office closes on Wednesday at 5 pm and reopens on Monday at 9 am: 112 hours without an answer. Without it, the longest closures are the 88-hour long weekends, such as Easter or All Saints’ Day.</p>
+<h2>Prepare now</h2>
+<ul>
+  <li><strong>Decide your bridges early</strong> and put them on your site.</li>
+  <li><strong>Check who answers</strong> during each long weekend.</li>
+  <li><strong>Plan the Monday after</strong>: that is when four days of enquiries arrive at once.</li>
+</ul>`,
+    sources: [
+      { label: "Service-Public.fr, “Jours fériés et ponts dans le secteur privé”: list of French public holidays (in French)", url: "https://www.service-public.fr/particuliers/vosdroits/F2405" }
     ]
   }
 ];

@@ -144,4 +144,124 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/ia-generative-francais-2025/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/generative-ai-use-france-2025/"/>
   </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/accessibility-act-microenterprise-exemption/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/accessibility-act-microenterprise-exemption/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/accessibilite-eaa-microentreprises/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/accessibility-act-microenterprise-exemption/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/accessibilite-eaa-microentreprises/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/accessibility-act-microenterprise-exemption/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/accessibilite-eaa-microentreprises/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/accessibility-act-microenterprise-exemption/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/businesses-without-employees/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/businesses-without-employees/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/entreprises-sans-salarie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/businesses-without-employees/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/entreprises-sans-salarie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/businesses-without-employees/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/entreprises-sans-salarie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/businesses-without-employees/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/keeping-lead-data-three-years/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/keeping-lead-data-three-years/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/conservation-donnees-prospects-3-ans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/keeping-lead-data-three-years/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/conservation-donnees-prospects-3-ans/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/keeping-lead-data-three-years/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/conservation-donnees-prospects-3-ans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/keeping-lead-data-three-years/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/paid-leave-closed-hours/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/paid-leave-closed-hours/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/conges-payes-independant-fermeture/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/paid-leave-closed-hours/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/conges-payes-independant-fermeture/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/paid-leave-closed-hours/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/conges-payes-independant-fermeture/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/paid-leave-closed-hours/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/ai-adoption-gap-people-businesses/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/ai-adoption-gap-people-businesses/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/ecart-ia-francais-entreprises/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/ai-adoption-gap-people-businesses/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/ecart-ia-francais-entreprises/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/ai-adoption-gap-people-businesses/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/ecart-ia-francais-entreprises/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/ai-adoption-gap-people-businesses/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/landing-page-conversion-rate/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/landing-page-conversion-rate/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/taux-conversion-landing-page/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/landing-page-conversion-rate/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/taux-conversion-landing-page/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/landing-page-conversion-rate/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/taux-conversion-landing-page/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/landing-page-conversion-rate/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/email-response-times/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/email-response-times/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/reponse-emails-entreprises/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/email-response-times/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/reponse-emails-entreprises/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/email-response-times/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/reponse-emails-entreprises/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/email-response-times/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/missed-calls-voicemail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/missed-calls-voicemail/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/appels-manques-messagerie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/missed-calls-voicemail/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/appels-manques-messagerie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/missed-calls-voicemail/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/appels-manques-messagerie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/missed-calls-voicemail/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/time-spent-online-france/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/time-spent-online-france/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/temps-en-ligne-francais/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/time-spent-online-france/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/temps-en-ligne-francais/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/time-spent-online-france/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/temps-en-ligne-francais/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/time-spent-online-france/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/articles/calendar-2027-bridges/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/calendar-2027-bridges/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/calendrier-2027-ponts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/calendar-2027-bridges/"/>
+  </url>
+  <url>
+    <loc>https://omni-chat-ia.vercel.app/fr/articles/calendrier-2027-ponts/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://omni-chat-ia.vercel.app/articles/calendar-2027-bridges/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://omni-chat-ia.vercel.app/fr/articles/calendrier-2027-ponts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://omni-chat-ia.vercel.app/articles/calendar-2027-bridges/"/>
+  </url>
 </urlset>

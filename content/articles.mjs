@@ -11,6 +11,7 @@ export const AUTHOR = {
 };
 
 const PUBLISHED = "2026-09-24";
+const PUBLISHED_2 = "2026-09-25";
 
 export const ARTICLES_FR = [
   {
@@ -437,6 +438,407 @@ export const ARTICLES_FR = [
 <p>Un peu plus d’une personne sur deux n’utilise pas encore l’IA générative. Un chat doit rester simple pour elles : une question, une réponse, et un moyen clair d’être rappelé par une personne.</p>`,
     sources: [
       { label: "Arcep, Baromètre du numérique, édition 2026 (infographie)", url: "https://www.arcep.fr/uploads/tx_gspublication/barometre-du-numerique-edition-2026_INFOGRAPHIE.pdf" }
+    ]
+  },
+  {
+    id: "accessibilite-eaa-microentreprises",
+    slug: "accessibilite-eaa-microentreprises",
+    category: "Réglementation",
+    title: "96,5 % des entreprises françaises échappent aux règles d’accessibilité des services. Votre chat doit rester utilisable",
+    description: "L’acte européen sur l’accessibilité s’applique depuis le 28 juin 2025, avec une exemption pour les microentreprises de services. Les chiffres de l’Insee montrent combien d’entreprises elle couvre, et pourquoi l’accessibilité reste payante.",
+    date: PUBLISHED_2,
+    readingMinutes: 5,
+    insight: {
+      title: "L’exemption des microentreprises couvre presque toutes les entreprises françaises",
+      value: "96,5 %",
+      label: "des entreprises françaises sont des microentreprises selon l’Insee en 2023, avec la même définition que celle de l’exemption européenne",
+      body: "La directive exempte les microentreprises qui fournissent des services : moins de 10 personnes et un chiffre d’affaires annuel ou un total de bilan d’au plus 2 millions d’euros. L’Insee en compte 4 995 894 sur 5 178 283 entreprises des secteurs marchands hors agriculture et finance.",
+      formula: "4 995 894 ÷ 5 178 283 = 96,5 %",
+      source: "Sources : directive (UE) 2019/882, articles 3, point 23, 4, paragraphe 5, et 31 ; Insee, « L’essentiel sur… les entreprises », 26 janvier 2026 (données 2023).",
+      caveat: "L’exemption concerne les services entrant dans le champ de la directive, pas les produits, et le décompte de l’Insee exclut l’agriculture et la finance. Être exempté ne rend pas un chat inaccessible acceptable. Pas un avis juridique."
+    },
+    body: `
+<p>Depuis le 28 juin 2025, l’acte européen sur l’accessibilité impose à de nombreux services numériques vendus aux consommateurs, dont le commerce en ligne, d’être accessibles aux personnes handicapées. La France l’a transposé par la loi du 9 mars 2023 et un décret du 9 octobre 2023.</p>
+<h2>Qui est exempté</h2>
+<p>L’article 4, paragraphe 5, de la directive exempte les microentreprises qui fournissent des services. L’article 3, point 23, définit la microentreprise comme une entreprise qui occupe moins de 10 personnes et dont le chiffre d’affaires annuel ou le total du bilan annuel n’excède pas 2 millions d’euros. Le droit français reprend les mêmes seuils.</p>
+<p>C’est exactement la définition de la microentreprise de l’Insee. En 2023, l’Insee comptait 5 178 283 entreprises dans les secteurs marchands hors agriculture et finance, dont 4 995 894 microentreprises.</p>
+<table>
+  <thead><tr><th>Catégorie (Insee, 2023)</th><th>Entreprises</th></tr></thead>
+  <tbody>
+    <tr><td>Microentreprises</td><td>4 995 894</td></tr>
+    <tr><td>PME hors microentreprises</td><td>174 614</td></tr>
+    <tr><td>Entreprises de taille intermédiaire</td><td>7 442</td></tr>
+    <tr><td>Grandes entreprises</td><td>333</td></tr>
+  </tbody>
+</table>
+<h2>Pourquoi l’accessibilité compte quand même pour votre chat</h2>
+<p>Une exemption n’est pas une raison d’exclure. Un visiteur qui utilise un lecteur d’écran ou le clavier, ou qui voit mal, reste un client potentiel, et une fenêtre de chat qu’il ne peut pas utiliser vous fait perdre ce contact.</p>
+<ul>
+  <li><strong>Accès au clavier</strong> : le chat s’ouvre, s’utilise et se ferme sans souris, et la touche Échap le ferme.</li>
+  <li><strong>Libellés</strong> : le bouton du chat et les champs ont un texte qu’un lecteur d’écran peut annoncer.</li>
+  <li><strong>Contraste et taille</strong> : le texte reste lisible, et la fenêtre ne masque pas toute la page sur téléphone.</li>
+  <li><strong>Un autre moyen de vous joindre</strong> : un numéro ou un formulaire reste disponible pour qui le préfère.</li>
+</ul>
+<p>Si votre entreprise dépasse 10 personnes ou 2 millions d’euros, les règles s’appliquent pleinement. Choisir un outil accessible dès maintenant vous évite d’en changer plus tard.</p>`,
+    sources: [
+      { label: "Directive (UE) 2019/882 relative aux exigences en matière d’accessibilité applicables aux produits et services (EUR-Lex)", url: "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32019L0882" },
+      { label: "Loi n° 2023-171 du 9 mars 2023, article 16 (Légifrance)", url: "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000047281814" },
+      { label: "Insee, « L’essentiel sur… les entreprises », 26 janvier 2026", url: "https://www.insee.fr/fr/statistiques/5424748" }
+    ]
+  },
+  {
+    id: "entreprises-sans-salarie",
+    slug: "entreprises-sans-salarie",
+    category: "Disponibilité",
+    title: "76 % des entreprises françaises n’ont aucun salarié pour décrocher le téléphone",
+    description: "Trois entreprises actives sur quatre n’ont aucun salarié. Quand le dirigeant est avec un client, personne ne répond. Ce que cela change pour les demandes qui arrivent par votre site.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Dans trois entreprises sur quatre, celui qui répond est aussi celui qui travaille",
+      value: "76,2 %",
+      label: "des entreprises économiquement actives en France n’avaient aucun salarié en 2024",
+      body: "L’Insee a compté 5 987 885 unités légales économiquement actives dans l’industrie, la construction, le commerce et les services en 2024. 4 562 923 d’entre elles n’avaient aucun salarié.",
+      formula: "4 562 923 ÷ 5 987 885 = 76,2 %",
+      source: "Source : Insee, « Nombre d’unités légales et d’établissements par tranche d’effectif salarié », données 2024, publié le 23 juillet 2026.",
+      caveat: "Une entreprise sans salarié peut avoir un associé, un proche ou un service qui répond pour elle. Le chiffre compte des unités légales, pas des personnes, et inclut de très petites activités."
+    },
+    body: `
+<p>Un plombier sur un chantier, une kinésithérapeute avec un patient, un consultant en rendez-vous : quand une entreprise n’a pas de salarié, le téléphone sonne pendant que le dirigeant travaille. La plupart des entreprises françaises sont dans ce cas.</p>
+<h2>Ce que compte l’Insee</h2>
+<p>En 2024, l’Insee a compté 5 987 885 unités légales économiquement actives en France dans l’industrie, la construction, le commerce et les services. 4 562 923 n’avaient aucun salarié, soit 76,2 %. L’année précédente, elles étaient 4 317 601 sur 5 741 792.</p>
+<p>L’Insee notait déjà en 2022 que les trois quarts des microentreprises n’ont aucun salarié.</p>
+<h2>Les vrais horaires d’une entreprise d’une personne</h2>
+<p>Pour une entreprise sans salarié, les « horaires d’ouverture » sont les heures où le dirigeant est libre de répondre, qui sont moins nombreuses que ses heures de travail. Chaque heure passée avec un client est une heure où un visiteur du site reste sans réponse.</p>
+<h2>Trois façons de répondre sans s’arrêter de travailler</h2>
+<ul>
+  <li><strong>Dites quand vous rappelez</strong> : un message clair sur votre site ou votre messagerie vaut mieux que le silence.</li>
+  <li><strong>Regroupez vos rappels</strong> : prévoyez deux créneaux par jour pour les appels et les demandes, et affichez-les sur votre site.</li>
+  <li><strong>Laissez un agent de chat faire le premier pas</strong> : il répond tout de suite aux questions courantes et recueille les informations utiles pour rappeler, sans vous interrompre.</li>
+</ul>`,
+    sources: [
+      { label: "Insee, nombre d’unités légales et d’établissements par tranche d’effectif salarié, 2024", url: "https://www.insee.fr/fr/statistiques/9027479" },
+      { label: "Insee, Les entreprises en France, édition 2022 : les trois quarts des microentreprises n’ont aucun salarié", url: "https://www.insee.fr/fr/statistiques/6666957?sommaire=6667157" }
+    ]
+  },
+  {
+    id: "conservation-donnees-prospects-3-ans",
+    slug: "conservation-donnees-prospects-3-ans",
+    category: "Données personnelles",
+    title: "Un contact recueilli par votre chat aujourd’hui peut être conservé jusqu’au 25 septembre 2029",
+    description: "Selon la CNIL, les données d’un prospect peuvent être conservées trois ans à compter de leur collecte ou du dernier contact venant de lui. Comment l’appliquer aux contacts d’un chat.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Trois ans, comptés à partir du dernier geste du prospect, pas du vôtre",
+      value: "1 096 jours",
+      label: "durée repère de la CNIL pour un contact recueilli le 25 septembre 2026, sauf si le prospect se manifeste à nouveau",
+      body: "La CNIL indique que les données d’un prospect peuvent être conservées trois ans à compter de leur collecte ou du dernier contact venant du prospect, comme une réponse ou un clic sur un lien. Un e-mail que vous envoyez ne relance pas le délai, et sa simple ouverture non plus.",
+      formula: "25 septembre 2026 + 3 ans = 25 septembre 2029, soit 1 096 jours (2028 est bissextile)",
+      source: "Source : CNIL, questions-réponses sur les référentiels relatifs à la gestion des activités commerciales, 28 janvier 2022.",
+      caveat: "Les référentiels de la CNIL sont des recommandations, pas des règles contraignantes, et un prospect devenu client relève des règles applicables aux clients. Pas un avis juridique."
+    },
+    body: `
+<p>Chaque contact recueilli par votre chat est une donnée personnelle. Le RGPD impose de fixer une durée de conservation, et la CNIL donne un repère clair pour les prospects.</p>
+<h2>Le repère de la CNIL</h2>
+<p>Dans ses questions-réponses sur la gestion des activités commerciales, la CNIL indique que les données d’un prospect peuvent être conservées trois ans à compter de leur collecte ou du dernier contact venant du prospect. Elle cite en exemple un clic sur un lien dans un e-mail. Ses décisions de sanction précisent que la simple ouverture d’un e-mail ne compte pas.</p>
+<h2>Ce que cela donne pour un contact issu du chat</h2>
+<table>
+  <thead><tr><th>Situation</th><th>Conservation jusqu’au</th></tr></thead>
+  <tbody>
+    <tr><td>Contact recueilli le 25 septembre 2026, sans suite</td><td>25 septembre 2029</td></tr>
+    <tr><td>Le même contact vous répond le 10 mars 2027</td><td>10 mars 2030</td></tr>
+    <tr><td>Le contact devient client</td><td>Règles applicables aux clients</td></tr>
+  </tbody>
+</table>
+<h2>Quatre bonnes habitudes</h2>
+<ul>
+  <li><strong>Datez chaque contact</strong> à son arrivée, et notez le dernier contact venant du prospect.</li>
+  <li><strong>Faites le tri une fois par an</strong> et supprimez les contacts de plus de trois ans sans nouvelles de leur part.</li>
+  <li><strong>Ne gardez la conversation que le temps nécessaire</strong> : l’historique du chat n’a pas à survivre au contact.</li>
+  <li><strong>Annoncez-le</strong> : indiquez la durée de conservation dans le chat et dans votre politique de confidentialité.</li>
+</ul>`,
+    sources: [
+      { label: "CNIL, questions-réponses sur les référentiels relatifs à la gestion des activités commerciales, 28 janvier 2022", url: "https://www.cnil.fr/fr/questions-reponses-sur-les-referentiels-relatifs-la-gestion-des-activites-commerciales-et-des" },
+      { label: "CNIL, sanction de 80 000 euros à l’encontre de la société CALOGA", url: "https://www.cnil.fr/fr/sanction-de-80-000-euros-societe-caloga" }
+    ]
+  },
+  {
+    id: "conges-payes-independant-fermeture",
+    slug: "conges-payes-independant-fermeture",
+    category: "Disponibilité",
+    title: "Avec cinq semaines de congés, une entreprise d’une personne est fermée 79 % de l’année",
+    description: "Les cinq semaines de congés habituelles, appliquées à une entreprise où personne d’autre ne répond, font passer la part des heures fermées de 77 % à 79 %. Le calcul, et comment gérer ces semaines.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Les vacances transforment une soirée fermée en mois fermé",
+      value: "79,3 %",
+      label: "des heures de 2026 tombent hors horaires pour une entreprise ouverte de 9 h à 17 h qui prend aussi cinq semaines de congés",
+      body: "Un salarié acquiert 2,5 jours ouvrables de congés par mois, soit 30 jours ouvrables ou cinq semaines par an. Cinq semaines représentent 25 jours de semaine. Retirés des 252 jours ouvrés de 2026, il reste 227 jours de 8 heures.",
+      formula: "1 − (252 − 25) × 8 h ÷ 8 760 h = 1 − 1 816 ÷ 8 760 = 79,3 %",
+      source: "Sources : Service-Public.gouv.fr, congés payés (fiche F2258) ; calendrier 2026 et jours fériés d’après Service-Public.fr.",
+      caveat: "Les indépendants n’ont pas de congés payés légaux : cinq semaines servent ici de repère. Une entreprise avec des salariés peut échelonner les congés et rester ouverte."
+    },
+    body: `
+<p>Les indépendants n’ont pas droit légalement à des congés payés, mais la plupart prennent des vacances, et le repère français est de cinq semaines. Pour une entreprise où personne d’autre ne peut répondre, ce sont des semaines sans réponse.</p>
+<h2>Le calcul</h2>
+<p>Un salarié acquiert 2,5 jours ouvrables de congés par mois, 30 par an : cinq semaines. Comptées en jours de semaine, cinq semaines font 25 jours.</p>
+<table>
+  <thead><tr><th>2026, ouvert de 9 h à 17 h</th><th>Jours ouvrés</th><th>Part des heures fermées</th></tr></thead>
+  <tbody>
+    <tr><td>Sans congés</td><td>252</td><td>77,0 %</td></tr>
+    <tr><td>Avec cinq semaines de congés</td><td>227</td><td>79,3 %</td></tr>
+  </tbody>
+</table>
+<p>L’écart paraît faible sur l’année, mais il est concentré : deux ou trois semaines en août et une à Noël, alors que les demandes, elles, ne s’arrêtent pas.</p>
+<h2>Avant de partir en vacances</h2>
+<ul>
+  <li><strong>Annoncez-le sur votre site</strong> : affichez vos dates d’absence et la date de reprise.</li>
+  <li><strong>Mettez à jour votre messagerie et votre réponse automatique</strong> avec les mêmes dates.</li>
+  <li><strong>Continuez à répondre aux questions simples</strong> : un agent de chat peut renseigner sur vos services et vos tarifs, et recueillir les coordonnées pour votre retour.</li>
+  <li><strong>Préparez le retour</strong> : bloquez la première matinée pour les demandes arrivées pendant votre absence.</li>
+</ul>`,
+    sources: [
+      { label: "Service-Public.gouv.fr, « Congés payés du salarié dans le secteur privé » (fiche F2258)", url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258" },
+      { label: "Service-Public.fr, « Jours fériés et ponts dans le secteur privé »", url: "https://www.service-public.fr/particuliers/vosdroits/F2405" }
+    ]
+  },
+  {
+    id: "ecart-ia-francais-entreprises",
+    slug: "ecart-ia-francais-entreprises",
+    category: "Usages",
+    title: "Les Français utilisent l’IA 2,7 fois plus que les entreprises françaises",
+    description: "48 % des Français utilisent l’IA générative, mais seulement 18 % des entreprises de 10 salariés ou plus utilisent une technologie d’IA. Vos visiteurs ont une longueur d’avance sur la plupart des entreprises.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Vos clients ont adopté l’IA plus vite que les entreprises auxquelles ils s’adressent",
+      value: "2,7×",
+      label: "la part des Français qui utilisent l’IA générative (48 % en 2025) rapportée à celle des entreprises de 10 salariés ou plus qui utilisent l’IA (18 % en 2025)",
+      body: "Le Baromètre du numérique 2026 indique que 48 % des personnes de 12 ans et plus ont utilisé l’IA générative en 2025. L’Insee indique que 18 % des entreprises françaises de 10 salariés ou plus déclarent utiliser au moins une technologie d’IA en 2025, 8 points de plus qu’en 2024.",
+      formula: "48 % ÷ 18 % = 2,7",
+      source: "Sources : Baromètre du numérique 2026 (CREDOC pour l’Arcep, l’Arcom, le CGE et l’ANCT) ; Insee Première n° 2120, 21 juillet 2026 ; Eurostat, isoc_eb_ai.",
+      caveat: "Les deux enquêtes ne mesurent pas la même chose : l’usage personnel de l’IA générative d’un côté, l’usage d’une technologie d’IA par l’entreprise de l’autre. Les entreprises de moins de 10 salariés ne sont pas dans le chiffre de l’Insee."
+    },
+    body: `
+<p>Vos visiteurs ont pris l’habitude de poser leurs questions à une IA. La plupart des entreprises n’ont pas encore suivi.</p>
+<h2>Deux enquêtes, un écart</h2>
+<ul>
+  <li><strong>Les particuliers</strong> : selon le Baromètre du numérique 2026, 48 % des personnes de 12 ans et plus ont utilisé l’IA générative en 2025, contre 20 % en 2023.</li>
+  <li><strong>Les entreprises</strong> : selon l’Insee, 18 % des entreprises françaises de 10 salariés ou plus utilisent au moins une technologie d’IA en 2025, contre environ 10 % en 2024. Chez les entreprises de 10 à 49 salariés, la part est de 15 %.</li>
+</ul>
+<p>À l’échelle de l’Union, Eurostat mesure 20 % d’entreprises utilisatrices en 2025. La France est légèrement en dessous de la moyenne européenne.</p>
+<h2>Pourquoi les entreprises hésitent</h2>
+<p>Parmi les entreprises françaises qui n’utilisent pas l’IA, 71 % n’en voient pas l’utilité, selon l’Insee. Pour une petite entreprise, l’usage doit être concret : gagner du temps ou gagner des clients.</p>
+<h2>Par où commencer</h2>
+<p>Répondre aux visiteurs est l’un des points de départ les plus simples, car la demande existe déjà : les gens arrivent avec des questions, souvent en dehors des horaires. Un agent de chat répond aux questions habituelles et transmet les coordonnées. Votre équipe garde les échanges qui demandent une personne.</p>`,
+    sources: [
+      { label: "Insee Première n° 2120, l’usage de l’IA dans les entreprises, 21 juillet 2026", url: "https://www.insee.fr/fr/statistiques/9025878?sommaire=7667330" },
+      { label: "Eurostat, « Use of artificial intelligence in enterprises » (en anglais)", url: "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Use_of_artificial_intelligence_in_enterprises" },
+      { label: "Arcep, Baromètre du numérique, édition 2026 (infographie)", url: "https://www.arcep.fr/uploads/tx_gspublication/barometre-du-numerique-edition-2026_INFOGRAPHIE.pdf" }
+    ]
+  },
+  {
+    id: "taux-conversion-landing-page",
+    slug: "taux-conversion-landing-page",
+    category: "Conversion",
+    title: "934 visiteurs sur 1 000 quittent une page type sans vous contacter",
+    description: "La page d’atterrissage médiane convertit 6,6 % de ses visiteurs. Que deviennent les 93,4 % restants, et comment un chat peut donner à certains une raison de rester.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "La plupart des visiteurs partent sans un mot",
+      value: "934",
+      label: "visiteurs sur 1 000 quittent une page d’atterrissage médiane sans convertir",
+      body: "Unbounce a analysé 41 000 pages d’atterrissage, 464 millions de visites et 57 millions de conversions au quatrième trimestre 2024. Le taux de conversion médian, tous secteurs confondus, était de 6,6 %.",
+      formula: "1 000 × (1 − 6,6 %) = 934",
+      source: "Source : Unbounce, Conversion Benchmark Report, données du 4e trimestre 2024, mis à jour le 4 mars 2025.",
+      caveat: "Une médiane tous secteurs et tous types de pages, mesurée par un éditeur d’outils de pages d’atterrissage, surtout sur des sites anglophones. Votre taux dépend de votre trafic et de votre offre."
+    },
+    body: `
+<p>La plupart des visiteurs d’une page repartent sans remplir le formulaire, appeler ou réserver. C’est normal, et une étude de référence montre à quel point.</p>
+<h2>Ce que dit l’étude</h2>
+<p>Unbounce a étudié 41 000 pages d’atterrissage au quatrième trimestre 2024 : 464 millions de visites et 57 millions de conversions. Le taux de conversion médian, tous secteurs confondus, était de 6,6 %. Sur 1 000 visiteurs, 66 convertissent et 934 repartent.</p>
+<h2>Pourquoi les visiteurs repartent</h2>
+<p>Certains ne sont pas prêts, d’autres sont arrivés par erreur, d’autres comparent plusieurs offres. Mais une partie repart à cause d’une question restée sans réponse : le prix, un délai, votre zone d’intervention. Un formulaire ne répond pas à cette question ; il demande d’attendre.</p>
+<h2>Offrir un chemin plus court à ceux qui hésitent</h2>
+<ul>
+  <li><strong>Répondez aux objections sur la page</strong> : prix, délais et zone couverte, en termes simples.</li>
+  <li><strong>Proposez une étape légère</strong> : une question dans un chat est plus facile qu’un formulaire de huit champs.</li>
+  <li><strong>Mesurez à part</strong> : comptez les contacts issus du chat séparément de ceux du formulaire, pour savoir ce que le chat apporte vraiment.</li>
+</ul>
+<p>Même un seul point de conversion compte : sur 1 000 visiteurs, c’est 10 contacts de plus.</p>`,
+    sources: [
+      { label: "Unbounce, « Average conversion rates for landing pages », 4 mars 2025 (en anglais)", url: "https://unbounce.com/average-conversion-rates-landing-pages/" },
+      { label: "Unbounce, Conversion Benchmark Report (en anglais)", url: "https://unbounce.com/conversion-benchmark-report/" }
+    ]
+  },
+  {
+    id: "reponse-emails-entreprises",
+    slug: "reponse-emails-entreprises",
+    category: "Réactivité",
+    title: "Les entreprises répondent aux e-mails 73 fois plus lentement que les 10 minutes attendues",
+    description: "Sur 1 000 entreprises testées, 62 % n’ont jamais répondu à un e-mail de client, et les autres ont mis 12 h 10 en moyenne. Face à ce que les clients appellent une réponse immédiate, l’écart est considérable.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Entre le silence et une demi-journée d’attente",
+      value: "73×",
+      label: "plus long que les 10 minutes que la plupart des gens jugent « immédiates » : le délai moyen de 12 h 10 mesuré par SuperOffice",
+      body: "En 2018, SuperOffice a envoyé une question de client par e-mail à 1 000 entreprises. 62 % n’ont jamais répondu. Chez celles qui ont répondu, le délai moyen était de 12 h 10. Dans l’enquête HubSpot de 2018, 62 % des consommateurs situaient une réponse immédiate à une question commerciale à 10 minutes ou moins.",
+      formula: "12 h 10 = 730 min ; 730 ÷ 10 = 73",
+      source: "Sources : SuperOffice, Customer Service Benchmark Report, 2018 ; HubSpot Research, Consumer Customer Support Survey, 2e trimestre 2018.",
+      caveat: "Les deux études datent de 2018 et n’ont pas été menées en France. Aucune étude publique plus récente sur les délais de réponse des entreprises par e-mail n’a été trouvée."
+    },
+    body: `
+<p>L’e-mail semble un canal sûr : la demande est écrite, rien ne se perd. En pratique, beaucoup d’entreprises répondent tard, ou pas du tout.</p>
+<h2>Ce qu’a mesuré SuperOffice</h2>
+<p>En 2018, SuperOffice a envoyé un e-mail de service client à 1 000 entreprises et chronométré les réponses.</p>
+<ul>
+  <li><strong>62 %</strong> n’ont jamais répondu.</li>
+  <li><strong>90 %</strong> n’ont pas accusé réception.</li>
+  <li>Le délai moyen de réponse était de <strong>12 h 10</strong>.</li>
+</ul>
+<h2>Face aux attentes des clients</h2>
+<p>La même année, HubSpot a demandé à 1 000 consommateurs ce que signifie « immédiat » : 62 % le situaient à 10 minutes ou moins pour une question commerciale. La moyenne mesurée par SuperOffice est 73 fois plus longue.</p>
+<table>
+  <thead><tr><th>Sur 100 e-mails envoyés</th><th>Résultat</th></tr></thead>
+  <tbody>
+    <tr><td>Aucune réponse</td><td>62</td></tr>
+    <tr><td>Une réponse, après 12 h 10 en moyenne</td><td>38</td></tr>
+  </tbody>
+</table>
+<h2>Réduire l’écart</h2>
+<ul>
+  <li><strong>Accusez réception de chaque demande</strong> tout de suite, avec un délai réaliste pour la réponse complète.</li>
+  <li><strong>Répondez sans attendre aux questions fréquentes</strong> : un agent de chat peut le faire à toute heure.</li>
+  <li><strong>Gardez l’e-mail pour ce qui demande réflexion</strong>, et mesurez vos vrais délais de réponse.</li>
+</ul>`,
+    sources: [
+      { label: "SuperOffice, « Customer Service Benchmark Report », 2018 (en anglais)", url: "https://www.superoffice.co.uk/resources/articles/customer-service-study/" },
+      { label: "HubSpot, « Live chat and the go-to-market flaw », avec les résultats de la Consumer Customer Support Survey 2018 (en anglais)", url: "https://blog.hubspot.com/sales/live-chat-go-to-market-flaw" }
+    ]
+  },
+  {
+    id: "appels-manques-messagerie",
+    slug: "appels-manques-messagerie",
+    category: "Réactivité",
+    title: "44 % des appels aux entreprises n’aboutissent à personne, et la célèbre statistique sur la messagerie n’a pas de source",
+    description: "Une analyse de plus de 70 millions d’appels publiée en 2026 montre que seuls 56 % sont décrochés par une personne. Le chiffre de « 80 % des appelants ne laissent pas de message », repris partout, est introuvable.",
+    date: PUBLISHED_2,
+    readingMinutes: 5,
+    insight: {
+      title: "Près d’un appel sur deux se termine sans conversation",
+      value: "44 %",
+      label: "des appels aux entreprises ne sont pas décrochés par une personne, selon une analyse de plus de 70 millions d’appels",
+      body: "Le rapport Invoca publié en 2026, fondé sur plus de 70 millions d’appels, indique que, tous secteurs confondus, 56 % des appels aux entreprises sont décrochés par une personne. Les autres aboutissent à une messagerie, à un serveur vocal ou à rien.",
+      formula: "100 % − 56 % = 44 %",
+      source: "Source : Invoca, Lead Conversion Benchmarks Report, juillet 2026.",
+      caveat: "Invoca vend des logiciels de suivi d’appels, et ses données portent surtout sur des entreprises américaines de toutes tailles, pas sur des petites entreprises françaises."
+    },
+    body: `
+<p>« 62 % des appels aux petites entreprises restent sans réponse. » « 80 % des appelants renvoyés vers la messagerie ne laissent pas de message. » Ces chiffres circulent dans d’innombrables articles. Nous avons cherché leur origine.</p>
+<h2>D’où viennent les chiffres populaires</h2>
+<ul>
+  <li><strong>Les 62 %</strong> viennent d’une étude de 2016 de 411 Locals, une agence marketing, portant sur 85 entreprises pendant 30 jours. Elle compte comme sans réponse les appels tombés sur la messagerie : 37,8 % décrochés, 37,8 % messagerie, 24,3 % sans réponse.</li>
+  <li><strong>Les 80 %</strong> n’ont pu être rattachés à aucune étude. La plus ancienne mention trouvée, de 2014, les attribue à des « statistiques de Forbes » sans référence.</li>
+</ul>
+<h2>Un chiffre plus solide</h2>
+<p>Le rapport Invoca publié en 2026, fondé sur plus de 70 millions d’appels, indique que 56 % des appels aux entreprises sont décrochés par une personne, donc 44 % ne le sont pas. C’est une étude d’éditeur, surtout américaine, mais elle repose sur un échantillon large et documenté.</p>
+<h2>Ce que cela signifie pour une petite entreprise</h2>
+<p>Si près de la moitié des appels n’aboutissent à personne, toutes tailles d’entreprise confondues, une entreprise d’une personne occupée avec un client a peu de chances de faire mieux. Et un appelant qui tombe sur la messagerie peut simplement essayer l’entreprise suivante de la liste.</p>
+<ul>
+  <li><strong>Affichez quand vous décrochez</strong>, à côté de votre numéro.</li>
+  <li><strong>Proposez un canal qui répond tout de suite</strong> quand vous ne pouvez pas : un chat qui répond et prend les coordonnées pour rappeler.</li>
+  <li><strong>Vérifiez vos propres chiffres</strong> : votre opérateur peut souvent indiquer combien d’appels vous manquez.</li>
+</ul>`,
+    sources: [
+      { label: "Invoca, Lead Conversion Benchmarks Report, juillet 2026 (en anglais)", url: "https://www.invoca.com/reports/the-invoca-call-conversion-industry-benchmarks-report-2025" },
+      { label: "411 Locals, « Small business owners don’t answer 62% of phone calls », 18 janvier 2016 (en anglais)", url: "https://411locals.us/small-business-owners-dont-answer-62-of-phone-calls/" },
+      { label: "CRM magazine, « Business voicemail goes unanswered », 1er novembre 2014 (en anglais)", url: "https://www.destinationcrm.com/Articles/CRM-Insights/Insight/Business-Voicemail-Goes-Unanswered-100080.aspx" }
+    ]
+  },
+  {
+    id: "temps-en-ligne-francais",
+    slug: "temps-en-ligne-francais",
+    category: "Usages",
+    title: "Les Français passent désormais plus de 1 000 heures par an en ligne",
+    description: "Médiamétrie a mesuré plus de trois heures en ligne par jour en 2025, un record, dont 80 % sur mobile. Sur une année, cela fait plus de 1 095 heures, en grande partie sur téléphone.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Le temps en ligne de vos visiteurs dépasse la moitié de vos heures d’ouverture",
+      value: "1 095 h",
+      label: "par an passées en ligne, au rythme de plus de 3 heures par jour mesuré par Médiamétrie en 2025, soit 54 % des 2 016 heures d’ouverture d’une entreprise de 9 h à 17 h",
+      body: "L’Année Internet 2025 de Médiamétrie indique que les Français passent désormais plus de 3 heures par jour en ligne, un record, et près de 5 heures pour les 15-24 ans. Le mobile représente 80 % du temps passé en ligne.",
+      formula: "3 h × 365 jours = 1 095 h ; 1 095 ÷ 2 016 = 54 % ; 80 % sur mobile = 876 h",
+      source: "Source : Médiamétrie, L’Année Internet 2025, 12 février 2026.",
+      caveat: "« Plus de 3 heures » fait de 1 095 heures un minimum. La population exacte derrière cette moyenne n’est pas précisée sur la page de synthèse de Médiamétrie, et l’étude n’indique pas à quelle heure de la journée les gens sont en ligne."
+    },
+    body: `
+<p>Le temps passé en ligne continue d’augmenter en France. Selon Médiamétrie, il a dépassé trois heures par jour en 2025.</p>
+<h2>Ce qu’a mesuré Médiamétrie</h2>
+<ul>
+  <li><strong>Plus de 3 heures par jour</strong> en ligne en moyenne, un record. La presse spécialisée qui a relayé la présentation donne 3 h 01, contre 2 h 40 en 2024.</li>
+  <li><strong>Près de 5 heures</strong> pour les 15-24 ans.</li>
+  <li><strong>48,6 millions</strong> de Français en ligne chaque jour.</li>
+  <li><strong>80 %</strong> du temps en ligne passé sur mobile.</li>
+</ul>
+<h2>Sur une année</h2>
+<p>À trois heures par jour, cela fait 1 095 heures par an, dont 876 sur téléphone. Une entreprise ouverte de 9 h à 17 h en semaine est ouverte 2 016 heures en 2026 : le temps en ligne de ses visiteurs en représente plus de la moitié. Médiamétrie n’indique pas à quelle heure de la journée les gens sont en ligne : regardez vos propres statistiques pour savoir quelle part de votre trafic arrive hors horaires.</p>
+<h2>Ce qu’il faut en retenir</h2>
+<ul>
+  <li><strong>Pensez d’abord au téléphone</strong> : c’est là que se passe l’essentiel du temps.</li>
+  <li><strong>Attendez-vous à des questions hors horaires</strong> et donnez aux visiteurs un moyen d’obtenir une réponse à ce moment-là.</li>
+  <li><strong>Faites court</strong> : sur téléphone, une question dans un chat est plus simple qu’un long formulaire.</li>
+</ul>`,
+    sources: [
+      { label: "Médiamétrie, L’Année Internet 2025, 12 février 2026", url: "https://www.mediametrie.fr/fr/audiences-et-resultats/internet/lannee-internet" },
+      { label: "CB News, compte rendu de L’Année Internet 2025 de Médiamétrie, 12 février 2026", url: "https://www.cbnews.fr/etudes/internet-francais-accelere-plus-temps-plus-mobile-plus-ia-mediametrie" }
+    ]
+  },
+  {
+    id: "calendrier-2027-ponts",
+    slug: "calendrier-2027-ponts",
+    category: "Disponibilité",
+    title: "2027 compte deux jours ouvrés de plus que 2026, et deux ponts de 112 heures",
+    description: "Quatre jours fériés tombent un week-end en 2027, ce qui donne 254 jours ouvrés. Mais l’Ascension et le 11 novembre tombent un jeudi : en faisant le pont, votre entreprise est fermée 112 heures d’affilée.",
+    date: PUBLISHED_2,
+    readingMinutes: 4,
+    insight: {
+      title: "Un jeudi férié plus un pont, c’est la plus longue fermeture de l’année",
+      value: "112 h",
+      label: "de fermeture d’affilée, du mercredi 17 h au lundi 9 h, en faisant le pont de l’Ascension (6 mai 2027) ou du 11 novembre 2027",
+      body: "En 2027, le 1er mai, le 8 mai et Noël tombent un samedi, et le 15 août un dimanche : seuls 7 jours fériés tombent en semaine. Cela donne 254 jours ouvrés, deux de plus qu’en 2026. L’Ascension et le 11 novembre tombent tous deux un jeudi.",
+      formula: "Mercredi 17 h → lundi 9 h = 4 × 24 h + 16 h = 112 h",
+      source: "Calendrier 2027 ; jours fériés d’après Service-Public.fr ; dimanche de Pâques 2027 le 28 mars.",
+      caveat: "Les ponts ne sont pas des jours fériés : fermer relève de votre choix. Sans pont, les plus longues fermetures de 2027 durent 88 heures, comme en 2026."
+    },
+    body: `
+<p>Préparer 2027 commence par le calendrier. La bonne nouvelle : plus de jours ouvrés. Le piège : deux jeudis qui invitent au pont.</p>
+<h2>2027 en chiffres</h2>
+<table>
+  <thead><tr><th></th><th>2026</th><th>2027</th></tr></thead>
+  <tbody>
+    <tr><td>Jours de semaine</td><td>261</td><td>261</td></tr>
+    <tr><td>Jours fériés en semaine</td><td>9</td><td>7</td></tr>
+    <tr><td>Jours ouvrés</td><td>252</td><td>254</td></tr>
+    <tr><td>Heures fermées (9 h à 17 h)</td><td>6 744</td><td>6 728</td></tr>
+    <tr><td>Part de l’année fermée</td><td>77,0 %</td><td>76,8 %</td></tr>
+  </tbody>
+</table>
+<p>En 2027, le 1er mai, le 8 mai et Noël tombent un samedi, et le 15 août un dimanche. Le lundi de Pâques tombe le 29 mars, l’Ascension le 6 mai et le lundi de Pentecôte le 17 mai.</p>
+<h2>Les deux ponts</h2>
+<p>L’Ascension (jeudi 6 mai) et l’Armistice (jeudi 11 novembre) invitent à faire le pont le vendredi. Avec le pont, le bureau ferme le mercredi à 17 h et rouvre le lundi à 9 h : 112 heures sans réponse. Sans pont, les plus longues fermetures sont les week-ends prolongés de 88 heures, comme Pâques ou la Toussaint.</p>
+<h2>Préparez-vous dès maintenant</h2>
+<ul>
+  <li><strong>Décidez tôt de vos ponts</strong> et annoncez-les sur votre site.</li>
+  <li><strong>Vérifiez qui répond</strong> pendant chaque week-end prolongé.</li>
+  <li><strong>Prévoyez le lundi suivant</strong> : c’est là qu’arrivent d’un coup quatre jours de demandes.</li>
+</ul>`,
+    sources: [
+      { label: "Service-Public.fr, « Jours fériés et ponts dans le secteur privé »", url: "https://www.service-public.fr/particuliers/vosdroits/F2405" }
     ]
   }
 ];
